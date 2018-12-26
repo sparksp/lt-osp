@@ -1,3 +1,9 @@
-baseURL = "http://example.org/"
+baseURL = "http://lt-osp.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "LT-OSP Field Guide"
+theme = "hyde"
+
+
+[params]
+  themeColor = "theme-base-09"
+  description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points"
