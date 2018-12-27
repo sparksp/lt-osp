@@ -1,11 +1,11 @@
 ---
 title: "Create Poison 1"
 date: 2018-12-26T20:27:00Z
-draft: true
-version: 3.1.1
 guilds: ["Alchemists"]
 tier: 2
 osp_cost: 20
+prerequisites: ["Poison Lore"]
+requirements: ["Poison lore CS"]
 ---
 Requirements to use: Poison lore CS.
 
