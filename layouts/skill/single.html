@@ -22,11 +22,19 @@
         {{- range $index, $e := . }}
         {{- if $index }}, {{ end }}
         {{ . }}
-        {{- end }}
+        {{- end }}.
     </p>
     {{- end }}
 
-
+    {{- with .Params.requirements }}
+    <p>
+        <strong>Requirements to use:</strong>
+        {{- range $index, $e := . }}
+        {{- if $index }}, {{ end }}
+        {{ . }}
+        {{- end }}.
+    </p>
+    {{- end }}
 
     {{ .Content }}
 </div>
