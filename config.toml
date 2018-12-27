@@ -1,9 +1,16 @@
-baseURL = "http://lt-osp.org/"
+baseURL = "http://lt-osp.netlify.com/"
 languageCode = "en-us"
 title = "LT-OSP Field Guide"
 theme = "hyde"
 
+[taxonomies]
+  guild = "guilds"
 
 [params]
   themeColor = "theme-base-09"
   description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points"
+
+[[menu.main]]
+  identifier = "guilds"
+  name = "Guilds"
+  url = "/guilds/"
