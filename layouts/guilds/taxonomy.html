@@ -68,14 +68,10 @@
     </thead>
     <tbody>
         {{- $skills := $.Site.GetPage "/skill" }}
-        {{- $tier := 0 }}
-        {{- range (.Pages.ByParam "ladder").ByParam "tier" }}
-        {{- range after 1 (seq $tier .Params.tier) }}
-        {{- if $tier }}</tr>{{ end }}
+        {{- range .Pages.GroupByParam "tier" }}
         <tr>
-            <th scope="row">{{ . }}</th>
-            {{- $tier = . }}
-            {{- end }}
+            <th scope="row">{{ .Key }}</th>
+            {{- range .Pages.ByParam "ladder" }}
             <td>
                 <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
                     id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
@@ -86,6 +82,7 @@
             </td>
             {{- end }}
         </tr>
+        {{- end }}
     </tbody>
 </table>
 <script src="/leader-line.min.js"></script>
