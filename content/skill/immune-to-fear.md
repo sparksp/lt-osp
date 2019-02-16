@@ -1,7 +1,7 @@
 ---
 title: "Immune to Fear"
 date: 2019-02-16T20:30:38Z
-guilds: ["Militia"]
+guilds: ["Bards", "Militia"]
 tier: 1
 osp_cost: 10
 prerequisites: []
