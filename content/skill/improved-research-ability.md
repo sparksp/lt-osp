@@ -1,7 +1,6 @@
 ---
 title: "Improved Research Ability"
 date: 2019-02-16T11:22:59Z
-draft: true
 guilds: ["Knowledge Guilds"]
 tier: 4
 osp_cost: 40

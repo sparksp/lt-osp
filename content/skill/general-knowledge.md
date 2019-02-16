@@ -1,7 +1,6 @@
 ---
 title: "General Knowledge (X)"
 date: 2019-02-16T11:17:14Z
-draft: true
 guilds: ["Knowledge Guilds"]
 tier: 1
 osp_cost: 10
