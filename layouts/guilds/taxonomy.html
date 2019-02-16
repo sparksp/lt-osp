@@ -2,13 +2,25 @@
 <h1>{{ .Title }}</h1>
 
 <style>
-    .skill-table,
-    .skill-table th,
-    .skill-table td {
+    .skill-table {
         background-color: #fafafa;
         border-collapse: collapse;
-        border: 1px solid #a9a9a9;
         color: black;
+    }
+
+    .skill-table,
+    .skill-table tr,
+    .skill-table th,
+    .skill-table td {
+        border: 1px solid #a9a9a9;
+    }
+
+    .skill-table td {
+        border-left: none;
+    }
+
+    .skill-table td:nth-last-child(n+2) {
+        border-right: none;
     }
 
     .skill-table th,
@@ -51,18 +63,61 @@
     <thead>
         <tr>
             <th>Tier</th>
-            <th>{{ .Title }}</th>
+            <th colspan="42">{{ .Title }}</th>
         </tr>
     </thead>
     <tbody>
         {{- $skills := $.Site.GetPage "/skill" }}
+        {{- $default_ladder := "none" }}
+        {{- $ladder_count := 0}}
+        {{- $scratch := newScratch }}
+
+        {{- with where .Pages ".Params.ladder" "!=" nil }}
+        {{- range $n, $group := .GroupByParam "ladder" }}
+        {{- $scratch.SetInMap "ladders" $group.Key $n }}
+        {{- $ladder_count = add $ladder_count 1 }}
+        {{- end }}
+        {{- end }}
+        {{- $scratch.SetInMap "ladders" $default_ladder $ladder_count }}
+
+        {{- $max_col := 0 }}
+        {{- range .Pages.GroupByParam "tier" }}
+        {{- $col := 0 }}
+        {{- range .Pages.ByParam "ladder" }}
+        {{- $ladder := .Params.ladder | default $default_ladder }}
+        {{- $ladder_column := index ($scratch.Get "ladders") $ladder }}
+        {{- if lt $col $ladder_column }}
+        {{- range after 1 (seq $col $ladder_column) }}
+        {{- $col = add $col 1 }}
+        {{- end }}
+        {{- end }}
+        {{- $col = add $col 1 }}
+        {{- end }}
+        {{- if lt $max_col $col }}
+        {{- $max_col = $col }}
+        {{- end }}
+        {{- end }}
+
         {{- $tier := 0 }}
-        {{- range .Pages.ByParam "tier" }}
-        {{- range after 1 (seq $tier .Params.tier) }}
-        {{- if $tier }}</tr>{{ end }}
+        {{- range .Pages.GroupByParam "tier" }}
+        {{- range after 1 (seq $tier (sub .Key 1)) }}
         <tr>
-            <th scope="row">{{ . }}</th>
-            {{- $tier = . }}
+            <th>{{ . }}</th>
+            <td colspan="{{ add $max_col 1 }}" class="no-skill"></td>
+        </tr>
+        {{- end }}
+        {{- $col := 0 }}
+        {{- $tier = .Key }}
+        <tr>
+            <th scope="row">{{ .Key }}</th>
+            {{- range .Pages.ByParam "ladder" }}
+            {{- $ladder := .Params.ladder | default $default_ladder }}
+            {{- $ladder_column := index ($scratch.Get "ladders") $ladder }}
+            {{- if lt $col $ladder_column }}
+            {{- range after 1 (seq $col $ladder_column) }}
+            <td class="no-skill"></td>
+            {{- $col = add $col 1 }}
+            {{- end }}
             {{- end }}
             <td>
                 <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
@@ -72,8 +127,22 @@
                     {{ .Title }}
                 </a>
             </td>
+            {{- $col = add $col 1 }}
+            {{- end }}
+
+            {{- if le $col $max_col }}
+            {{- range after 1 (seq $col $max_col) }}
+            <td class="no-skill"></td>
+            {{- end }}
             {{- end }}
         </tr>
+        {{- end }}
+        {{- range after 1 (seq $tier 5) }}
+        <tr>
+            <th>{{ . }}</th>
+            <td colspan="{{ $max_col }}" class="no-skill"></td>
+        </tr>
+        {{- end }}
     </tbody>
 </table>
 <script src="/leader-line.min.js"></script>
@@ -81,11 +150,13 @@
     'use strict';
     (function (document) {
         var color = "black";
+        var path = "fluid";
+        var endSocket = "top";
         var skills = document.getElementsByClassName("skill");
         Array.from(skills).forEach(skill => {
             if (skill.dataset.prerequisite) {
                 var prerequisite = document.getElementById(skill.dataset.prerequisite);
-                new LeaderLine(prerequisite, skill, { color });
+                new LeaderLine(prerequisite, skill, { color, endSocket, path });
             }
         });
     }(document));
