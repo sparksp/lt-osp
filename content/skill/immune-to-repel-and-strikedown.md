@@ -1,7 +1,7 @@
 ---
 title: "Immune to Repel and Strikedown"
 date: 2019-02-16T19:58:23Z
-guilds: ["Scouts"]
+guilds: ["Militia", "Scouts"]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-repel"]
