@@ -57,7 +57,7 @@
     <tbody>
         {{- $skills := $.Site.GetPage "/skill" }}
         {{- $tier := 0 }}
-        {{- range .Pages.ByParam "tier" }}
+        {{- range (.Pages.ByParam "ladder").ByParam "tier" }}
         {{- range after 1 (seq $tier .Params.tier) }}
         {{- if $tier }}</tr>{{ end }}
         <tr>
@@ -81,11 +81,13 @@
     'use strict';
     (function (document) {
         var color = "black";
+        var path = "fluid";
+        var endSocket = "top";
         var skills = document.getElementsByClassName("skill");
         Array.from(skills).forEach(skill => {
             if (skill.dataset.prerequisite) {
                 var prerequisite = document.getElementById(skill.dataset.prerequisite);
-                new LeaderLine(prerequisite, skill, { color });
+                new LeaderLine(prerequisite, skill, { color, endSocket, path });
             }
         });
     }(document));
