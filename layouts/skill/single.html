@@ -17,11 +17,16 @@
     {{- end }}
 
     {{- with .Params.prerequisites }}
+    {{- $skill := $.Site.GetPage "/skill" }}
     <p>
         <strong>Pre-requisite to learn:</strong>
-        {{- range $index, $e := . }}
+        {{- range $index, $item := . }}
         {{- if $index }}, {{ end }}
-        {{ . }}
+        {{- with $skill.GetPage $item }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{- else }}
+        {{ $item }}
+        {{- end }}
         {{- end }}.
     </p>
     {{- end }}

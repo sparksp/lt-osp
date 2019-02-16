@@ -4,7 +4,7 @@ date: 2018-12-27T17:35:38Z
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50
-prerequisites: ["Create Poison 3", "Poison Lore"]
+prerequisites: ["create-poison-3", "Poison Lore"]
 requirements: ["Poison lore CS"]
 restricted: true
 ---
