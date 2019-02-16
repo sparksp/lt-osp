@@ -1,7 +1,7 @@
 ---
 title: "Herb Lore"
 date: 2019-02-16T15:45:40Z
-guilds: ["Alchemists"]
+guilds: ["Alchemists", "Bards"]
 tier: 1
 osp_cost: 10
 prerequisites: []

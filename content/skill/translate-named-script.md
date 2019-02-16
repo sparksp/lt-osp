@@ -1,7 +1,7 @@
 ---
 title: "Translate Named Script <X>"
 date: 2019-02-16T20:02:30Z
-guilds: ["Scouts"]
+guilds: ["Bards", "Scouts"]
 tier: 1
 osp_cost: 10
 prerequisites: []

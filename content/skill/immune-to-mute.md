@@ -1,7 +1,7 @@
 ---
 title: "Immune to Mute"
 date: 2019-02-16T20:30:45Z
-guilds: ["Militia"]
+guilds: ["Bards", "Militia"]
 tier: 2
 osp_cost: 20
 prerequisites: ["immune-to-fear"]
