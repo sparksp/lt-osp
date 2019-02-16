@@ -55,6 +55,7 @@
         </tr>
     </thead>
     <tbody>
+        {{- $skills := $.Site.GetPage "/skill" }}
         {{- $tier := 0 }}
         {{- range .Pages.ByParam "tier" }}
         {{- range after 1 (seq $tier .Params.tier) }}
@@ -65,10 +66,28 @@
             {{- end }}
             <td>
                 <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    href="{{ .Permalink }}">{{ .Title }}</a>
+                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
+                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
+                    {{ .Title }}
+                </a>
             </td>
             {{- end }}
         </tr>
     </tbody>
 </table>
+<script src="/leader-line.min.js"></script>
+<script type="text/javascript">
+    'use strict';
+    (function (document) {
+        var color = "black";
+        var skills = document.getElementsByClassName("skill");
+        Array.from(skills).forEach(skill => {
+            if (skill.dataset.prerequisite) {
+                var prerequisite = document.getElementById(skill.dataset.prerequisite);
+                new LeaderLine(prerequisite, skill, { color });
+            }
+        });
+    }(document));
+</script>
 {{- end }}
