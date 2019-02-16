@@ -1,7 +1,7 @@
 ---
 title: "Tracking"
 date: 2019-02-16T20:06:43Z
-guilds: ["Scouts"]
+guilds: ["Militia", "Scouts"]
 tier: 1
 osp_cost: 10
 prerequisites: []

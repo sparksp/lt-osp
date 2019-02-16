@@ -1,7 +1,7 @@
 ---
 title: "Immune to Fumble"
 date: 2019-02-16T19:46:31Z
-guilds: ["Scouts"]
+guilds: ["Militia", "Scouts"]
 tier: 1
 osp_cost: 10
 prerequisites: []
