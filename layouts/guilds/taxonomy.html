@@ -1,0 +1,74 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+
+<style>
+    .skill-table,
+    .skill-table th,
+    .skill-table td {
+        background-color: #fafafa;
+        border-collapse: collapse;
+        border: 1px solid #a9a9a9;
+        color: black;
+    }
+
+    .skill-table th,
+    .skill-table td {
+        line-height: 1.5;
+        padding: .3em;
+    }
+
+    .skill {
+        background-color: white;
+        border: 2px solid #666;
+        color: black;
+        display: block;
+        margin: .3em;
+        padding: .2em .5em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .skill.restricted-skill {
+        background-color: #C6D7A5;
+        color: black;
+    }
+
+    .skill.replacement-skill {
+        border-width: 1px;
+    }
+
+    .theme-base-09 .content a.skill {
+        color: black;
+    }
+
+    .skill:hover {
+        text-decoration: none;
+        border-color: black;
+    }
+</style>
+
+<table class="skill-table">
+    <thead>
+        <tr>
+            <th>Tier</th>
+            <th>{{ .Title }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{- $tier := 0 }}
+        {{- range .Pages.ByParam "tier" }}
+        {{- range after 1 (seq $tier .Params.tier) }}
+        {{- if $tier }}</tr>{{ end }}
+        <tr>
+            <th scope="row">{{ . }}</th>
+            {{- $tier = . }}
+            {{- end }}
+            <td>
+                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+                    href="{{ .Permalink }}">{{ .Title }}</a>
+            </td>
+            {{- end }}
+        </tr>
+    </tbody>
+</table>
+{{- end }}
