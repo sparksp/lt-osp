@@ -70,7 +70,7 @@
                     id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
                     {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
                     data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
+                    {{ .LinkTitle }}
                 </a>
             </td>
             {{- $col = add $col 1 }}
