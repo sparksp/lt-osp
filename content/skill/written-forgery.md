@@ -4,7 +4,7 @@ date: 2019-02-16T20:02:45Z
 guilds: ["Bards", "Scouts"]
 tier: 4
 osp_cost: 40
-prerequisites: ["translate-named-script", "Recognise Forgery"]
+prerequisites: ["translate-named-script-x", "Recognise Forgery"]
 requirements: []
 ladder: "translate-named-script"
 ---

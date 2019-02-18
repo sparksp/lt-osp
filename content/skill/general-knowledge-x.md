@@ -1,5 +1,5 @@
 ---
-title: "General Knowledge (X)"
+title: "General Knowledge <X>"
 date: 2019-02-16T11:17:14Z
 guilds: ["Knowledge Guilds"]
 tier: 1
