@@ -166,6 +166,9 @@
         Array.from(skills).forEach(skill => {
             if (skill.dataset.prerequisite) {
                 var prerequisite = document.getElementById(skill.dataset.prerequisite);
+                if (!prerequisite) {
+                    return;
+                }
                 new LeaderLine(prerequisite, skill, { color, endSocket, path });
             }
         });
