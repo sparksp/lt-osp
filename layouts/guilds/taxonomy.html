@@ -164,13 +164,14 @@
         var endSocket = "top";
         var skills = document.getElementsByClassName("skill");
         Array.from(skills).forEach(skill => {
-            if (skill.dataset.prerequisite) {
-                var prerequisite = document.getElementById(skill.dataset.prerequisite);
-                if (!prerequisite) {
-                    return;
-                }
-                new LeaderLine(prerequisite, skill, { color, endSocket, path });
+            if (!skill.dataset.prerequisite) {
+                return;
             }
+            var prerequisite = document.getElementById(skill.dataset.prerequisite);
+            if (!prerequisite) {
+                return;
+            }
+            new LeaderLine(prerequisite, skill, { color, endSocket, path });
         });
     }(document));
 </script>
