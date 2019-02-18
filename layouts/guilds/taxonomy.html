@@ -158,7 +158,17 @@
 <script src="/leader-line.min.js"></script>
 <script type="text/javascript">
     'use strict';
-    (function (document) {
+    function onReady(callback) {
+        if (
+            document.readyState === "complete" ||
+            (document.readyState !== "loading" && !document.documentElement.doScroll)
+        ) {
+            callback();
+        } else {
+            document.addEventListener("DOMContentLoaded", callback);
+        }
+    }
+    onReady(function () {
         var color = "black";
         var path = "fluid";
         var endSocket = "top";
@@ -173,6 +183,6 @@
             }
             new LeaderLine(prerequisite, skill, { color, endSocket, path });
         });
-    }(document));
+    });
 </script>
 {{- end }}
