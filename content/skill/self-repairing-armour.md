@@ -1,0 +1,8 @@
+---
+title: "Self Repairing Armour #"
+linktitle: "Self Repairing Armour"
+guilds: ["Lammie Restricted"]
+prerequisites: []
+requirements: ["Any Armour use CS"]
+---
+If out of combat for 10 minutes the AV of any worn armour is restored to full.
