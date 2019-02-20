@@ -1,7 +1,7 @@
 ---
 title: "Oiled Weapons"
 date: 2019-02-16T19:47:56Z
-guilds: ["Archers", "Scouts"]
+guilds: ["Scouts"]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]
