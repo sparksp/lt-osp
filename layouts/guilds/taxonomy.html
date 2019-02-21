@@ -1,14 +1,18 @@
 {{ define "main" -}}
 <h1>{{ .Title }}</h1>
-{{- with .Params.guilds }}
+
+{{- with .Menus.guilds }}
+{{- if .HasChildren }}
 <p>
     <strong>Guilds:</strong>
-    {{- range $index, $e := . }}
+    {{- range $index, $e := .Children }}
     {{- if $index }}, {{ end }}
-    <a href="{{ "guilds/" | relURL }}{{ . | urlize }}" class="guild guild-{{ . | urlize }}">{{ . }}</a>
+    <a href="{{ .URL }}">{{ .Title }}</a>
     {{- end }}
 </p>
 {{- end }}
+{{- end }}
+
 {{ .Content }}
 
 <style>
