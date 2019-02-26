@@ -1,0 +1,8 @@
+{{- $skills := .skills }}
+{{- range $item := .list }}
+{{- with $skills.GetPage $item }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{- else }}
+{{ $item }}
+{{- end }}
+{{- end }}.

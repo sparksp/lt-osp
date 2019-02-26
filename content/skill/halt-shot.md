@@ -4,7 +4,7 @@ guilds: ["Archers"]
 tier: 5
 osp_cost: 50
 prerequisites: ["strikedown-shot"]
-requirements: ["Projectile Weapon Use CS", "Bow Competency"]
+requirements: ["Projectile Weapon Use CS", " and ", "Bow Competency"]
 replacement: true
 restricted: true
 ladder: "immune-to-fumble"

@@ -4,7 +4,7 @@ guilds: ["Incantors"]
 tier: 5
 osp_cost: 50
 prerequisites: ["last-rites-improved"]
-requirements: ["Light Incantation or Dark Incantation OS"]
+requirements: ["light-incantation", " or ", "dark-incantation", " OS"]
 restricted: true
 ladder: "last-rites"
 ---

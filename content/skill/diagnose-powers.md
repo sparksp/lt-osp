@@ -4,7 +4,7 @@ guilds: ["Mages"]
 tier: 5
 osp_cost: 50
 prerequisites: ["identify"]
-requirements: ["Any Magic CS or Sense Magic CS"]
+requirements: ["Any Magic CS", " or ", "Sense Magic CS"]
 replacement: true
 restricted: true
 ladder: "identify"

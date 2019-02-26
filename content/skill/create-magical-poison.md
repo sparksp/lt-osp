@@ -3,7 +3,7 @@ title: "Create Magical Poison"
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50
-prerequisites: ["create-poison-3", "Poison Lore"]
+prerequisites: ["create-poison-3", " & ", "Poison Lore"]
 requirements: ["Poison lore CS"]
 replacement: true
 restricted: true

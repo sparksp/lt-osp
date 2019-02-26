@@ -3,7 +3,7 @@ title: "Create Poison 3"
 guilds: ["Alchemists"]
 tier: 4
 osp_cost: 40
-prerequisites: ["create-poison-2", "Poison Lore"]
+prerequisites: ["create-poison-2", " & ", "Poison Lore"]
 requirements: ["Poison lore CS"]
 replacement: true
 ladder: "create-poison"

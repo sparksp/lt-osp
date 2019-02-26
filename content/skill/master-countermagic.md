@@ -3,8 +3,8 @@ title: "Master Countermagic"
 guilds: ["Mages"]
 tier: 4
 osp_cost: 40
-prerequisites: ["cast-high-countermagic", "High Magic (Spellcasting)"]
-requirements: ["Spellcasting or Incantation CS"]
+prerequisites: ["cast-high-countermagic", " or ", "high-magic-x", " (Spellcasting)"]
+requirements: ["Spellcasting", " or ", "Incantation CS"]
 replacement: true
 ladder: "countermagic"
 ---

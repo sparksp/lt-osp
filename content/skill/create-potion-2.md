@@ -3,7 +3,7 @@ title: "Create Potion 2"
 guilds: ["Alchemists"]
 tier: 3
 osp_cost: 30
-prerequisites: ["create-potion-1", "Potion Lore"]
+prerequisites: ["create-potion-1", " & ", "Potion Lore"]
 requirements: ["Potion Lore CS"]
 replacement: true
 ladder: "create-potion"

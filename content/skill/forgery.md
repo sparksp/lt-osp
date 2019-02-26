@@ -3,7 +3,7 @@ title: "Forgery"
 guilds: ["Bards", "Scouts"]
 tier: 5
 osp_cost: 50
-prerequisites: ["written-forgery", "Recognise Forgery"]
+prerequisites: ["written-forgery", " & ", "Recognise Forgery"]
 requirements: []
 replacement: true
 restricted: true
