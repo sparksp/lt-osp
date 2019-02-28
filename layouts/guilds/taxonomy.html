@@ -56,7 +56,7 @@
 
     .skill {
         background-color: white;
-        border: 3px solid #666;
+        border: 3px solid #999;
         color: black;
         display: block;
         margin: .3em;
@@ -71,7 +71,7 @@
     }
 
     .skill.replacement-skill {
-        border-width: 1px;
+        border-width: 2px;
     }
 
     .theme-base-09 .content a.skill {
@@ -184,19 +184,58 @@
         }
     }
     onReady(function () {
-        var color = "black";
-        var path = "fluid";
-        var endSocket = "top";
+        var lineColor = "#999";
+        var options = {
+            color: lineColor,
+            dash: false,
+            dropShadow: false,
+            endPlugColor: lineColor,
+            gradient: false,
+            startPlugColor: lineColor
+        };
+        var highlightColor = "black";
+        var connectionColor = "#777";
+        var highlightShadow = "0 0 2px 1px rgba(0, 0, 0, .3)";
         var skills = document.getElementsByClassName("skill");
         Array.from(skills).forEach(skill => {
             if (!skill.dataset.prerequisite) {
                 return;
             }
-            var prerequisite = document.getElementById(skill.dataset.prerequisite);
-            if (!prerequisite) {
-                return;
-            }
-            new LeaderLine(prerequisite, skill, { color, endSocket, path });
+            var prerequisites = skill.dataset.prerequisite.split(";");
+            prerequisites.forEach(prerequisiteId => {
+                var prerequisite = document.getElementById(prerequisiteId);
+                if (!prerequisite) {
+                    return;
+                }
+                var reset = () => {
+                    line.setOptions(options);
+                    prerequisite.style.boxShadow = "none";
+                    prerequisite.style.borderColor = null;
+                    skill.style.boxShadow = "none";
+                    skill.style.borderColor = null;
+                };
+                var line = new LeaderLine(prerequisite, skill, options);
+                prerequisite.addEventListener('mouseenter', () => {
+                    line.setOptions({
+                        startPlugColor: highlightColor,
+                        endPlugColor: connectionColor,
+                        gradient: true
+                    });
+                    prerequisite.style.boxShadow = highlightShadow;
+                    skill.style.borderColor = connectionColor;
+                });
+                skill.addEventListener('mouseenter', () => {
+                    line.setOptions({
+                        startPlugColor: connectionColor,
+                        endPlugColor: highlightColor,
+                        gradient: true
+                    });
+                    prerequisite.style.borderColor = connectionColor;
+                    skill.style.boxShadow = highlightShadow;
+                });
+                prerequisite.addEventListener('mouseleave', reset);
+                skill.addEventListener('mouseleave', reset);
+            });
         });
     });
 </script>
