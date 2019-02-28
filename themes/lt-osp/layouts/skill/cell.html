@@ -1,6 +1,7 @@
 <a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
-    id="{{ .Type }}-{{ .File.UniqueID }}" href="{{ .Permalink }}" title="{{ .Title }}"
-    {{ range .Params.prerequisites }}{{- with site.GetPage (printf "/skill/%s" .) }}
-    data-prerequisite="{{ .Type }}-{{ .File.UniqueID }}" {{ end }}{{ end }}>
-    {{ .LinkTitle }}
+   id="{{ .Type }}-{{ .File.UniqueID }}" href="{{ .Permalink }}" title="{{ .Title }}" {{- $prerequisites := slice }}
+    {{- range .Params.prerequisites }}{{- with site.GetPage (printf "/skill/%s" .) }}
+    {{- $prerequisites = $prerequisites | append (print .Type "-" .File.UniqueID) }} {{ end }}{{ end }}
+    {{- with $prerequisites }}data-prerequisites="{{ delimit . ";" }}" {{ end }}>
+    {{- .LinkTitle -}}
 </a>
