@@ -1,6 +1,5 @@
 ---
 title: "Unending Voice"
-date: 2019-02-16T21:26:34Z
 guilds: ["Bards"]
 tier: 3
 osp_cost: 30

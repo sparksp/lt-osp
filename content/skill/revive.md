@@ -1,6 +1,5 @@
 ---
 title: "Revive"
-date: 2019-02-16T21:52:33Z
 guilds: ["Healers"]
 tier: 1
 osp_cost: 10

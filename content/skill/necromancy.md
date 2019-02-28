@@ -1,6 +1,5 @@
 ---
 title: "Necromancy"
-date: 2019-02-16T21:44:04Z
 guilds: ["Corruptors"]
 tier: 1
 osp_cost: 10

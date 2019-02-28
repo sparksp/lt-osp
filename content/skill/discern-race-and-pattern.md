@@ -1,6 +1,5 @@
 ---
 title: "Discern Race and Pattern"
-date: 2019-02-16T20:46:56Z
 guilds: ["Archers"]
 tier: 4
 osp_cost: 40

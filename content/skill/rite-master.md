@@ -1,6 +1,5 @@
 ---
 title: "Rite Master"
-date: 2019-02-17T17:55:39Z
 guilds: ["Mages"]
 tier: 1
 osp_cost: 10

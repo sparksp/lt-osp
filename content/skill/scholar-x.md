@@ -1,6 +1,5 @@
 ---
 title: "Scholar <X>"
-date: 2019-02-17T20:04:03Z
 guilds: ["Generic"]
 tier: 2
 osp_cost: 20

@@ -1,6 +1,5 @@
 ---
 title: "Traverse Faction Wards"
-date: 2019-02-16T20:07:14Z
 guilds: ["Scouts"]
 tier: 3
 osp_cost: 30

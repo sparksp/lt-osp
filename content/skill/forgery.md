@@ -1,6 +1,5 @@
 ---
 title: "Forgery"
-date: 2019-02-16T20:02:49Z
 guilds: ["Bards", "Scouts"]
 tier: 5
 osp_cost: 50

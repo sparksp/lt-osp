@@ -1,6 +1,5 @@
 ---
 title: "Through Thrown"
-date: 2019-02-16T19:47:48Z
 guilds: ["Scouts"]
 tier: 5
 osp_cost: 50

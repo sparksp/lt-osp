@@ -1,6 +1,5 @@
 ---
 title: "Immune to Fumble and Shatter"
-date: 2019-02-16T20:22:14Z
 guilds: ["Archers", "Militia"]
 tier: 3
 osp_cost: 30

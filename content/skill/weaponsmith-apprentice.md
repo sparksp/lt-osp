@@ -1,6 +1,5 @@
 ---
 title: "Weaponsmith (Apprentice)"
-date: 2019-02-16T21:06:57Z
 guilds: ["Armourers"]
 tier: 1
 osp_cost: 10

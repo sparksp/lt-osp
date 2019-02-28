@@ -1,6 +1,5 @@
 ---
 title: "Immune to Through"
-date: 2019-02-16T20:22:25Z
 guilds: ["Militia"]
 tier: 4
 osp_cost: 40

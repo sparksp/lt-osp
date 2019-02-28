@@ -1,6 +1,5 @@
 ---
 title: "Wedge Mastery (Improved)"
-date: 2019-02-16T21:37:34Z
 guilds: ["Corruptors", "Incantors"]
 tier: 4
 osp_cost: 40

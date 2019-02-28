@@ -1,6 +1,5 @@
 ---
 title: "Tutor"
-date: 2019-02-17T20:05:04Z
 guilds: ["Generic"]
 tier: 4
 osp_cost: 40

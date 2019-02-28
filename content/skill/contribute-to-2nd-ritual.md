@@ -1,6 +1,5 @@
 ---
 title: "Contribute to 2nd Ritual"
-date: 2019-02-17T18:13:05Z
 guilds: ["Mages"]
 tier: 1
 osp_cost: 10

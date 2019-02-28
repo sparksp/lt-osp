@@ -1,6 +1,5 @@
 ---
 title: "Discern Daemonic Being"
-date: 2019-02-17T18:13:32Z
 guilds: ["Mages"]
 tier: 3
 osp_cost: 30

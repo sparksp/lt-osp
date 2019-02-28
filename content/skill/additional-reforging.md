@@ -1,6 +1,5 @@
 ---
 title: "Additional Reforging"
-date: 2019-02-16T21:11:21Z
 guilds: ["Armourers"]
 tier: 1
 osp_cost: 10

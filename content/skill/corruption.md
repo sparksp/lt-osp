@@ -1,6 +1,5 @@
 ---
 title: "Corruption"
-date: 2019-02-16T21:43:56Z
 guilds: ["Corruptors"]
 tier: 1
 osp_cost: 10

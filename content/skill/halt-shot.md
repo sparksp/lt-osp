@@ -1,6 +1,5 @@
 ---
 title: "Halt Shot"
-date: 2019-02-16T20:42:44Z
 guilds: ["Archers"]
 tier: 5
 osp_cost: 50

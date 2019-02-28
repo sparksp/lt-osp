@@ -1,6 +1,5 @@
 ---
 title: "Conceal Item"
-date: 2019-02-16T20:06:51Z
 guilds: ["Scouts"]
 tier: 2
 osp_cost: 20

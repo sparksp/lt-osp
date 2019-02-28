@@ -1,6 +1,5 @@
 ---
 title: "Quick Armour Repair"
-date: 2019-02-17T18:33:24Z
 guilds: ["Martial Guilds"]
 tier: 1
 osp_cost: 10

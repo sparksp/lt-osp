@@ -1,6 +1,5 @@
 ---
 title: "Hand of Nature"
-date: 2019-02-16T20:55:56Z
 guilds: ["Archers"]
 tier: 2
 osp_cost: 20

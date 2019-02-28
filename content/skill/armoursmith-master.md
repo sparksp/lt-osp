@@ -1,6 +1,5 @@
 ---
 title: "Armoursmith (Master)"
-date: 2019-02-16T21:01:38Z
 guilds: ["Armourers"]
 tier: 5
 osp_cost: 50

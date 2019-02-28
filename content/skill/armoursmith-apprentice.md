@@ -1,6 +1,5 @@
 ---
 title: "Armoursmith (Apprentice)"
-date: 2019-02-16T21:01:22Z
 guilds: ["Armourers"]
 tier: 1
 osp_cost: 10

@@ -1,6 +1,5 @@
 ---
 title: "Spell Tempering"
-date: 2019-02-16T21:11:43Z
 guilds: ["Armourers"]
 tier: 3
 osp_cost: 30

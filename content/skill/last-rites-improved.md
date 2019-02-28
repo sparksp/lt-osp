@@ -1,6 +1,5 @@
 ---
 title: "Last Rites (Improved)"
-date: 2019-02-17T17:32:41Z
 guilds: ["Incantors"]
 tier: 4
 osp_cost: 40

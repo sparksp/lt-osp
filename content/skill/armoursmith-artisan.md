@@ -1,6 +1,5 @@
 ---
 title: "Armoursmith (Artisan)"
-date: 2019-02-16T21:01:26Z
 guilds: ["Armourers"]
 tier: 4
 osp_cost: 40

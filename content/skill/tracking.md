@@ -1,6 +1,5 @@
 ---
 title: "Tracking"
-date: 2019-02-16T20:06:43Z
 guilds: ["Archers", "Militia", "Scouts"]
 tier: 1
 osp_cost: 10

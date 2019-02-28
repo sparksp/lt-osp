@@ -1,6 +1,5 @@
 ---
 title: "Champion"
-date: 2019-02-17T17:36:39Z
 guilds: ["Incantors", "Mages"]
 tier: 4
 osp_cost: 40

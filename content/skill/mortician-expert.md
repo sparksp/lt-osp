@@ -1,6 +1,5 @@
 ---
 title: "Mortician Expert"
-date: 2019-02-16T21:35:02Z
 guilds: ["Corruptors"]
 tier: 4
 osp_cost: 40

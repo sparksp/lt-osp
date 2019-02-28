@@ -1,6 +1,5 @@
 ---
 title: "Mighty Blow"
-date: 2019-02-16T20:27:02Z
 guilds: ["Armourers", "Militia"]
 tier: 4
 osp_cost: 40

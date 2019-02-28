@@ -1,6 +1,5 @@
 ---
 title: "Weaponsmith (Artisan)"
-date: 2019-02-16T21:07:03Z
 guilds: ["Armourers"]
 tier: 4
 osp_cost: 40

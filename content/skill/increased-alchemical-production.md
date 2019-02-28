@@ -1,6 +1,5 @@
 ---
 title: "Increased Alchemical Production"
-date: 2019-02-16T16:20:43Z
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50

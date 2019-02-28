@@ -1,6 +1,5 @@
 ---
 title: "Immune to Sleep"
-date: 2019-02-16T20:51:08Z
 guilds: ["Archers"]
 tier: 4
 osp_cost: 40

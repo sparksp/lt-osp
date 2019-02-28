@@ -1,6 +1,5 @@
 ---
 title: "Strikedown Shot"
-date: 2019-02-16T20:42:36Z
 guilds: ["Archers"]
 tier: 4
 osp_cost: 40

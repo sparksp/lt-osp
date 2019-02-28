@@ -1,6 +1,5 @@
 ---
 title: "Heal Alien or Aberrant Pattern"
-date: 2019-02-16T22:03:15Z
 guilds: ["Healers"]
 tier: 3
 osp_cost: 30

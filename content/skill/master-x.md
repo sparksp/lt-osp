@@ -1,6 +1,5 @@
 ---
 title: "Master <X>"
-date: 2019-02-17T20:02:09Z
 guilds: ["Generic"]
 tier: 3
 osp_cost: 30

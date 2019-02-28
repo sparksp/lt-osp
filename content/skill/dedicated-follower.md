@@ -1,6 +1,5 @@
 ---
 title: "Dedicated Follower"
-date: 2019-02-17T17:38:02Z
 guilds: ["Incantors"]
 tier: 3
 osp_cost: 30

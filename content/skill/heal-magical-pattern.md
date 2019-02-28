@@ -1,6 +1,5 @@
 ---
 title: "Heal Magical Pattern"
-date: 2019-02-16T22:03:38Z
 guilds: ["Healers"]
 tier: 5
 osp_cost: 50

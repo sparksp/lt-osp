@@ -1,6 +1,5 @@
 ---
 title: "Mind Healing"
-date: 2019-02-16T21:52:48Z
 guilds: ["Healers"]
 tier: 4
 osp_cost: 40

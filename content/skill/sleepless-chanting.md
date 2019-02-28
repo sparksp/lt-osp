@@ -1,6 +1,5 @@
 ---
 title: "Sleepless Chanting"
-date: 2019-02-16T21:26:26Z
 guilds: ["Bards"]
 tier: 2
 osp_cost: 20

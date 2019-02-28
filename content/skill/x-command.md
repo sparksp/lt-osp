@@ -1,6 +1,5 @@
 ---
 title: "<X> Command"
-date: 2019-02-17T20:06:01Z
 guilds: ["Generic"]
 tier: 5
 osp_cost: 50

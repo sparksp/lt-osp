@@ -1,6 +1,5 @@
 ---
 title: "Diagnose Powers"
-date: 2019-02-17T18:03:06Z
 guilds: ["Mages"]
 tier: 5
 osp_cost: 50

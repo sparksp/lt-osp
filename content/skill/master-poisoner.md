@@ -1,6 +1,5 @@
 ---
 title: "Master Poisoner"
-date: 2019-02-16T20:07:33Z
 guilds: ["Scouts"]
 tier: 4
 osp_cost: 40

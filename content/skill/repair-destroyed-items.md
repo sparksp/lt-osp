@@ -1,6 +1,5 @@
 ---
 title: "Repair Destroyed Items"
-date: 2019-02-16T21:07:20Z
 guilds: ["Armourers"]
 tier: 2
 osp_cost: 20

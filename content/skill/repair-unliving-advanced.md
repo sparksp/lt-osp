@@ -1,6 +1,5 @@
 ---
 title: "Repair Unliving (Advanced)"
-date: 2019-02-16T21:29:38Z
 guilds: ["Corruptors"]
 tier: 2
 osp_cost: 20

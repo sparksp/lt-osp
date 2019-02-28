@@ -1,6 +1,5 @@
 ---
 title: "Rally"
-date: 2019-02-16T20:31:00Z
 guilds: ["Bards", "Militia"]
 tier: 4
 osp_cost: 40

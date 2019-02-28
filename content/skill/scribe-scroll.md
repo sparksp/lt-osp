@@ -1,6 +1,5 @@
 ---
 title: "Scribe Scroll"
-date: 2019-02-16T21:44:10Z
 guilds: ["Corruptors", "Healers", "Incantors", "Mages"]
 tier: 2
 osp_cost: 20

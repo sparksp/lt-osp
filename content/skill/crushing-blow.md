@@ -1,6 +1,5 @@
 ---
 title: "Crushing Blow"
-date: 2019-02-16T20:27:09Z
 guilds: ["Armourers", "Militia"]
 tier: 5
 osp_cost: 50

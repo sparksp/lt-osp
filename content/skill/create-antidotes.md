@@ -1,6 +1,5 @@
 ---
 title: "Create Antidotes"
-date: 2019-02-16T15:43:00Z
 guilds: ["Alchemists"]
 tier: 1
 osp_cost: 10

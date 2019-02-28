@@ -1,6 +1,5 @@
 ---
 title: "Through"
-date: 2019-02-16T19:47:34Z
 guilds: ["Scouts"]
 tier: 4
 osp_cost: 40

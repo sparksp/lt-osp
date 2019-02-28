@@ -1,6 +1,5 @@
 ---
 title: "Create Reagents (Improved)"
-date: 2019-02-16T16:16:37Z
 guilds: ["Alchemists"]
 tier: 2
 osp_cost: 30

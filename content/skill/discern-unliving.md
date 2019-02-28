@@ -1,6 +1,5 @@
 ---
 title: "Discern Unliving"
-date: 2019-02-16T21:44:18Z
 guilds: ["Corruptors", "Incantors"]
 tier: 3
 osp_cost: 30

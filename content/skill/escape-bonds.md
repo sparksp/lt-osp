@@ -1,6 +1,5 @@
 ---
 title: "Escape Bonds"
-date: 2019-02-17T20:23:04Z
 guilds: ["Generic"]
 tier: 3
 osp_cost: 30

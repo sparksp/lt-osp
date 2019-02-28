@@ -1,6 +1,5 @@
 ---
 title: "Source of Life"
-date: 2019-02-16T21:52:59Z
 guilds: ["Healers"]
 tier: 5
 osp_cost: 50

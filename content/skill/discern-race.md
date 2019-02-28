@@ -1,6 +1,5 @@
 ---
 title: "Discern Race"
-date: 2019-02-16T20:46:44Z
 guilds: ["Archers"]
 tier: 2
 osp_cost: 20

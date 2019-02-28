@@ -1,6 +1,5 @@
 ---
 title: "+12 Spell Cards"
-date: 2019-02-17T18:18:57Z
 guilds: ["Powers or Magic Guilds"]
 tier: 4
 osp_cost: 40
