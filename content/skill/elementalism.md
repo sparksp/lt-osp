@@ -1,6 +1,5 @@
 ---
 title: "Elementalism"
-date: 2019-02-17T20:21:54Z
 guilds: ["Generic"]
 tier: 1
 osp_cost: 10

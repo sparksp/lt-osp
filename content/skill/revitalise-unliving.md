@@ -1,6 +1,5 @@
 ---
 title: "Revitalise Unliving"
-date: 2019-02-16T21:29:21Z
 guilds: ["Corruptors"]
 tier: 1
 osp_cost: 10

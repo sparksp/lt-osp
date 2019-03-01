@@ -1,6 +1,5 @@
 ---
 title: "Master Countermagic"
-date: 2019-02-17T18:05:02Z
 guilds: ["Mages"]
 tier: 4
 osp_cost: 40

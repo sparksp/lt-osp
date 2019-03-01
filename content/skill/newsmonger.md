@@ -1,6 +1,5 @@
 ---
 title: "Newsmonger"
-date: 2019-02-16T11:19:20Z
 guilds: ["Knowledge Guilds"]
 tier: 2
 osp_cost: 20

@@ -1,6 +1,5 @@
 ---
 title: "Guarded Channelling"
-date: 2019-02-16T22:05:35Z
 guilds: ["Healers"]
 tier: 5
 osp_cost: 50

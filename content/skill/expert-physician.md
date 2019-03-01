@@ -1,6 +1,5 @@
 ---
 title: "Expert Physician"
-date: 2019-02-16T21:58:16Z
 guilds: ["Healers"]
 tier: 4
 osp_cost: 40

@@ -1,6 +1,5 @@
 ---
 title: "Create Magical Poison"
-date: 2018-12-27T17:35:38Z
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50

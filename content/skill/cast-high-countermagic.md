@@ -1,6 +1,5 @@
 ---
 title: "Cast High Countermagic"
-date: 2019-02-17T17:39:58Z
 guilds: ["Incantors", "Mages"]
 tier: 3
 osp_cost: 30

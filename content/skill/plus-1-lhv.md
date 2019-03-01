@@ -1,6 +1,5 @@
 ---
 title: "+1 LHV"
-date: 2019-02-17T20:24:18Z
 guilds: ["Generic"]
 tier: 5
 osp_cost: 50

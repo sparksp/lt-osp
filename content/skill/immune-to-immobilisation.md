@@ -1,6 +1,5 @@
 ---
 title: "Immune to Immobilisation"
-date: 2019-02-16T19:58:33Z
 guilds: ["Scouts"]
 tier: 5
 osp_cost: 50

@@ -1,6 +1,5 @@
 ---
 title: "Immune to Mute"
-date: 2019-02-16T20:30:45Z
 guilds: ["Bards", "Militia"]
 tier: 2
 osp_cost: 20

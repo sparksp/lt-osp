@@ -1,6 +1,5 @@
 ---
 title: "Advanced Healing"
-date: 2019-02-16T21:52:41Z
 guilds: ["Healers"]
 tier: 2
 osp_cost: 20

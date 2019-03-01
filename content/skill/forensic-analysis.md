@@ -1,6 +1,5 @@
 ---
 title: "Forensic Analysis"
-date: 2019-02-16T15:52:32Z
 guilds: ["Alchemists"]
 tier: 3
 osp_cost: 30

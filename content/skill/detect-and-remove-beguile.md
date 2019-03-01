@@ -1,6 +1,5 @@
 ---
 title: "Detect and Remove Beguile"
-date: 2019-02-16T21:15:28Z
 guilds: ["Bards"]
 tier: 2
 osp_cost: 20

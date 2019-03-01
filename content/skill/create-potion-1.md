@@ -1,6 +1,5 @@
 ---
 title: "Create Potion 1"
-date: 2019-02-16T16:09:00Z
 guilds: ["Alchemists"]
 tier: 2
 osp_cost: 20

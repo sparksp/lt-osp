@@ -1,6 +1,5 @@
 ---
 title: "Cast Additional Magecraft"
-date: 2019-02-17T18:05:13Z
 guilds: ["Mages"]
 tier: 5
 osp_cost: 50

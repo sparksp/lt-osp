@@ -1,6 +1,5 @@
 ---
 title: "Herb Lore"
-date: 2019-02-16T15:45:40Z
 guilds: ["Alchemists", "Bards", "Healers"]
 tier: 1
 osp_cost: 10

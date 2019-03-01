@@ -1,6 +1,5 @@
 ---
 title: "Oiled Arrows"
-date: 2019-02-20T18:02:23Z
 guilds: ["Archers"]
 tier: 3
 osp_cost: 30

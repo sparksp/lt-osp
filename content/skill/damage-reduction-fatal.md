@@ -1,6 +1,5 @@
 ---
 title: "Damage Reduction (Fatal)"
-date: 2019-02-17T17:38:10Z
 guilds: ["Incantors"]
 tier: 5
 osp_cost: 50

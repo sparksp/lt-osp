@@ -1,6 +1,5 @@
 ---
 title: "Magical Armour Mastery"
-date: 2019-02-17T20:22:44Z
 guilds: ["Generic"]
 tier: 2
 osp_cost: 20

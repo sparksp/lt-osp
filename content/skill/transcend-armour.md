@@ -1,6 +1,5 @@
 ---
 title: "Transcend Armour"
-date: 2019-02-17T17:36:32Z
 guilds: ["Incantors", "Mages"]
 tier: 2
 osp_cost: 20

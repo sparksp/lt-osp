@@ -1,6 +1,5 @@
 ---
 title: "Fearsome Aspect"
-date: 2019-02-17T20:23:29Z
 guilds: ["Generic"]
 tier: 4
 osp_cost: 40

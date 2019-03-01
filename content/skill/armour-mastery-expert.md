@@ -1,6 +1,5 @@
 ---
 title: "Armour Mastery (Expert)"
-date: 2019-02-17T18:33:42Z
 guilds: ["Martial Guilds"]
 tier: 5
 osp_cost: 50

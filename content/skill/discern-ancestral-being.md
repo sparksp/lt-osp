@@ -1,6 +1,5 @@
 ---
 title: "Discern Ancestral Being"
-date: 2019-02-17T17:39:49Z
 guilds: ["Incantors"]
 tier: 3
 osp_cost: 30

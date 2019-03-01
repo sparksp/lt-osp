@@ -1,6 +1,5 @@
 ---
 title: "Beguile"
-date: 2019-02-16T21:15:58Z
 guilds: ["Bards"]
 tier: 5
 osp_cost: 50

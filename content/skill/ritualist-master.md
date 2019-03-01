@@ -1,6 +1,5 @@
 ---
 title: "Ritualist (Master)"
-date: 2019-02-17T17:59:09Z
 guilds: ["Mages"]
 tier: 5
 osp_cost: 50

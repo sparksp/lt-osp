@@ -1,6 +1,5 @@
 ---
 title: "Cast Mass Charms"
-date: 2019-02-16T21:15:51Z
 guilds: ["Bards"]
 tier: 4
 osp_cost: 40

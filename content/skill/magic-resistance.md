@@ -1,6 +1,5 @@
 ---
 title: "Magic Resistance"
-date: 2019-02-16T20:22:36Z
 guilds: ["Militia"]
 tier: 5
 osp_cost: 50

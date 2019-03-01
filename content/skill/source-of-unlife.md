@@ -1,6 +1,5 @@
 ---
 title: "Source of Unlife"
-date: 2019-02-16T21:29:48Z
 guilds: ["Corruptors"]
 tier: 5
 osp_cost: 50

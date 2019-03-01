@@ -1,6 +1,5 @@
 ---
 title: "Shield Mastery"
-date: 2019-02-16T20:36:20Z
 guilds: ["Armourers", "Militia"]
 tier: 3
 osp_cost: 30

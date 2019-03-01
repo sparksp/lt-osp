@@ -1,6 +1,5 @@
 ---
 title: "Theology"
-date: 2019-02-17T20:22:33Z
 guilds: ["Generic"]
 tier: 1
 osp_cost: 10

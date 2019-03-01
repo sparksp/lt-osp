@@ -1,6 +1,5 @@
 ---
 title: "Cast Additional Incantation"
-date: 2019-02-17T17:32:55Z
 guilds: ["Incantors"]
 tier: 5
 osp_cost: 50

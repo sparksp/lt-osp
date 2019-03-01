@@ -1,6 +1,5 @@
 ---
 title: "Identify"
-date: 2019-02-17T18:02:59Z
 guilds: ["Mages"]
 tier: 2
 osp_cost: 20

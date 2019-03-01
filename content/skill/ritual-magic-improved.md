@@ -1,6 +1,5 @@
 ---
 title: "Ritual Magic Improved"
-date: 2019-02-17T17:58:39Z
 guilds: ["Mages"]
 tier: 3
 osp_cost: 30

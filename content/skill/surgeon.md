@@ -1,6 +1,5 @@
 ---
 title: "Surgeon"
-date: 2019-02-16T21:58:05Z
 guilds: ["Healers"]
 tier: 2
 osp_cost: 20

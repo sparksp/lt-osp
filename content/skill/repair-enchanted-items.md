@@ -1,6 +1,5 @@
 ---
 title: "Repair Enchanted Items"
-date: 2019-02-16T21:01:53Z
 guilds: ["Armourers"]
 tier: 2
 osp_cost: 20

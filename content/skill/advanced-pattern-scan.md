@@ -1,6 +1,5 @@
 ---
 title: "Advanced Pattern Scan"
-date: 2019-02-16T22:00:42Z
 guilds: ["Healers"]
 tier: 4
 osp_cost: 40

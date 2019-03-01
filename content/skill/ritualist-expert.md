@@ -1,6 +1,5 @@
 ---
 title: "Ritualist (Expert)"
-date: 2019-02-17T17:59:01Z
 guilds: ["Mages"]
 tier: 4
 osp_cost: 40

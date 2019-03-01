@@ -1,6 +1,5 @@
 ---
 title: "Immune to Fumble"
-date: 2019-02-16T19:46:31Z
 guilds: ["Archers", "Militia", "Scouts"]
 tier: 1
 osp_cost: 10

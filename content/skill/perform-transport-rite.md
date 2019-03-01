@@ -1,6 +1,5 @@
 ---
 title: "Perform Transport Rite"
-date: 2019-02-20T16:26:29Z
 guilds: ["Mages"]
 tier: 1
 osp_cost: 10

@@ -1,6 +1,5 @@
 ---
 title: "Discern Pattern Type"
-date: 2019-02-16T22:00:33Z
 guilds: ["Healers"]
 tier: 1
 osp_cost: 10

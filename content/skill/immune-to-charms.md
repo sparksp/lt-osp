@@ -1,6 +1,5 @@
 ---
 title: "Immune to Charms"
-date: 2019-02-16T21:15:36Z
 guilds: ["Bards"]
 tier: 3
 osp_cost: 30

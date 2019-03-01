@@ -1,6 +1,5 @@
 ---
 title: "Dismiss/Control +8"
-date: 2019-02-16T21:39:02Z
 guilds: ["Corruptors", "Incantors"]
 tier: 5
 osp_cost: 50

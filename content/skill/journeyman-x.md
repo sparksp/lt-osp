@@ -1,6 +1,5 @@
 ---
 title: "Journeyman <X>"
-date: 2019-02-17T20:02:05Z
 guilds: ["Generic"]
 tier: 2
 osp_cost: 20

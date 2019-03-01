@@ -1,6 +1,5 @@
 ---
 title: "Immune to Repel"
-date: 2019-02-16T19:58:15Z
 guilds: ["Armourers", "Militia", "Scouts"]
 tier: 2
 osp_cost: 20

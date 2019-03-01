@@ -1,6 +1,5 @@
 ---
 title: "Discern Elemental Being"
-date: 2019-02-16T22:07:31Z
 guilds: ["Healers"]
 tier: 3
 osp_cost: 30

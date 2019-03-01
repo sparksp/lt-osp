@@ -1,6 +1,5 @@
 ---
 title: "Through From Behind"
-date: 2019-02-16T19:47:28Z
 guilds: ["Scouts"]
 tier: 2
 osp_cost: 20

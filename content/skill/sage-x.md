@@ -1,6 +1,5 @@
 ---
 title: "Sage <X>"
-date: 2019-02-17T20:04:08Z
 guilds: ["Generic"]
 tier: 4
 osp_cost: 40

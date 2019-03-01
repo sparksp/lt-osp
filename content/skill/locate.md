@@ -1,6 +1,5 @@
 ---
 title: "Locate"
-date: 2019-02-16T20:06:57Z
 guilds: ["Militia", "Scouts"]
 tier: 2
 osp_cost: 20

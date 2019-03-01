@@ -1,6 +1,5 @@
 ---
 title: "Shield Dismiss Level"
-date: 2019-02-17T20:23:16Z
 guilds: ["Generic"]
 tier: 3
 osp_cost: 30

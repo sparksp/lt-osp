@@ -1,6 +1,5 @@
 ---
 title: "Armour Mastery (Advanced)"
-date: 2019-02-17T18:33:38Z
 guilds: ["Martial Guilds"]
 tier: 4
 osp_cost: 40

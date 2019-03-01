@@ -1,6 +1,5 @@
 ---
 title: "Create Magical Potion"
-date: 2019-02-16T16:09:12Z
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50

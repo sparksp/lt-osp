@@ -1,6 +1,5 @@
 ---
 title: "Create Poison 1"
-date: 2018-12-26T20:27:00Z
 guilds: ["Alchemists"]
 tier: 2
 osp_cost: 20

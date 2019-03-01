@@ -1,6 +1,5 @@
 ---
 title: "Bowyer (Apprentice)"
-date: 2019-02-16T20:53:29Z
 guilds: ["Archers"]
 tier: 2
 osp_cost: 20
