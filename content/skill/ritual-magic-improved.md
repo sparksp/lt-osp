@@ -1,5 +1,5 @@
 ---
-title: "Ritual Magic Improved"
+title: "Ritual Magic (Improved)"
 guilds: ["Mages"]
 tier: 3
 osp_cost: 30
