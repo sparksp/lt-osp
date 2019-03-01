@@ -4,7 +4,7 @@ guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50
 prerequisites: ["create-reagents-improved"]
-requirements: ["Potion Lore or Poison Lore CS"]
+requirements: ["Potion Lore", " or ", "Poison Lore CS"]
 replacement: true
 restricted: true
 ladder: "create-reagents"

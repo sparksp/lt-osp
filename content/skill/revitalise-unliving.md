@@ -4,7 +4,7 @@ guilds: ["Corruptors"]
 tier: 1
 osp_cost: 10
 prerequisites: []
-requirements: ["Corruption OS"]
+requirements: ["corruption", " OS"]
 restricted: true
 ladder: "revitalise-unliving"
 ---

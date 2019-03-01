@@ -14,28 +14,18 @@
     </p>
     {{- end }}
 
+    {{- $skills := $.Site.GetPage "/skill" }}
     {{- with .Params.prerequisites }}
-    {{- $skill := $.Site.GetPage "/skill" }}
     <p>
         <strong>Pre-requisite to learn:</strong>
-        {{- range $index, $item := . }}
-        {{- if $index }}, {{ end }}
-        {{- with $skill.GetPage $item }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{- else }}
-        {{ $item }}
-        {{- end }}
-        {{- end }}.
+        {{ partial "skill-list" (dict "list" . "skills" $skills) }}
     </p>
     {{- end }}
 
     {{- with .Params.requirements }}
     <p>
         <strong>Requirements to use:</strong>
-        {{- range $index, $e := . }}
-        {{- if $index }}, {{ end }}
-        {{ . }}
-        {{- end }}.
+        {{ partial "skill-list" (dict "list" . "skills" $skills) }}
     </p>
     {{- end }}
 

@@ -3,8 +3,8 @@ title: "Source of Life"
 guilds: ["Healers"]
 tier: 5
 osp_cost: 50
-prerequisites: ["mind-healing"]
-requirements: ["Healing CS", "High Magic OS"]
+prerequisites: ["mind-healing", " & ", "advanced-healing"]
+requirements: ["Healing CS", " and ", "high-magic-x", " OS"]
 replacement: true
 restricted: true
 ladder: "revive"

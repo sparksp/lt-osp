@@ -3,7 +3,7 @@ title: "Create Magical Potion"
 guilds: ["Alchemists"]
 tier: 5
 osp_cost: 50
-prerequisites: ["create-potion-3", "Potion Lore"]
+prerequisites: ["create-potion-3", " & ", "Potion Lore"]
 requirements: ["Potion Lore CS"]
 replacement: true
 restricted: true

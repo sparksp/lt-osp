@@ -3,7 +3,7 @@ title: "Rally"
 guilds: ["Bards", "Militia"]
 tier: 4
 osp_cost: 40
-prerequisites: ["immune-to-mute"]
+prerequisites: ["immune-to-mute", " & ", "immune-to-fear"]
 requirements: []
 replacement: true
 restricted: true

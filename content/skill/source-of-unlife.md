@@ -4,7 +4,7 @@ guilds: ["Corruptors"]
 tier: 5
 osp_cost: 50
 prerequisites: ["repair-unliving-advanced"]
-requirements: ["High Magic", "Corruptor OS", "Healing CS"]
+requirements: ["high-magic-x", " and ", "corruption", " OS", " and ", "Healing CS"]
 replacement: true
 restricted: true
 ladder: "revitalise-unliving"

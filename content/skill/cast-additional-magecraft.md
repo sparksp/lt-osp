@@ -4,7 +4,7 @@ guilds: ["Mages"]
 tier: 5
 osp_cost: 50
 prerequisites: ["master-countermagic"]
-requirements: ["Enchanting or Shadow Magic OS"]
+requirements: ["enchanting", " or ", "shadow-magic", " OS"]
 restricted: true
 ladder: "countermagic"
 ---
