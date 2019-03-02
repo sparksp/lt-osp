@@ -26,64 +26,6 @@
 
 {{ .Content }}
 
-<style>
-    .skill-table {
-        background-color: #fafafa;
-        border-collapse: collapse;
-        color: black;
-    }
-
-    .skill-table,
-    .skill-table tr,
-    .skill-table th,
-    .skill-table td {
-        border: 1px solid #a9a9a9;
-    }
-
-    .skill-table td {
-        border-left: none;
-    }
-
-    .skill-table td:nth-last-child(n+2) {
-        border-right: none;
-    }
-
-    .skill-table th,
-    .skill-table td {
-        line-height: 1.5;
-        padding: .3em;
-    }
-
-    .skill {
-        background-color: white;
-        border: 3px solid #666;
-        color: black;
-        display: block;
-        margin: .3em;
-        padding: .2em .5em;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    .skill.restricted-skill {
-        background-color: #C6D7A5;
-        color: black;
-    }
-
-    .skill.replacement-skill {
-        border-width: 1px;
-    }
-
-    .theme-base-09 .content a.skill {
-        color: black;
-    }
-
-    .skill:hover {
-        text-decoration: none;
-        border-color: black;
-    }
-</style>
-
 {{- $skills := $.Site.GetPage "/skill" }}
 {{- $guilds := $.Site.GetPage "/guilds" }}
 

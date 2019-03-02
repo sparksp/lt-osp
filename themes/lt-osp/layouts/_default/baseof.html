@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {{- if eq .Title .Site.Title -}}
+        {{- .Site.Title -}}
+        {{- else -}}
+        {{- with .Title -}}{{- . }} &bull; {{ end -}}{{- .Site.Title -}}
+        {{- end -}}
+    </title>
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    {{ .Hugo.Generator }}
+</head>
+
+<body>
+    {{- partial "header.html" . -}}
+    <div id="content">
+        {{- block "main" . }}{{- end }}
+    </div>
+</body>
+
+</html>

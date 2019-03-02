@@ -1,7 +1,7 @@
 baseURL = "http://lt-osp.netlify.com/"
 languageCode = "en-us"
 title = "LT-OSP Field Guide"
-theme = "hyde"
+theme = ["lt-osp"]
 
 [taxonomies]
   guild = "guilds"

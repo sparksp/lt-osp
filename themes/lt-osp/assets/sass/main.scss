@@ -1,0 +1,107 @@
+@import 'normalize';
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.banner {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0; right: 0;
+  background: #DC7F38;
+  box-shadow: 0 0 2px #000;
+
+  h1, li {
+    padding: 0;
+    margin: 0;
+    font-size: 120%;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  a:link, a:visited, a:active {
+    display: inline-block;
+    padding: .3em .5em;
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    background: rgba(0, 0, 0, .1);
+  }
+}
+
+#content {
+  padding: 2.2em .5em .2em;
+  line-height: 1.4;
+}
+
+li ul {
+  margin-bottom: 1em;
+}
+
+.skill-table {
+  background-color: #fafafa;
+  border-collapse: collapse;
+  color: black;
+  width: 100%;
+  margin-bottom: 1em;
+
+  &, tr, th, td {
+    border: 1px solid #a9a9a9;
+  }
+
+  td {
+    border-left: none;
+  }
+  td:nth-last-child(n+2) {
+    border-right: none;
+  }
+  th, td {
+    line-height: 1.5;
+    padding: .3em;
+  }
+  th:first-child {
+    width: 1%;
+    height: 1;
+  }
+}
+
+.skill {
+  background-color: white;
+  border: 3px solid #999;
+  color: black;
+  display: block;
+  margin: .3em;
+  padding: .2em .5em;
+  text-align: center;
+  text-decoration: none;
+
+  &.restricted-skill {
+    background-color: #C6D7A5;
+    color: black;
+  }
+  &.replacement-skill {
+    border-width: 2px;
+  }  
+  &:hover {
+    text-decoration: none;
+    border-color: black;
+  }
+}
