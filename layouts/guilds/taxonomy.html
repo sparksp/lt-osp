@@ -78,6 +78,8 @@
         color: black;
     }
 
+    .skill:active,
+    .skill:focus,
     .skill:hover {
         text-decoration: none;
         border-color: black;
@@ -198,6 +200,14 @@
         var highlightShadow = "0 0 2px 1px rgba(0, 0, 0, .3)";
         var skills = document.getElementsByClassName("skill");
         Array.from(skills).forEach(skill => {
+            skill.addEventListener('touchend', (evt) => {
+                if (document.activeElement == evt.target) {
+                    return;
+                }
+                evt.preventDefault();
+                evt.target.focus();
+            });
+
             if (!skill.dataset.prerequisite) {
                 return;
             }
@@ -207,6 +217,8 @@
                 if (!prerequisite) {
                     return;
                 }
+                var line = new LeaderLine(prerequisite, skill, options);
+
                 var reset = () => {
                     line.setOptions(options);
                     prerequisite.style.boxShadow = "none";
@@ -214,8 +226,8 @@
                     skill.style.boxShadow = "none";
                     skill.style.borderColor = null;
                 };
-                var line = new LeaderLine(prerequisite, skill, options);
-                prerequisite.addEventListener('mouseenter', () => {
+
+                var onPrerequisiteFocus = () => {
                     line.setOptions({
                         startPlugColor: highlightColor,
                         endPlugColor: connectionColor,
@@ -223,8 +235,14 @@
                     });
                     prerequisite.style.boxShadow = highlightShadow;
                     skill.style.borderColor = connectionColor;
-                });
-                skill.addEventListener('mouseenter', () => {
+                };
+
+                prerequisite.addEventListener('mouseenter', onPrerequisiteFocus);
+                prerequisite.addEventListener('focus', onPrerequisiteFocus);
+                prerequisite.addEventListener('mouseleave', reset);
+                prerequisite.addEventListener('blur', reset);
+
+                var onSkillFocus = () => {
                     line.setOptions({
                         startPlugColor: connectionColor,
                         endPlugColor: highlightColor,
@@ -232,9 +250,12 @@
                     });
                     prerequisite.style.borderColor = connectionColor;
                     skill.style.boxShadow = highlightShadow;
-                });
-                prerequisite.addEventListener('mouseleave', reset);
+                };
+
+                skill.addEventListener('mouseenter', onSkillFocus);
+                skill.addEventListener('focus', onSkillFocus);
                 skill.addEventListener('mouseleave', reset);
+                skill.addEventListener('blur', reset);
             });
         });
     });
