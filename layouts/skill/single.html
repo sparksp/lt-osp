@@ -2,13 +2,16 @@
 <div class="post">
     <h1>{{ .Title }}</h1>
 
-    {{- if .Params.tier }}<p><strong>Tier:</strong> {{ .Params.tier }}</p>{{ end }}
+    {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end }}
 
     {{- with .Params.guilds }}
     <p>
         <strong>Guilds:</strong>
+        {{- $len := len . }}
         {{- range $index, $e := . }}
-        {{- if $index }}, {{ end }}
+        {{- if $index }}
+        {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
+        {{- end }}
         <a href="{{ "guilds/" | relURL }}{{ . | urlize }}" class="guild guild-{{ . | urlize }}">{{ . }}</a>
         {{- end }}
     </p>

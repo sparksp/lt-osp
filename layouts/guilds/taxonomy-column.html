@@ -1,0 +1,143 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+
+{{- with .Menus.guilds }}
+{{- if .HasChildren }}
+<p>
+    <strong>Guilds:</strong>
+    {{- $len := len .Children }}
+    {{- range $index, $e := .Children }}
+    {{- if $index }}
+    {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
+    {{- end }}
+    {{ partial "guild-link" .Page }}
+    {{- end }}
+</p>
+{{- end }}
+{{- $parent := .Parent }}
+{{- if $parent }}
+{{- range $.Site.Menus.guilds }}
+{{- if eq (default .Name .Identifier) $parent }}
+<p>Back to <a href="{{ .URL }}" rel="parent">{{ .Title }}</a></p>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{ .Content }}
+
+<style>
+    .skill-table {
+        background-color: #fafafa;
+        border-collapse: collapse;
+        color: black;
+    }
+
+    .skill-table,
+    .skill-table tr,
+    .skill-table th,
+    .skill-table td {
+        border: 1px solid #a9a9a9;
+    }
+
+    .skill-table td {
+        border-left: none;
+    }
+
+    .skill-table td:nth-last-child(n+2) {
+        border-right: none;
+    }
+
+    .skill-table th,
+    .skill-table td {
+        line-height: 1.5;
+        padding: .3em;
+    }
+
+    .skill {
+        background-color: white;
+        border: 3px solid #666;
+        color: black;
+        display: block;
+        margin: .3em;
+        padding: .2em .5em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .skill.restricted-skill {
+        background-color: #C6D7A5;
+        color: black;
+    }
+
+    .skill.replacement-skill {
+        border-width: 1px;
+    }
+
+    .theme-base-09 .content a.skill {
+        color: black;
+    }
+
+    .skill:hover {
+        text-decoration: none;
+        border-color: black;
+    }
+</style>
+
+{{- $skills := $.Site.GetPage "/skill" }}
+{{- $guilds := $.Site.GetPage "/guilds" }}
+
+{{- with $pages := where .Pages ".Params.guild" nil }}
+<table class="skill-table">
+    <thead>
+        <tr>
+            <th>{{ $.Title }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{ range . }}
+                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
+                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
+                    {{ .Title }}
+                </a>
+                {{ end }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{ end }}
+
+{{ with where .Pages ".Params.guild" "!=" nil }}
+{{ range .GroupByParam "guild" }}
+<table class="skill-table">
+    <thead>
+        <tr>
+            <th>
+                {{ $guilds.GetPage .Key | partial "guild-link" }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                {{ range .Pages }}
+                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
+                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
+                    {{ .Title }}
+                </a>
+                {{ end }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{ end }}
+{{ end }}
+
+{{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "Daemonology"
-guilds: ["Generic"]
+guilds: ["Magic Disciplines"]
 tier: 1
 osp_cost: 10
 prerequisites: []
