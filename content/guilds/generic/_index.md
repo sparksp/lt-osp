@@ -1,4 +1,6 @@
 ---
 title: "Generic Skills"
-menu: "guilds"
+menu:
+    guilds:
+        identifier: "generic"
 ---
