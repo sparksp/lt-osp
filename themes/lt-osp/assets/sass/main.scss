@@ -3,6 +3,12 @@
 $text-color: #333;
 $primary-color: #DC7F38;
 
+@mixin text-decoration-color($color: currentcolor) {
+  text-decoration-color: $color;
+  -webkit-text-decoration-color: $color;
+  -moz-text-decoration-color: $color;
+}
+
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: $text-color;
@@ -22,15 +28,15 @@ html {
 a:link, a:visited {
   color: $text-color;
   text-decoration: underline;
-  text-decoration-color: $primary-color;
+  @include text-decoration-color($primary-color)
 }
 a:focus, a:hover {
   color: $primary-color;
-  text-decoration-color: $text-color;
+  @include text-decoration-color($text-color)
 }
 a:active {
   color: $primary-color;
-  text-decoration-color: $primary-color;
+  @include text-decoration-color($primary-color)
 }
 
 .banner {
