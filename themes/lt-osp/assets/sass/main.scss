@@ -25,6 +25,17 @@ html {
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
 a:link, a:visited {
   color: $text-color;
   text-decoration: underline;
@@ -40,29 +51,48 @@ a:active {
 }
 
 .banner {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0; right: 0;
   background: $primary-color;
   box-shadow: 0 0 2px #000;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+
+  .title-menu, .main-menu {
+    background: $primary-color;
+    z-index: 100;
+    position: relative;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu:target {
+    display: block;
+  }
+
+  .title-menu {
+    display: flex;
+  }
 
   h1, li {
+    display: block;
     padding: 0;
     margin: 0;
-    font-size: 120%;
   }
   ul {
     margin: 0;
     padding: 0;
-    display: flex;
+  }
+  h1 {
+    font-size: 140%;
+    flex-grow: 1;
   }
   li {
     list-style-type: none;
+    font-size: 120%;
   }
 
   a:link {
-    display: inline-block;
+    display: block;
     padding: .3em .5em;
     text-decoration: none;
   }
@@ -75,10 +105,69 @@ a:active {
   a:active {
     background: rgba(0, 0, 0, .3);
   }
+  h1 a:hover {
+    background: none;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: calc(-2.4em); left: 0;
+  }
+
+  .menu-toggle:link, .menu-close:link {
+    line-height: 1;
+    padding: .2em .5em 0;
+    order: -1;
+  }
+
+  .menu-toggle img {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(306deg) brightness(103%) contrast(101%);
+  }
+
+  .backdrop:link {
+    display: none;
+  }
+
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: absolute;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background: #000;
+    background: rgba(0,0,0,.85);
+    cursor: default;
+  }
+}
+
+@media (min-width:480px) {
+  .banner {
+    display: flex;
+
+    .main-menu {
+      display: block;
+    }
+    ul {
+      display: flex;
+    }
+    h1, li {
+      font-size: 120%;
+    }
+    .menu-toggle:link {
+      display: none;
+    }
+    .main-menu:target + .backdrop:link {
+      display: none
+    }
+  }
 }
 
 #content {
-  padding: 2.2em .5em .2em;
+  padding: .2em .5em;
+  padding-top: 2.2em;
   line-height: 1.4;
   max-width: 920px;
 }
