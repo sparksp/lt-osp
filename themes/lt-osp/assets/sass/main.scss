@@ -1,7 +1,12 @@
 @import 'normalize';
 
+$text-color: #333;
+$primary-color: #DC7F38;
+
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: $text-color;
+  background: white;
 }
 @media (min-width: 48em) {
   html {
@@ -14,12 +19,26 @@ html {
   }
 }
 
+a:link, a:visited {
+  color: $text-color;
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+}
+a:focus, a:hover {
+  color: $primary-color;
+  text-decoration-color: $text-color;
+}
+a:active {
+  color: $primary-color;
+  text-decoration-color: $primary-color;
+}
+
 .banner {
   display: flex;
   position: fixed;
   top: 0;
   left: 0; right: 0;
-  background: #DC7F38;
+  background: $primary-color;
   box-shadow: 0 0 2px #000;
 
   h1, li {
@@ -36,14 +55,19 @@ html {
     list-style-type: none;
   }
 
-  a:link, a:visited, a:active {
+  a:link {
     display: inline-block;
     padding: .3em .5em;
-    color: #fff;
     text-decoration: none;
   }
-  a:hover {
+  a:link, a:visited, a:hover, a:focus, a:active {
+    color: #fff;
+  }
+  a:hover, a:focus {
     background: rgba(0, 0, 0, .1);
+  }
+  a:active {
+    background: rgba(0, 0, 0, .3);
   }
 }
 
@@ -87,22 +111,28 @@ li ul {
 .skill {
   background-color: white;
   border: 3px solid #999;
-  color: black;
+  color: $text-color;
   display: block;
   margin: .3em;
   padding: .2em .5em;
   text-align: center;
-  text-decoration: none;
 
   &.restricted-skill {
     background-color: #C6D7A5;
-    color: black;
+    color: $text-color;
   }
   &.replacement-skill {
     border-width: 2px;
-  }  
-  &:hover {
+  }
+
+  &:link {
     text-decoration: none;
-    border-color: black;
+  }
+  &:hover, &:focus {
+    color: $text-color;
+    border-color: $primary-color;
+  }
+  &:active {
+    color: $primary-color;
   }
 }
