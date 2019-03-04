@@ -210,7 +210,9 @@ li ul {
   display: block;
   margin: .3em;
   padding: .2em .5em;
+  position: relative;
   text-align: center;
+  z-index: 1;
 
   &.restricted-skill {
     background-color: #C6D7A5;
