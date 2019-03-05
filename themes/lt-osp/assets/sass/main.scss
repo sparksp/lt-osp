@@ -50,6 +50,12 @@ a:active {
   @include text-decoration-color($primary-color)
 }
 
+body {
+  position: absolute;
+  top: 0; left: 0;
+  min-width: 100%;
+}
+
 .banner {
   background: $primary-color;
   box-shadow: 0 0 2px #000;
@@ -166,10 +172,18 @@ a:active {
 }
 
 #content {
-  padding: .2em .5em;
-  padding-top: 2.2em;
+  margin: 3em .5em .2em;
   line-height: 1.4;
   max-width: 920px;
+}
+
+@supports(position: sticky) {
+  .banner {
+    position: sticky;
+  }
+  #content {
+    margin-top: .2em;
+  }
 }
 
 li ul {

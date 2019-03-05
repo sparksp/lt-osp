@@ -13,6 +13,7 @@
     </title>
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ block "scripts" . }}{{ end }}
     {{ range .AlternativeOutputFormats -}}
     {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{ end -}}
