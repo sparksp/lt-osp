@@ -1,0 +1,6 @@
+{{- $index := slice -}}
+{{- range where .Site.RegularPages ".Params.searchable" "!=" false -}}
+    {{- $page := dict "id" .UniqueID "title" .Title "contents" (.Plain | chomp) "summary" (.Summary | chomp) "permalink" .Permalink "guilds" .Params.guilds }}
+    {{- $index = $index | append $page -}}
+{{- end -}}
+{{- jsonify $index -}}
