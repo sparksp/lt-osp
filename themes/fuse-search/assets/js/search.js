@@ -69,11 +69,14 @@ $(function () {
         }
 
         var queryInput = form.elements.namedItem("q");
-        $(queryInput).on("change keyup blur", function (evt) {
-            var query = this.value;
+        $(queryInput).on("keyup", function (evt) {
+            var query = queryInput.value;
             delayed.search(query);
         });
-        $(queryInput).val(params.get("q"));
+        $(queryInput).on("search change blur", function (evt) {
+            var query = queryInput.value;
+            search(query);
+        });
 
         $(form).submit(function (evt) {
             evt.preventDefault();
@@ -82,17 +85,25 @@ $(function () {
         });
     });
 
-    search(params.get("q"));
+    if (is_search_page) {
+        $("input[name=q]").val(params.get("q"));
+        search(params.get("q"));
+    }
 
     function search(query) {
-        if (!query || query == last_query || query.length < min_query_length) {
-            return deferSearch(null);
-        }
         if (!fuse) {
             return deferSearch(query);
         }
+        deferSearch(null);
+        if (query == last_query) {
+            return;
+        }
         last_query = query;
         updateLocation(query);
+        if (!query || query.length < min_query_length) {
+            populateResults([], { query });
+            return;
+        }
         populateResults(fuse.search(query), { query });
     }
 
@@ -100,9 +111,13 @@ $(function () {
         if (!is_search_page) return;
 
         var url = new URL(base_url);
-        url.search = "?q=" + query;
-        document.title = query + " - " + page_title;
-        history.replaceState(history.state, document.title, url);
+        var search_title = page_title;
+        if (query.length) {
+            url.search = "?q=" + query;
+            search_title = query + " - " + search_title;
+        }
+        document.title = search_title;
+        history.replaceState(history.state, search_title, url);
     }
 
     function populateResults(results, { query }) {
@@ -110,20 +125,25 @@ $(function () {
         $(".no-search-results").hide();
         $(".search-results").hide();
 
-        if (results.length == 0) {
-            $(".no-search-results").show();
+        if (query.length == 0) {
+            $(".no-search-query").last().show();
             return;
         }
-        $(".search-results").empty().show();
+        if (results.length == 0) {
+            $(".no-search-results").last().show();
+            return;
+        }
+        $(".search-results").empty().last().show();
         $(results).each(function (_, result) {
             populateResult(result, { query });
         });
+        $(document).scrollTop(0);
     }
 
     function populateResult(result, { query }) {
         var contents = result.contents;
         var output = render(templateDefinition, { id: result.id, title: text(result.title), link: result.permalink, guilds: result.guilds, summary: result.summary });
-        $('.search-results').append(output);
+        $('.search-results').last().append(output);
         $("#summary-" + result.id).mark(query);
     }
 

@@ -1,16 +1,4 @@
 {{ define "main" }}
-<section>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-
-    <form method="GET" action="{{ .Permalink }}" role="search">
-        <input type="search" id="search-query" name="q" value="" placeholder="Search for skills..."
-            aria-label="Search through site content" enterkeyhint="Search" mozactionhint="Search" required
-            minlength="3">
-        <button>Search</button>
-    </form>
-</section>
-
 <section id="search-results">
     <h1>Search results</h1>
     <p class="no-search-query">Enter a search term above.</p>

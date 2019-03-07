@@ -5,5 +5,4 @@ outputs:
  - json
 layout: "search"
 searchable: false
-menu: main
 ---

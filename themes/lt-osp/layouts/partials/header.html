@@ -14,8 +14,37 @@
             {{ range . -}}
             <li><a href="{{ .URL }}">{{ .Title }}</a></li>
             {{ end -}}
+            {{- with $.Site.GetPage "/search" -}}
+            <li class="search">
+                <form role="search" method="GET" action="{{ .Permalink }}" class="search">
+                    <label for="search-query">🔍</label>
+                    <input name="q" id="search-query" type="search" placeholder="Search"
+                        aria-label="Search for skills"></label>
+                </form>
+            </li>
+            {{- end -}}
         </ul>
     </nav>
-    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
     {{ end -}}
 </header>
+<section id="header-search-results">
+    <p class="no-search-results" style="display: none">
+        No matches found. Enter a new search term above.</p>
+    <div class="search-results" style="display: none"></div>
+</section>
+<script id="search-result-template" type="text/x-js-template">
+    <article id="summary-${id}">
+        <h2 class="title"><a href="${link}">${title}</a></h2>
+        <p class="summary">${summary}</p>
+    </article>
+</script>
+
+{{- $bundle := slice }}
+{{- $bundle = $bundle | append (resources.Get "js/fuse.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/jquery-3.3.1.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/jquery.mark.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/url-search-params.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/search.js") -}}
+{{- $bundleJS := $bundle | resources.Concat "js/search-bundle.js" | minify | fingerprint }}
+<script defer src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"
+    type="text/javascript"></script>
