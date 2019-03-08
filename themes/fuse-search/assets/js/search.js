@@ -90,6 +90,18 @@ $(function () {
         search(params.get("q"));
     }
 
+    $('#header-search-results')
+        .on("mouseenter", "article", function (e) {
+            $(e.target).closest("article").addClass("hover");
+        })
+        .on("mouseleave", "article", function (e) {
+            $(e.target).closest("article").removeClass("hover");
+        })
+        .on("click", "article", function (e) {
+            var href = $(e.target).closest("article").find("a[href]").attr("href");
+            if (href) window.location = href;
+        });
+
     function search(query) {
         if (!fuse) {
             return deferSearch(query);

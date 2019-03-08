@@ -288,6 +288,10 @@ li ul {
     padding: .3em .5em;
     border-top: 1px solid black;
   }
+  article.hover {
+    background: white;
+    cursor: pointer;
+  }
 }
 
 mark {
