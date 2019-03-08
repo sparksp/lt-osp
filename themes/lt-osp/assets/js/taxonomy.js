@@ -26,6 +26,13 @@ onReady(function () {
         if (!skill.dataset.prerequisite) {
             return;
         }
+        var lines = [];
+        addResizeListener(document.body, () => {
+            lines.forEach(line => {
+                line.position();
+            });
+        });
+
         var prerequisites = skill.dataset.prerequisite.split(";");
         prerequisites.forEach(prerequisiteId => {
             var prerequisite = document.getElementById(prerequisiteId);
@@ -33,6 +40,7 @@ onReady(function () {
                 return;
             }
             var line = new LeaderLine(prerequisite, skill, options);
+            lines.push(line);
 
             var reset = () => {
                 line.setOptions(options);
