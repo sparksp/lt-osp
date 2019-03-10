@@ -137,18 +137,28 @@ $(function () {
         $(".no-search-results").hide();
         $(".search-results").hide();
 
+        const max_results = 5;
+        var result_count = results.length;
+
         if (query.length == 0) {
             $(".no-search-query").last().show();
             return;
         }
-        if (results.length == 0) {
+        if (result_count == 0) {
             $(".no-search-results").last().show();
             return;
         }
         $(".search-results").empty().last().show();
+        if (!is_search_page) {
+            results = results.slice(0, max_results);
+        }
         $(results).each(function (_, result) {
             populateResult(result, { query });
         });
+        if (!is_search_page && result_count > max_results) {
+            var more_link = '<article class="more-results"><a href="/search/?q=' + query + '">See all ' + result_count + ' results</a></article>';
+            $('.search-results').last().append(more_link);
+        }
         $(document).scrollTop(0);
     }
 
