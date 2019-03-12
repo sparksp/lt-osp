@@ -2,6 +2,7 @@
 title: "Mass Blast Wedge #"
 linktitle: "Mass Blast Wedge"
 guilds: ["Lammie Restricted"]
+weight: 3
 prerequisites: ["global-blast-wedge"]
 requirements: ["Lammie or Loresheet", " and ", "global-blast-wedge"]
 ladder: "magebolt-wedge"

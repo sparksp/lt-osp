@@ -2,6 +2,7 @@
 title: "Harden Body #"
 linktitle: "Harden Body"
 guilds: ["Lammie Restricted"]
+weight: 2
 prerequisites: ["toughen-body"]
 requirements: ["Lammie or Loresheet"]
 replacement: true

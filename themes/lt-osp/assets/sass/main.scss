@@ -248,6 +248,9 @@ li ul {
     border-color: #999;
     border-width: 2px;
   }
+  & + .has-prerequisite {
+    margin-top: 2em;
+  }
 
   &:link {
     text-decoration: none;

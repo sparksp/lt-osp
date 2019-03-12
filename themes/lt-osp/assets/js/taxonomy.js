@@ -39,7 +39,11 @@ onReady(function () {
             if (!prerequisite) {
                 return;
             }
+            skill.classList.add("has-prerequisite");
             var line = new LeaderLine(prerequisite, skill, options);
+            addResizeListener(skill.parentNode, () => {
+                line.position();
+            });
             lines.push(line);
 
             var reset = () => {

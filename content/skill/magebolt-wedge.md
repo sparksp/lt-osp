@@ -2,6 +2,7 @@
 title: "Magebolt Wedge #"
 linktitle: "Magebolt Wedge"
 guilds: ["Lammie Restricted"]
+weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ladder: "magebolt-wedge"

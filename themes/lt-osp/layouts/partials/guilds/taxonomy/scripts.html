@@ -1,0 +1,8 @@
+{{- $bundle := slice }}
+{{- $bundle = $bundle | append (resources.Get "js/leader-line.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/on-ready.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/resize-listener.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/taxonomy.js") -}}
+{{- $bundleJS := $bundle | resources.Concat "js/taxonomy-bundle.js" | minify | fingerprint }}
+<script defer src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"
+    type="text/javascript"></script>
