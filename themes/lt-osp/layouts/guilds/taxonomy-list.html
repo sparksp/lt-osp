@@ -9,48 +9,36 @@
 {{ .Content }}
 
 {{- $skills := $.Site.GetPage "/skill" }}
-<table class="skill-table">
-    <thead>
-        <tr>
-            <th>
-                {{ .Title }}
-            </th>
-        </tr>
-    </thead>
+<section class="skill-list">
+    <header class="skill-list-title">
+        {{ .Title }}
+    </header>
     {{ with where .Pages ".Params.ladder" "!=" nil -}}
     {{ range .GroupByParam "ladder" -}}
-    <tbody>
-        <tr>
-            <td>
-                {{ range .ByWeight -}}
-                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
-                </a>
-                {{- end }}
-            </td>
-        </tr>
-    </tbody>
+    <div class="skill-ladder">
+        {{ range .ByWeight -}}
+        <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+            id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+            {{ range .Params.prerequisites }}{{- with $skills.GetPage . }} data-prerequisite="skill-{{ .UniqueID }}"
+            {{ end }}{{ end }}>
+            {{ .Title }}
+        </a>
+        {{- end }}
+    </div>
     {{- end }}
     {{- end }}
     {{ with where .Pages ".Params.ladder" "==" nil -}}
-    <tbody>
-        <tr>
-            <td>
-                {{ range .ByTitle -}}
-                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
-                </a>
-                {{- end }}
-            </td>
-        </tr>
-    </tbody>
+    {{ range .ByTitle -}}
+    <div class="skill-ladder skill-ladder-misc">
+        <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+            id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+            {{ range .Params.prerequisites }}{{- with $skills.GetPage . }} data-prerequisite="skill-{{ .UniqueID }}"
+            {{ end }}{{ end }}>
+            {{ .Title }}
+        </a>
+    </div>
     {{- end }}
-</table>
+    {{- end }}
+</section>
 
 {{- end }}
