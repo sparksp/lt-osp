@@ -248,6 +248,9 @@ li ul {
     border-color: #999;
     border-width: 2px;
   }
+  & + .skill {
+    margin-top: .6em;
+  }
   & + .has-prerequisite {
     margin-top: 2em;
   }
