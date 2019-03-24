@@ -72,7 +72,7 @@ body {
     display: none;
     flex: 1;
   }
-  .main-menu:target {
+  .main-menu:target, .main-menu[aria-expanded=true] {
     display: block;
   }
 
