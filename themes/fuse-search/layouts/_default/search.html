@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section id="search-results">
+    <h1>Search results</h1>
+    <p class="no-search-query">Enter a search term above.</p>
+    <p class="no-search-results" style="display: none">
+        No matches found. Enter a new search term above.</p>
+    <div class="search-results" style="display: none"></div>
+</section>
+<script id="search-result-template" type="text/x-js-template">
+    <article id="summary-${id}">
+        <h2><a href="${link}">${title}</a></h2>
+        <p>${summary}</p>
+    </article>
+</script>
+{{ end }}
+{{ define "scripts" }}
+{{- $bundle := slice }}
+{{- $bundle = $bundle | append (resources.Get "js/fuse.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/jquery-3.3.1.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/jquery.mark.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/url-search-params.min.js") -}}
+{{- $bundle = $bundle | append (resources.Get "js/search.js") -}}
+{{- $bundleJS := $bundle | resources.Concat "js/search-bundle.js" | minify | fingerprint }}
+<script defer src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"
+    type="text/javascript"></script>
+{{ end }}
