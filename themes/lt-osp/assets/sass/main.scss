@@ -72,7 +72,7 @@ body {
     display: none;
     flex: 1;
   }
-  .main-menu:target {
+  .main-menu:target, .main-menu[aria-expanded=true] {
     display: block;
   }
 
@@ -139,14 +139,13 @@ body {
   a:link, a:visited, a:hover, a:focus, a:active {
     color: #fff;
   }
-  a:hover, a:focus {
-    background: rgba(0, 0, 0, .1);
-  }
   a:active {
     background: rgba(0, 0, 0, .3);
   }
-  h1 a:hover {
-    background: none;
+  .main-menu {
+    a:hover, a:focus {
+      background: rgba(0, 0, 0, .1);
+    }
   }
 
   .menu-close {
