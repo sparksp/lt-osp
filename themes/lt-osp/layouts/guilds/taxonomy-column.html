@@ -1,28 +1,10 @@
+{{ define "scripts" }}
+{{ partial "guilds/taxonomy/scripts" . }}
+{{ end }}
 {{ define "main" -}}
 <h1>{{ .Title }}</h1>
 
-{{- with .Menus.guilds }}
-{{- if .HasChildren }}
-<p>
-    <strong>Guilds:</strong>
-    {{- $len := len .Children }}
-    {{- range $index, $e := .Children }}
-    {{- if $index }}
-    {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
-    {{- end }}
-    {{ partial "guild-link" .Page }}
-    {{- end }}
-</p>
-{{- end }}
-{{- $parent := .Parent }}
-{{- if $parent }}
-{{- range $.Site.Menus.guilds }}
-{{- if eq (default .Name .Identifier) $parent }}
-<p>Back to <a href="{{ .URL }}" rel="parent">{{ .Title }}</a></p>
-{{- end }}
-{{- end }}
-{{- end }}
-{{- end }}
+{{ partial "guilds/nav" . }}
 
 {{ .Content }}
 

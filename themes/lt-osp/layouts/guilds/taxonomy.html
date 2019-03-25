@@ -1,28 +1,10 @@
+{{ define "scripts" }}
+{{ partial "guilds/taxonomy/scripts" . }}
+{{ end }}
 {{ define "main" -}}
 <h1>{{ .Title }}</h1>
 
-{{- with .Menus.guilds }}
-{{- if .HasChildren }}
-<p>
-    <strong>Guilds:</strong>
-    {{- $len := len .Children }}
-    {{- range $index, $e := .Children }}
-    {{- if $index }}
-    {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
-    {{- end }}
-    {{ partial "guild-link" .Page }}
-    {{- end }}
-</p>
-{{- end }}
-{{- $parent := .Parent }}
-{{- if $parent }}
-{{- range $.Site.Menus.guilds }}
-{{- if eq (default .Name .Identifier) $parent }}
-<p>Back to <a href="{{ .URL }}" rel="parent">{{ .Title }}</a></p>
-{{- end }}
-{{- end }}
-{{- end }}
-{{- end }}
+{{ partial "guilds/nav" . }}
 
 {{ .Content }}
 
@@ -91,7 +73,7 @@
                     id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
                     {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
                     data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
+                    {{ .LinkTitle }}
                 </a>
             </td>
             {{- $col = add $col 1 }}
@@ -112,14 +94,4 @@
         {{- end }}
     </tbody>
 </table>
-{{ end }}
-{{ define "scripts" }}
-{{- $bundle := slice }}
-{{- $bundle = $bundle | append (resources.Get "js/leader-line.min.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/on-ready.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/resize-listener.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/taxonomy.js") -}}
-{{- $bundleJS := $bundle | resources.Concat "js/taxonomy-bundle.js" | minify | fingerprint }}
-<script defer src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"
-    type="text/javascript"></script>
-{{ end }}
+{{- end }}

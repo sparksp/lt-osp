@@ -26,6 +26,7 @@
     {{- end }}
 
     {{- with .Params.requirements }}
+    {{- $skill := $.Site.GetPage "/skill" }}
     <p>
         <strong>Requirements to use:</strong>
         {{ partial "skill-list" (dict "list" . "skills" $skills) }}

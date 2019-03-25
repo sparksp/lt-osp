@@ -14,8 +14,8 @@ onReady(function () {
     var connectionColor = "#666";
     var highlightShadow = "0 0 2px 1px rgba(0, 0, 0, .3)";
     var skills = document.getElementsByClassName("skill");
-    Array.from(skills).forEach(skill => {
-        skill.addEventListener('touchend', (evt) => {
+    Array.from(skills).forEach(function (skill) {
+        skill.addEventListener('touchend', function (evt) {
             if (document.activeElement == evt.target) {
                 return;
             }
@@ -27,22 +27,26 @@ onReady(function () {
             return;
         }
         var lines = [];
-        addResizeListener(document.body, () => {
-            lines.forEach(line => {
+        addResizeListener(document.body, function () {
+            lines.forEach(function (line) {
                 line.position();
             });
         });
 
         var prerequisites = skill.dataset.prerequisite.split(";");
-        prerequisites.forEach(prerequisiteId => {
+        prerequisites.forEach(function (prerequisiteId) {
             var prerequisite = document.getElementById(prerequisiteId);
             if (!prerequisite) {
                 return;
             }
+            skill.classList.add("has-prerequisite");
             var line = new LeaderLine(prerequisite, skill, options);
+            addResizeListener(skill.parentNode, function () {
+                line.position();
+            });
             lines.push(line);
 
-            var reset = () => {
+            var reset = function () {
                 line.setOptions(options);
                 prerequisite.style.boxShadow = "none";
                 prerequisite.style.borderColor = null;
@@ -50,7 +54,7 @@ onReady(function () {
                 skill.style.borderColor = null;
             };
 
-            var onPrerequisiteFocus = () => {
+            var onPrerequisiteFocus = function () {
                 line.setOptions({
                     startPlugColor: highlightColor,
                     endPlugColor: connectionColor,
@@ -65,7 +69,7 @@ onReady(function () {
             prerequisite.addEventListener('mouseleave', reset);
             prerequisite.addEventListener('blur', reset);
 
-            var onSkillFocus = () => {
+            var onSkillFocus = function () {
                 line.setOptions({
                     startPlugColor: connectionColor,
                     endPlugColor: highlightColor,
