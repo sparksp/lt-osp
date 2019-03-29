@@ -1,6 +1,6 @@
 ---
 title: "Through"
-guilds: ["Scouts"]
+guilds: [scouts]
 tier: 4
 osp_cost: 40
 prerequisites: ["through-from-behind"]

@@ -1,6 +1,6 @@
 ---
 title: "+4 Spell Cards"
-guilds: ["Powers or Magic Guilds"]
+guilds: [powers-or-magic-guilds]
 tier: 1
 osp_cost: 10
 prerequisites: []

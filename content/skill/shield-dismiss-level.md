@@ -1,6 +1,6 @@
 ---
 title: "Shield Dismiss Level"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 3
 osp_cost: 30
 prerequisites: []

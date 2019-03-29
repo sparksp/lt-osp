@@ -1,6 +1,6 @@
 ---
 title: "Source of Life"
-guilds: ["Healers"]
+guilds: [healers]
 tier: 5
 osp_cost: 50
 prerequisites: ["mind-healing", " & ", "advanced-healing"]

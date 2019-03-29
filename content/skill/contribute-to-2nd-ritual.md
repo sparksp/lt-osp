@@ -1,6 +1,6 @@
 ---
 title: "Contribute to 2nd Ritual"
-guilds: ["Mages"]
+guilds: [mages]
 tier: 1
 osp_cost: 10
 prerequisites: []

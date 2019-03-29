@@ -1,7 +1,7 @@
 ---
 title: "Mass Blast Wedge #"
 linktitle: "Mass Blast Wedge"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 3
 prerequisites: ["global-blast-wedge"]
 requirements: ["Lammie or Loresheet", " and ", "global-blast-wedge"]

@@ -1,6 +1,6 @@
 ---
 title: "Dedicated Follower"
-guilds: ["Incantors"]
+guilds: [incantors]
 tier: 3
 osp_cost: 30
 prerequisites: []

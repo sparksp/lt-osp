@@ -1,6 +1,6 @@
 ---
 title: "Forensic Analysis"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 3
 osp_cost: 30
 prerequisites: []

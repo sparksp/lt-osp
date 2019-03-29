@@ -1,6 +1,6 @@
 ---
 title: "Shield Mastery"
-guilds: ["Armourers", "Militia"]
+guilds: [armourers, militia]
 tier: 3
 osp_cost: 30
 prerequisites: []

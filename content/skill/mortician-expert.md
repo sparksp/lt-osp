@@ -1,6 +1,6 @@
 ---
 title: "Mortician Expert"
-guilds: ["Corruptors"]
+guilds: [corruptors]
 tier: 4
 osp_cost: 40
 prerequisites: ["mortician"]

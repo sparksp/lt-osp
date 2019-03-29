@@ -1,6 +1,6 @@
 ---
 title: "Revitalise Unliving"
-guilds: ["Corruptors"]
+guilds: [corruptors]
 tier: 1
 osp_cost: 10
 prerequisites: []

@@ -1,7 +1,7 @@
 ---
 title: "Brutish Strike #"
 linktitle: "Brutish Strike"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ladder: "strike"

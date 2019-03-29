@@ -1,6 +1,6 @@
 ---
 title: "Create Potion 3"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 4
 osp_cost: 40
 prerequisites: ["create-potion-2", " & ", "Potion Lore"]

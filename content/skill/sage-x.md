@@ -1,6 +1,6 @@
 ---
 title: "Sage <X>"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 4
 osp_cost: 40
 prerequisites: ["scholar-x"]

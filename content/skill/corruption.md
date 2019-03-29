@@ -1,6 +1,6 @@
 ---
 title: "Corruption"
-guilds: ["Corruptors", "Magic Disciplines"]
+guilds: [corruptors, magic-disciplines]
 guild: "corruptors"
 tier: 1
 osp_cost: 10

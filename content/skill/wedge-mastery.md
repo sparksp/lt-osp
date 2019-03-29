@@ -1,6 +1,6 @@
 ---
 title: "Wedge Mastery"
-guilds: ["Corruptors", "Incantors"]
+guilds: [corruptors, incantors]
 tier: 1
 osp_cost: 10
 prerequisites: []

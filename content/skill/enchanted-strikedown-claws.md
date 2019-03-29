@@ -1,7 +1,7 @@
 ---
 title: "Enchanted Strikedown Claws #"
 linktitle: "Enchanted Strikedown Claws"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: ["enchanted-claws"]
 requirements: ["Lammie or Loresheet", " and ", "Claw Competency"]
 replacement: true

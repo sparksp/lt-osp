@@ -1,6 +1,6 @@
 ---
 title: "Perform Transport Rite"
-guilds: ["Mages"]
+guilds: [mages]
 tier: 1
 osp_cost: 10
 prerequisites: []

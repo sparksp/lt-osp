@@ -5,6 +5,7 @@
     {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end }}
 
     {{- with .Params.guilds }}
+    {{- $guilds := $.Site.GetPage "/guilds" }}
     <p>
         <strong>Guilds:</strong>
         {{- $len := len . }}
@@ -12,7 +13,7 @@
         {{- if $index }}
         {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
         {{- end }}
-        <a href="{{ "guilds/" | relURL }}{{ . | urlize }}" class="guild guild-{{ . | urlize }}">{{ . }}</a>
+        {{ $guilds.GetPage . | partial "guild-link" }}
         {{- end }}
     </p>
     {{- end }}

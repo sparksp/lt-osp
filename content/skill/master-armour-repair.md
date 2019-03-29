@@ -1,7 +1,7 @@
 ---
 title: "Master Armour Repair #"
 linktitle: "Master Armour Repair"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 2
 tier: 4
 osp_cost: 40

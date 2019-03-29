@@ -1,7 +1,7 @@
 ---
 title: "Toughen Body #"
 linktitle: "Toughen Body"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]

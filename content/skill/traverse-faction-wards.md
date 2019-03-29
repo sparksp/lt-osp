@@ -1,6 +1,6 @@
 ---
 title: "Traverse Faction Wards"
-guilds: ["Scouts"]
+guilds: [scouts]
 tier: 3
 osp_cost: 30
 prerequisites: []

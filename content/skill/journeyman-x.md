@@ -1,6 +1,6 @@
 ---
 title: "Journeyman <X>"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 2
 osp_cost: 20
 prerequisites: ["apprentice-x"]

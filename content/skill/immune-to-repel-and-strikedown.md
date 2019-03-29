@@ -1,6 +1,6 @@
 ---
 title: "Immune to Repel and Strikedown"
-guilds: ["Armourers", "Militia", "Scouts"]
+guilds: [armourers, militia, scouts]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-repel"]

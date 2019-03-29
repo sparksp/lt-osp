@@ -1,6 +1,6 @@
 ---
 title: "Quick Armour Repair"
-guilds: ["Martial Guilds"]
+guilds: [martial-guilds]
 tier: 1
 osp_cost: 10
 prerequisites: []

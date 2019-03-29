@@ -1,6 +1,6 @@
 ---
 title: "Discern Race"
-guilds: ["Archers"]
+guilds: [archers]
 tier: 2
 osp_cost: 20
 prerequisites: ["tracking"]

@@ -1,7 +1,7 @@
 ---
 title: "Advanced Armour Repair #"
 linktitle: "Advanced Armour Repair"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 1
 prerequisites: ["quick-armour-repair"]
 requirements: ["Any Armour use CS"]

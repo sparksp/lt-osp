@@ -1,6 +1,6 @@
 ---
 title: "Repair Enchanted Items"
-guilds: ["Armourers"]
+guilds: [armourers]
 tier: 2
 osp_cost: 20
 prerequisites: ["armoursmith-apprentice"]

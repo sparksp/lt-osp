@@ -1,7 +1,7 @@
 ---
 title: "Damage Reduction (Crush) #"
 linktitle: "Damage Reduction (Crush)"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]

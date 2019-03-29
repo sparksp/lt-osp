@@ -1,6 +1,6 @@
 ---
 title: "Discern Elemental Being"
-guilds: ["Healers"]
+guilds: [healers]
 tier: 3
 osp_cost: 30
 prerequisites: []

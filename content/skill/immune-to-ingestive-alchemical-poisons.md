@@ -1,7 +1,7 @@
 ---
 title: "Immune to Ingestive Alchemical Poisons #"
 linktitle: "Immune to Ingestive Alchemical Poisons"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

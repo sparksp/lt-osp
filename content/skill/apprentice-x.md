@@ -1,6 +1,6 @@
 ---
 title: "Apprentice <X>"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 1
 osp_cost: 10
 prerequisites: []

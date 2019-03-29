@@ -1,6 +1,6 @@
 ---
 title: "Source of Unlife"
-guilds: ["Corruptors"]
+guilds: [corruptors]
 tier: 5
 osp_cost: 50
 prerequisites: ["repair-unliving-advanced"]

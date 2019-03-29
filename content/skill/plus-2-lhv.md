@@ -1,7 +1,7 @@
 ---
 title: "+2 LHV #"
 linktitle: "+2 LHV"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: ["plus-1-lhv"]
 requirements: ["Lammie or Loresheet"]
 replacement: true

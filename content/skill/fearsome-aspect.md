@@ -1,6 +1,6 @@
 ---
 title: "Fearsome Aspect"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 4
 osp_cost: 40
 prerequisites: []

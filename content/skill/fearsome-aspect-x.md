@@ -1,7 +1,7 @@
 ---
 title: "Fearsome Aspect <X> #"
 linktitle: "Fearsome Aspect <X>"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

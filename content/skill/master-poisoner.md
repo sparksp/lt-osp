@@ -1,6 +1,6 @@
 ---
 title: "Master Poisoner"
-guilds: ["Scouts"]
+guilds: [scouts]
 tier: 4
 osp_cost: 40
 prerequisites: []

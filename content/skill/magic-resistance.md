@@ -1,6 +1,6 @@
 ---
 title: "Magic Resistance"
-guilds: ["Militia"]
+guilds: [militia]
 tier: 5
 osp_cost: 50
 prerequisites: ["immune-to-through"]

@@ -1,7 +1,7 @@
 ---
 title: "Improved Ritual of Peace (RoP) #"
 linktitle: "Improved RoP"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

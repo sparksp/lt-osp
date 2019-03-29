@@ -1,6 +1,6 @@
 ---
 title: "Create Magical Poison"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 5
 osp_cost: 50
 prerequisites: ["create-poison-3", " & ", "Poison Lore"]

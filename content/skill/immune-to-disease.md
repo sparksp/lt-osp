@@ -1,6 +1,6 @@
 ---
 title: "Immune to Disease"
-guilds: ["Corruptors", "Healers"]
+guilds: [corruptors, healers]
 tier: 3
 osp_cost: 30
 prerequisites: []

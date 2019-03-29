@@ -1,7 +1,7 @@
 ---
 title: "Regenerates (<time period>,<effect(s)>) [<exclusion(s)>]: #"
 linktitle: "Regenerates"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Oiled Arrows"
-guilds: ["Archers"]
+guilds: [archers]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]

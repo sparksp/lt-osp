@@ -1,6 +1,6 @@
 ---
 title: "Through Thrown"
-guilds: ["Scouts"]
+guilds: [scouts]
 tier: 5
 osp_cost: 50
 prerequisites: ["through"]

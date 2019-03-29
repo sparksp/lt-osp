@@ -1,6 +1,6 @@
 ---
 title: "Immune to Sleep"
-guilds: ["Archers"]
+guilds: [archers]
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-distract-and-confusion"]
