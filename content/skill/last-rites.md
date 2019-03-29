@@ -1,6 +1,6 @@
 ---
 title: "Last Rites"
-guilds: ["Incantors"]
+guilds: [incantors]
 tier: 1
 osp_cost: 10
 prerequisites: []

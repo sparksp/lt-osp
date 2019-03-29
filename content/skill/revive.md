@@ -1,6 +1,6 @@
 ---
 title: "Revive"
-guilds: ["Healers"]
+guilds: [healers]
 tier: 1
 osp_cost: 10
 prerequisites: []

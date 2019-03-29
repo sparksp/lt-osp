@@ -1,6 +1,6 @@
 ---
 title: "Immune to Fumble and Shatter"
-guilds: ["Archers", "Militia"]
+guilds: [archers, militia]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]

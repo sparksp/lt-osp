@@ -1,7 +1,7 @@
 ---
 title: "Master Brewer #"
 linktitle: "Master Brewer"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

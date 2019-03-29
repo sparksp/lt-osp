@@ -1,6 +1,6 @@
 ---
 title: "Cast Additional Incantation"
-guilds: ["Incantors"]
+guilds: [incantors]
 tier: 5
 osp_cost: 50
 prerequisites: ["last-rites-improved"]

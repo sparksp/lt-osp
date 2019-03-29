@@ -1,6 +1,6 @@
 ---
 title: "Written Forgery"
-guilds: ["Bards", "Scouts"]
+guilds: [bards, scouts]
 tier: 4
 osp_cost: 40
 prerequisites: ["translate-named-script-x", " & ", "Recognise Forgery"]

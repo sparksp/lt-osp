@@ -1,7 +1,7 @@
 ---
 title: "Magebolt Wedge #"
 linktitle: "Magebolt Wedge"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]

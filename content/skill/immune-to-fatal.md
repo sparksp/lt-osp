@@ -1,7 +1,7 @@
 ---
 title: "Immune to Fatal #"
 linktitle: "Immune to Fatal"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

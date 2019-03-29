@@ -1,6 +1,6 @@
 ---
 title: "Create Poison 2"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 3
 osp_cost: 30
 prerequisites: ["create-poison-1", " & ", "Poison Lore"]

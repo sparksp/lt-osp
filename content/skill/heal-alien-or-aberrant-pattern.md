@@ -1,6 +1,6 @@
 ---
 title: "Heal Alien or Aberrant Pattern"
-guilds: ["Healers"]
+guilds: [healers]
 tier: 3
 osp_cost: 30
 prerequisites: []

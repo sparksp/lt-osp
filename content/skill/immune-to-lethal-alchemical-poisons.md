@@ -1,6 +1,6 @@
 ---
 title: "Immune to Lethal Alchemical Poisons"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 4
 osp_cost: 40
 prerequisites: []

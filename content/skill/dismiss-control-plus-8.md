@@ -1,6 +1,6 @@
 ---
 title: "Dismiss/Control +8"
-guilds: ["Corruptors", "Incantors"]
+guilds: [corruptors, incantors]
 tier: 5
 osp_cost: 50
 prerequisites: ["wedge-mastery-improved"]

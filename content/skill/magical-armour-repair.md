@@ -1,7 +1,7 @@
 ---
 title: "Magical Armour Repair #"
 linktitle: "Magical Armour Repair"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 3
 prerequisites: []
 requirements: []

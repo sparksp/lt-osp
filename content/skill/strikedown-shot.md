@@ -1,6 +1,6 @@
 ---
 title: "Strikedown Shot"
-guilds: ["Archers"]
+guilds: [archers]
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-fumble-and-shatter"]

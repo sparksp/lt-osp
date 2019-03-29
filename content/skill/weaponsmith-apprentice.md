@@ -1,6 +1,6 @@
 ---
 title: "Weaponsmith (Apprentice)"
-guilds: ["Armourers"]
+guilds: [armourers]
 tier: 1
 osp_cost: 10
 prerequisites: []

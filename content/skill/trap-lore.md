@@ -1,6 +1,6 @@
 ---
 title: "Trap Lore"
-guilds: ["Archers", "Scouts"]
+guilds: [archers, scouts]
 tier: 3
 osp_cost: 30
 prerequisites: []

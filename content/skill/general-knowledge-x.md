@@ -1,6 +1,6 @@
 ---
 title: "General Knowledge <X>"
-guilds: ["Knowledge Guilds"]
+guilds: [knowledge-guilds]
 tier: 1
 osp_cost: 10
 prerequisites: []

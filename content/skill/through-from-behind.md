@@ -1,6 +1,6 @@
 ---
 title: "Through From Behind"
-guilds: ["Scouts"]
+guilds: [scouts]
 tier: 2
 osp_cost: 20
 prerequisites: ["immune-to-fumble"]

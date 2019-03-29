@@ -1,7 +1,7 @@
 ---
 title: "Jack of All Trades #"
 linktitle: "Jack of All Trades"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

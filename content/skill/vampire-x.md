@@ -1,7 +1,7 @@
 ---
 title: "Vampire <X> #"
 linktitle: "Vampire <X>"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

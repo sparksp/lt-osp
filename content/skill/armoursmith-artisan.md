@@ -1,6 +1,6 @@
 ---
 title: "Armoursmith (Artisan)"
-guilds: ["Armourers"]
+guilds: [armourers]
 tier: 4
 osp_cost: 40
 prerequisites: ["armoursmith-apprentice"]

@@ -1,6 +1,6 @@
 ---
 title: "Scribe Scroll"
-guilds: ["Corruptors", "Healers", "Incantors", "Mages"]
+guilds: [corruptors, healers, incantors, mages]
 tier: 2
 osp_cost: 20
 prerequisites: []

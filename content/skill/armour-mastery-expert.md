@@ -1,6 +1,6 @@
 ---
 title: "Armour Mastery (Expert)"
-guilds: ["Martial Guilds"]
+guilds: [martial-guilds]
 tier: 5
 osp_cost: 50
 prerequisites: ["armour-mastery-advanced"]

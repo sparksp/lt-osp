@@ -1,6 +1,6 @@
 ---
 title: "Mighty Blow"
-guilds: ["Armourers", "Militia"]
+guilds: [armourers, militia]
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-repel-and-strikedown"]

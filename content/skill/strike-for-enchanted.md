@@ -1,7 +1,7 @@
 ---
 title: "Strike for Enchanted #"
 linktitle: "Strike for Enchanted"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

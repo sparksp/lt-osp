@@ -1,6 +1,6 @@
 ---
 title: "Herb Lore"
-guilds: ["Alchemists", "Bards", "Healers"]
+guilds: [alchemists, bards, healers]
 tier: 1
 osp_cost: 10
 prerequisites: []

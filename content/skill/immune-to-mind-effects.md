@@ -1,6 +1,6 @@
 ---
 title: "Immune to Mind Effects"
-guilds: ["Bards", "Militia"]
+guilds: [bards, militia]
 tier: 5
 osp_cost: 50
 prerequisites: ["rally"]

@@ -1,6 +1,6 @@
 ---
 title: "Mortician"
-guilds: ["Corruptors"]
+guilds: [corruptors]
 tier: 2
 osp_cost: 20
 prerequisites: []

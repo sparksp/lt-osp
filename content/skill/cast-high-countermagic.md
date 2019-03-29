@@ -1,6 +1,6 @@
 ---
 title: "Cast High Countermagic"
-guilds: ["Incantors", "Mages"]
+guilds: [incantors, mages]
 tier: 3
 osp_cost: 30
 prerequisites: []

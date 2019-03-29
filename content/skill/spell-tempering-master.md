@@ -1,7 +1,7 @@
 ---
 title: "Spell Tempering (Master) #"
 linktitle: "Spell Tempering (Master)"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Goblin Resilience #"
 linktitle: "Goblin Resilience"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

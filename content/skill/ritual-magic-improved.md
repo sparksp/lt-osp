@@ -1,6 +1,6 @@
 ---
 title: "Ritual Magic (Improved)"
-guilds: ["Mages"]
+guilds: [mages]
 tier: 3
 osp_cost: 30
 prerequisites: ["rite-master"]

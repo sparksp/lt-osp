@@ -1,6 +1,6 @@
 ---
 title: "Increased Alchemical Production"
-guilds: ["Alchemists"]
+guilds: [alchemists]
 tier: 5
 osp_cost: 50
 prerequisites: ["create-reagents-improved"]

@@ -1,6 +1,6 @@
 ---
 title: "Bowyer (Artisan)"
-guilds: ["Archers"]
+guilds: [archers]
 tier: 5
 osp_cost: 50
 prerequisites: ["bowyer-apprentice"]

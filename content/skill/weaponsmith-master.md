@@ -1,6 +1,6 @@
 ---
 title: "Weaponsmith (Master)"
-guilds: ["Armourers"]
+guilds: [armourers]
 tier: 5
 osp_cost: 50
 prerequisites: ["weaponsmith-artisan"]

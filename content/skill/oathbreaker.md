@@ -1,7 +1,7 @@
 ---
 title: "Oathbreaker #"
 linktitle: "Oathbreaker"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---

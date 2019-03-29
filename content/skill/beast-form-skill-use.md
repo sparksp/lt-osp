@@ -1,7 +1,7 @@
 ---
 title: "Beast-form Skill Use #"
 linktitle: "Beast-form Skill Use"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 weight: 2
 prerequisites: ["beast-form-intelligence"]
 requirements: ["Lammie or Loresheet"]

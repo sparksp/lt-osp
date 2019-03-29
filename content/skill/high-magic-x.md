@@ -1,6 +1,6 @@
 ---
 title: "High Magic <X>"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 5
 osp_cost: 50
 prerequisites: []

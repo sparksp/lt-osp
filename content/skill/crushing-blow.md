@@ -1,6 +1,6 @@
 ---
 title: "Crushing Blow"
-guilds: ["Armourers", "Militia"]
+guilds: [armourers, militia]
 tier: 5
 osp_cost: 50
 prerequisites: ["mighty-blow"]

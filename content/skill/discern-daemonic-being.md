@@ -1,6 +1,6 @@
 ---
 title: "Discern Daemonic Being"
-guilds: ["Mages"]
+guilds: [mages]
 tier: 3
 osp_cost: 30
 prerequisites: []

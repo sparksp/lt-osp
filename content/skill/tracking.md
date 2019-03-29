@@ -1,6 +1,6 @@
 ---
 title: "Tracking"
-guilds: ["Archers", "Militia", "Scouts"]
+guilds: [archers, militia, scouts]
 tier: 1
 osp_cost: 10
 prerequisites: []

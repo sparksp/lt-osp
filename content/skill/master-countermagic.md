@@ -1,6 +1,6 @@
 ---
 title: "Master Countermagic"
-guilds: ["Mages"]
+guilds: [mages]
 tier: 4
 osp_cost: 40
 prerequisites: ["cast-high-countermagic", " or ", "high-magic-x", " (Spellcasting)"]

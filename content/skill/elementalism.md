@@ -1,6 +1,6 @@
 ---
 title: "Elementalism"
-guilds: ["Magic Disciplines"]
+guilds: [magic-disciplines]
 tier: 1
 osp_cost: 10
 prerequisites: []

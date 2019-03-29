@@ -1,6 +1,6 @@
 ---
 title: "Beguile"
-guilds: ["Bards"]
+guilds: [bards]
 tier: 5
 osp_cost: 50
 prerequisites: ["cast-mass-charms", " & ", "detect-and-remove-beguile"]

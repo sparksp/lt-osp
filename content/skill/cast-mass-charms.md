@@ -1,6 +1,6 @@
 ---
 title: "Cast Mass Charms"
-guilds: ["Bards"]
+guilds: [bards]
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-charms"]

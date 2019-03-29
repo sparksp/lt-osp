@@ -1,6 +1,6 @@
 ---
 title: "Surgeon"
-guilds: ["Healers"]
+guilds: [healers]
 tier: 2
 osp_cost: 20
 prerequisites: []

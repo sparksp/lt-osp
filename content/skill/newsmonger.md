@@ -1,6 +1,6 @@
 ---
 title: "Newsmonger"
-guilds: ["Knowledge Guilds"]
+guilds: [knowledge-guilds]
 tier: 2
 osp_cost: 20
 prerequisites: ["general-knowledge-x"]

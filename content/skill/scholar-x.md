@@ -1,6 +1,6 @@
 ---
 title: "Scholar <X>"
-guilds: ["Generic"]
+guilds: [generic]
 tier: 2
 osp_cost: 20
 prerequisites: []

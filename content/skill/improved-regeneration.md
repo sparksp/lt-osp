@@ -1,7 +1,7 @@
 ---
 title: "Improved Regeneration #"
 linktitle: "Improved Regeneration"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

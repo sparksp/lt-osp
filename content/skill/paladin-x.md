@@ -1,7 +1,7 @@
 ---
 title: "Paladin <X> #"
 linktitle: "Paladin <X>"
-guilds: ["Lammie Restricted"]
+guilds: [lammie-restricted]
 prerequisites: []
 requirements: []
 ---
