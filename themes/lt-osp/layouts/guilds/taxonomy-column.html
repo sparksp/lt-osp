@@ -23,9 +23,9 @@
             <td>
                 {{ range . }}
                 <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+                    id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
                     {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
+                    data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
                     {{ .Title }}
                 </a>
                 {{ end }}
@@ -51,9 +51,9 @@
             <td>
                 {{ range .Pages }}
                 <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
+                    id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
                     {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
+                    data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
                     {{ .Title }}
                 </a>
                 {{ end }}

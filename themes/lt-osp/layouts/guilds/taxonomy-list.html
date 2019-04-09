@@ -19,9 +19,9 @@
         <div class="skill-ladder">
             {{ range .ByWeight -}}
             <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                {{ range .Params.prerequisites }}{{- with $skills.GetPage . }} data-prerequisite="skill-{{ .UniqueID }}"
-                {{ end }}{{ end }}>
+                id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
+                {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
+                data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
                 {{ .Title }}
             </a>
             {{- end }}
@@ -32,9 +32,9 @@
         {{ range .ByTitle -}}
         <div class="skill-ladder skill-ladder-misc">
             <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                {{ range .Params.prerequisites }}{{- with $skills.GetPage . }} data-prerequisite="skill-{{ .UniqueID }}"
-                {{ end }}{{ end }}>
+                id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
+                {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
+                data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
                 {{ .Title }}
             </a>
         </div>
