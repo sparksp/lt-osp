@@ -1,6 +1,5 @@
-{{- $skills := .skills -}}
-{{- range $item := .list -}}
-{{- with $skills.GetPage $item -}}
+{{- range $item := . -}}
+{{- with site.GetPage (printf "/skill/%s" $item) -}}
 <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{- else -}}
 {{ $item }}

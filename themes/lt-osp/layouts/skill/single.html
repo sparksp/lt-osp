@@ -5,7 +5,7 @@
     {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end }}
 
     {{- with .Params.guilds }}
-    {{- $guilds := $.Site.GetPage "/guilds" }}
+    {{- $guilds := site.GetPage "/guilds" }}
     <p>
         <strong>Guilds:</strong>
         {{- $len := len . }}
@@ -18,19 +18,17 @@
     </p>
     {{- end }}
 
-    {{- $skills := $.Site.GetPage "/skill" }}
     {{- with .Params.prerequisites }}
     <p>
         <strong>Pre-requisite to learn:</strong>
-        {{ partial "skill-list" (dict "list" . "skills" $skills) }}
+        {{ partial "skill-list" . }}
     </p>
     {{- end }}
 
     {{- with .Params.requirements }}
-    {{- $skill := $.Site.GetPage "/skill" }}
     <p>
         <strong>Requirements to use:</strong>
-        {{ partial "skill-list" (dict "list" . "skills" $skills) }}
+        {{ partial "skill-list" . }}
     </p>
     {{- end }}
 
