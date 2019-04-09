@@ -17,7 +17,7 @@
     {{ range .AlternativeOutputFormats -}}
     {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{ end -}}
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
 </head>
 
 <body>
