@@ -16,7 +16,6 @@
         </tr>
     </thead>
     <tbody>
-        {{- $skills := $.Site.GetPage "/skill" }}
         {{- $default_ladder := "none" }}
         {{- $ladder_count := 0}}
         {{- $scratch := newScratch }}
@@ -69,12 +68,7 @@
             {{- end }}
             {{- end }}
             <td>
-                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
-                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
-                    {{ .LinkTitle }}
-                </a>
+                {{ .Render "cell" }}
             </td>
             {{- $col = add $col 1 }}
             {{- end }}

@@ -1,0 +1,6 @@
+<a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
+    id="skill-{{ .File.UniqueID }}" href="{{ .Permalink }}"
+    {{ range .Params.prerequisites }}{{- with site.GetPage (printf "/skill/%s" .) }}
+    data-prerequisite="skill-{{ .File.UniqueID }}" {{ end }}{{ end }}>
+    {{ .LinkTitle }}
+</a>
