@@ -1,20 +1,19 @@
 <header class="banner" role="banner">
     <div class="title-menu">
-        <h1><a href="{{ "" | relURL }}">{{ .Site.Title }}</a></h1>
+        <h1><a href="{{ "" | relURL }}">{{ site.Title }}</a></h1>
 
         {{- $hamburger := resources.Get "svg/menu.svg" -}}
         <a href="#main-menu" class="menu-toggle" aria-label="Open main menu">
             <span class="sr-only">Open main menu</span><img src="{{ $hamburger.Permalink }}" aria-hidden="true"></a>
     </div>
-    {{ with .Site.Menus.main -}}
     <nav class="main-menu" id="main-menu" aria-label="Main menu">
         <a href="#main-menu-toggle" class="menu-close" aria-label="Close main menu">
             <span class="sr-only">Open main menu</span><img src="{{ $hamburger.Permalink }}" aria-hidden="true"></a>
         <ul>
-            {{ range . -}}
+            {{- range site.Menus.main }}
             <li><a href="{{ .URL }}">{{ .Title }}</a></li>
             {{ end -}}
-            {{- with $.Site.GetPage "/search" -}}
+            {{- with site.GetPage "/search" -}}
             <li class="search">
                 <form role="search" method="GET" action="{{ .Permalink }}" class="search">
                     <label for="search-query">🔍</label>
@@ -25,7 +24,6 @@
             {{- end -}}
         </ul>
     </nav>
-    {{ end -}}
 </header>
 <section id="header-search-results">
     <p class="no-search-results" style="display: none">
