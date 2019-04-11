@@ -1,4 +1,6 @@
 ---
 title: "Skills"
-menu: "main"
+menu:
+    main:
+        identifier: "skills"
 ---
