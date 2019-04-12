@@ -5,15 +5,7 @@
 {{- with site.Menus.guilds }}
 <ul>
     {{- range . }}
-    <li><a href="{{ .URL }}">{{ .Title }}</a>
-        {{- if .HasChildren }}
-        <ul>
-            {{- range .Children }}
-            <li><a href="{{ .URL }}">{{ .Title }}</a></li>
-            {{- end }}
-        </ul>
-        {{- end }}
-    </li>
+    <li>{{ partial "guilds/nav/link" . }}</li>
     {{- end }}
 </ul>
 {{- end }}

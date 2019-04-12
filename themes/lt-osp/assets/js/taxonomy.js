@@ -13,9 +13,9 @@ onReady(function () {
     var highlightColor = "black";
     var connectionColor = "#666";
     var highlightShadow = "0 0 2px 1px rgba(0, 0, 0, .3)";
-    var skills = document.getElementsByClassName("skill");
-    Array.from(skills).forEach(function (skill) {
-        skill.addEventListener('touchend', function (evt) {
+    var cells = document.getElementsByClassName("cell");
+    Array.from(cells).forEach(function (cell) {
+        cell.addEventListener('touchend', function (evt) {
             if (document.activeElement == evt.target) {
                 return;
             }
@@ -23,7 +23,7 @@ onReady(function () {
             evt.target.focus();
         });
 
-        if (!skill.dataset.prerequisite) {
+        if (!cell.dataset.prerequisite) {
             return;
         }
         var lines = [];
@@ -33,15 +33,15 @@ onReady(function () {
             });
         });
 
-        var prerequisites = skill.dataset.prerequisite.split(";");
+        var prerequisites = cell.dataset.prerequisite.split(";");
         prerequisites.forEach(function (prerequisiteId) {
             var prerequisite = document.getElementById(prerequisiteId);
             if (!prerequisite) {
                 return;
             }
-            skill.classList.add("has-prerequisite");
-            var line = new LeaderLine(prerequisite, skill, options);
-            addResizeListener(skill.parentNode, function () {
+            cell.classList.add("has-prerequisite");
+            var line = new LeaderLine(prerequisite, cell, options);
+            addResizeListener(cell.parentNode, function () {
                 line.position();
             });
             lines.push(line);
@@ -50,8 +50,8 @@ onReady(function () {
                 line.setOptions(options);
                 prerequisite.style.boxShadow = "none";
                 prerequisite.style.borderColor = null;
-                skill.style.boxShadow = "none";
-                skill.style.borderColor = null;
+                cell.style.boxShadow = "none";
+                cell.style.borderColor = null;
             };
 
             var onPrerequisiteFocus = function () {
@@ -61,7 +61,7 @@ onReady(function () {
                     gradient: true
                 });
                 prerequisite.style.boxShadow = highlightShadow;
-                skill.style.borderColor = connectionColor;
+                cell.style.borderColor = connectionColor;
             };
 
             prerequisite.addEventListener('mouseenter', onPrerequisiteFocus);
@@ -69,20 +69,20 @@ onReady(function () {
             prerequisite.addEventListener('mouseleave', reset);
             prerequisite.addEventListener('blur', reset);
 
-            var onSkillFocus = function () {
+            var onCellFocus = function () {
                 line.setOptions({
                     startPlugColor: connectionColor,
                     endPlugColor: highlightColor,
                     gradient: true
                 });
                 prerequisite.style.borderColor = connectionColor;
-                skill.style.boxShadow = highlightShadow;
+                cell.style.boxShadow = highlightShadow;
             };
 
-            skill.addEventListener('mouseenter', onSkillFocus);
-            skill.addEventListener('focus', onSkillFocus);
-            skill.addEventListener('mouseleave', reset);
-            skill.addEventListener('blur', reset);
+            cell.addEventListener('mouseenter', onCellFocus);
+            cell.addEventListener('focus', onCellFocus);
+            cell.addEventListener('mouseleave', reset);
+            cell.addEventListener('blur', reset);
         });
     });
 });

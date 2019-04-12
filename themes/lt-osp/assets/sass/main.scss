@@ -219,7 +219,7 @@ li ul {
   margin-bottom: 1em;
 }
 
-.skill-table {
+.cell-table {
   background-color: #fafafa;
   border-collapse: collapse;
   color: black;
@@ -246,7 +246,7 @@ li ul {
   }
 }
 
-.skill {
+.cell {
   background-color: white;
   border: 3px solid #333;
   color: $text-color;
@@ -257,15 +257,15 @@ li ul {
   text-align: center;
   z-index: 1;
 
-  &.restricted-skill {
+  &.restricted-cell {
     background-color: #C6D7A5;
     color: $text-color;
   }
-  &.replacement-skill {
+  &.replacement-cell {
     border-color: #999;
     border-width: 2px;
   }
-  & + .skill {
+  & + .cell {
     margin-top: .6em;
   }
   & + .has-prerequisite {
@@ -284,18 +284,31 @@ li ul {
   }
 }
 
-.skill-list {
+.guild-list {
+  column-gap: .5em;
+  column-rule: none;
+  column-width: 300px;
+}
+.guild {
+  -webkit-column-break-inside: avoid;
+}
+
+.cell-list {
   background-color: #fafafa;
   border: 1px solid #a9a9a9;
   column-gap: 0;
   column-rule: 1px solid #a9a9a9;
   column-width: 300px;
   margin-bottom: 1em;
+
+  &.no-cells {
+    border-top: none;
+  }
 }
-.skill-list-title, .skill-ladder, .skill {
+.cell-list-title, .cell-ladder, .cell {
   break-inside: avoid;
 }
-.skill-list-title {
+.cell-list-title {
   background-color: #fafafa;
   border: 1px solid #a9a9a9;
   border-bottom: none;
@@ -303,7 +316,7 @@ li ul {
   padding: .3em;
   text-align: center;
 }
-.skill-ladder {
+.cell-ladder {
   display: inline-block;
   width: 100%;
 }

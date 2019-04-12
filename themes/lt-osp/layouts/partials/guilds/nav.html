@@ -1,4 +1,5 @@
 {{- with .Menus.guilds }}
+{{- partial "guilds/nav/parent" (dict "menu" site.Menus.guilds "parent" .Parent) -}}
 {{- if .HasChildren }}
 <p>
     <strong>Guilds:</strong>
@@ -10,13 +11,5 @@
     {{ partial "guild-link" .Page }}
     {{- end }}
 </p>
-{{- end }}
-{{- $parent := .Parent }}
-{{- if $parent }}
-{{- range site.Menus.guilds }}
-{{- if eq (default .Name .Identifier) $parent }}
-<p>Back to <a href="{{ .URL }}" rel="parent">{{ .Title }}</a></p>
-{{- end }}
-{{- end }}
 {{- end }}
 {{- end }}

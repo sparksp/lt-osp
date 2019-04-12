@@ -1,19 +1,32 @@
 {{ define "main" -}}
-<div class="skills">
+<div class="guilds">
   <h1>{{ .Title }}</h1>
   <p>{{ site.Params.description }}</p>
-  {{ range .Data.Pages -}}
-  <article class="post">
-    <h2 class="post-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    {{ .Summary }}
-    {{ if .Truncated }}
-    <div class="read-more-link">
-      <a href="{{ .RelPermalink }}">Read More&hellip;</a>
-    </div>
-    {{ end }}
-  </article>
+  {{- with site.Menus.guilds }}
+  <section class="guild-list">
+    {{- range . }}
+    <section class="guild">
+      <header class="cell-list-title">
+        {{- if .URL }}
+        <a href="{{ .URL }}">{{ .Title }}</a>
+        {{- else }}
+        {{ .Title | default .Name }}
+        {{ end -}}
+      </header>
+      {{- if .HasChildren }}
+      <div class="cell-list">
+        <div class="cell-ladder">
+          {{- range .Children }}
+          {{ partial "guilds/home-item" . }}
+          {{ end -}}
+        </div>
+      </div>
+      {{- else }}
+      <div class="cell-list no-cells"></div>
+      {{ end -}}
+    </section>
+    {{ end -}}
+  </section>
   {{- end }}
 </div>
 {{- end }}

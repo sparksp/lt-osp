@@ -1,0 +1,8 @@
+<a href="{{ .URL }}">{{ default .Name .Title }}</a>
+{{- if .HasChildren }}
+<ul>
+    {{- range .Children }}
+    <li>{{ partial "guilds/nav/link" . }}</li>
+    {{- end }}
+</ul>
+{{- end }}
