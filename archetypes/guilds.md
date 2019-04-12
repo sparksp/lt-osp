@@ -1,4 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-menu: "guilds"
+menu:
+    guilds:
+        identifier: "{{ .Name }}"
 ---

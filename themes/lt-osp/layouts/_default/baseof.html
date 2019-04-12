@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ site.LanguageCode }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        {{- if eq .Title .Site.Title -}}
-        {{- .Site.Title -}}
+        {{- if eq .Title site.Title -}}
+        {{- site.Title -}}
         {{- else -}}
-        {{- with .Title -}}{{- . }} &bull; {{ end -}}{{- .Site.Title -}}
+        {{- with .Title -}}{{- . }} &bull; {{ end -}}{{- site.Title -}}
         {{- end -}}
     </title>
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ block "scripts" . }}{{ end }}
     {{ range .AlternativeOutputFormats -}}
-    {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
     {{ end -}}
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
 </head>
 
 <body>

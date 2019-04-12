@@ -13,7 +13,7 @@
 {{- end }}
 {{- $parent := .Parent }}
 {{- if $parent }}
-{{- range $.Site.Menus.guilds }}
+{{- range site.Menus.guilds }}
 {{- if eq (default .Name .Identifier) $parent }}
 <p>Back to <a href="{{ .URL }}" rel="parent">{{ .Title }}</a></p>
 {{- end }}

@@ -1,7 +1,7 @@
 {{ define "main" -}}
 <div class="skills">
   <h1>{{ .Title }}</h1>
-  <p>{{ .Site.Params.description }}</p>
+  <p>{{ site.Params.description }}</p>
   {{ range .Data.Pages -}}
   <article class="post">
     <h2 class="post-title">

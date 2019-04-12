@@ -8,10 +8,7 @@
 
 {{ .Content }}
 
-{{- $skills := $.Site.GetPage "/skill" }}
-{{- $guilds := $.Site.GetPage "/guilds" }}
-
-{{- with $pages := where .Pages ".Params.guild" nil }}
+{{- with where .Pages ".Params.guild" nil }}
 <table class="skill-table">
     <thead>
         <tr>
@@ -21,14 +18,9 @@
     <tbody>
         <tr>
             <td>
-                {{ range . }}
-                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
-                </a>
-                {{ end }}
+                {{ range . -}}
+                {{ .Render "cell" }}
+                {{- end }}
             </td>
         </tr>
     </tbody>
@@ -41,7 +33,7 @@
     <thead>
         <tr>
             <th>
-                {{ $guilds.GetPage .Key | partial "guild-link" }}
+                {{ site.GetPage (printf "/guilds/%s" .Key) | partial "guild-link" }}
             </th>
         </tr>
     </thead>
@@ -50,12 +42,7 @@
         <tr>
             <td>
                 {{ range .Pages }}
-                <a class="skill{{ if .Params.restricted }} restricted-skill{{ end }}{{ if .Params.replacement }} replacement-skill{{ end }}"
-                    id="skill-{{ .UniqueID }}" href="{{ .Permalink }}"
-                    {{ range .Params.prerequisites }}{{- with $skills.GetPage . }}
-                    data-prerequisite="skill-{{ .UniqueID }}" {{ end }}{{ end }}>
-                    {{ .Title }}
-                </a>
+                {{ .Render "cell" }}
                 {{ end }}
             </td>
         </tr>
