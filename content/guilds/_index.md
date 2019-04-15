@@ -1,6 +1,4 @@
 ---
 title: "Guilds"
-menu:
-  main:
-    identifier: "guilds"
+menu: "main"
 ---
