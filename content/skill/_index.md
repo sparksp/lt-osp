@@ -1,4 +1,3 @@
 ---
 title: "Skills"
-menu: "main"
 ---
