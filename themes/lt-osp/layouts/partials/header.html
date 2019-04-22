@@ -38,7 +38,8 @@
     {{- with site.GetPage "/search" -}}
     <form role="search" method="GET" action="{{ .Permalink }}" class="search" id="search-form">
         <label for="search-query">Search:</label>
-        <input name="q" id="search-query" type="search" placeholder="Search" aria-label="Search for skills"></label>
+        <input name="q" id="search-query" type="search" placeholder="Search" aria-label="Search for skills"
+            class="menu-focus"></label>
     </form>
     {{- end -}}
     <p class="no-search-results" style="display: none">

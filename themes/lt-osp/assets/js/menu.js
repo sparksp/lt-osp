@@ -104,6 +104,13 @@ $(function () {
     var search = document.getElementById("header-search-results");
     var searchToggles = document.getElementsByClassName("search-toggle");
 
+    var focusSearch = function () {
+        if (!search) return;
+        var searchFocus = search.getElementsByClassName("menu-focus");
+        forEach(searchFocus, function (focus) {
+            focus.focus();
+        });
+    };
     var showSearch = function () {
         closeMenus();
         forEach(searchToggles, function (button) {
@@ -111,6 +118,7 @@ $(function () {
         });
         search.setAttribute(ARIA_EXPANDED, true);
         scrollIntoView(search);
+        focusSearch();
     };
     var hideSearch = function () {
         forEach(searchToggles, function (button) {
