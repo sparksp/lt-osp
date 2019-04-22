@@ -9,7 +9,7 @@
 {{ .Content }}
 
 {{- with where .Pages ".Params.guild" nil }}
-<table class="skill-table">
+<table class="cell-table">
     <thead>
         <tr>
             <th>{{ $.Title }}</th>
@@ -29,7 +29,7 @@
 
 {{ with where .Pages ".Params.guild" "!=" nil }}
 {{ range .GroupByParam "guild" }}
-<table class="skill-table">
+<table class="cell-table">
     <thead>
         <tr>
             <th>

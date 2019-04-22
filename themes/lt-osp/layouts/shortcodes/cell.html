@@ -2,6 +2,6 @@
 {{ partial "guilds/taxonomy/scripts" . }}
 {{ end }}
 <a href="#"
-    class="skill{{ with .Get "replacement" }} replacement-skill{{ end }}{{ with .Get "restricted" }} restricted-skill{{ end }}"
+    class="cell{{ with .Get "replacement" }} replacement-cell{{ end }}{{ with .Get "restricted" }} restricted-cell{{ end }}"
     {{ with .Get "id" }}id="{{ . }}" {{ end }} {{ with .Get "prerequisite" }}data-prerequisite="{{ . }}" {{ end }}>
     {{- .Inner -}}</a>

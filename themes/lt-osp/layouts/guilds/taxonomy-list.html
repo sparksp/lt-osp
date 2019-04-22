@@ -9,13 +9,13 @@
 {{ .Content }}
 
 <section>
-    <header class="skill-list-title">
+    <header class="cell-list-title">
         {{ .Title }}
     </header>
-    <div class="skill-list">
+    <div class="cell-list">
         {{ with where .Pages ".Params.ladder" "!=" nil -}}
         {{ range .GroupByParam "ladder" -}}
-        <div class="skill-ladder">
+        <div class="cell-ladder">
             {{ range .ByWeight -}}
             {{ .Render "cell" }}
             {{- end }}
@@ -24,7 +24,7 @@
         {{- end }}
         {{ with where .Pages ".Params.ladder" "==" nil -}}
         {{ range .ByTitle -}}
-        <div class="skill-ladder skill-ladder-misc">
+        <div class="cell-ladder cell-ladder-misc">
             {{ .Render "cell" }}
         </div>
         {{- end }}
