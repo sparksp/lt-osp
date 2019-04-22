@@ -341,7 +341,7 @@ li ul {
     display: block;
   }
 
-  .search-results, .no-search-results {
+  .search-results {
     margin: 0;
   }
 
@@ -361,7 +361,7 @@ li ul {
     font-size: 120%;
     margin-bottom: 0;
   }
-  article, .no-search-results {
+  article, .no-search-results, .min-search-query {
     margin: 0;
     padding: .3em .5em;
     border-bottom: 1px solid black;
