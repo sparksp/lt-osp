@@ -138,15 +138,17 @@ $(function () {
     }
 
     function populateResults(results, { query }) {
-        $(".no-search-query").hide();
-        $(".no-search-results").hide();
-        $(".search-results").hide();
+        $(".no-search-query, .min-search-query, .no-search-results, .search-results").hide();
 
         const max_results = 5;
         var result_count = results.length;
 
         if (query.length == 0) {
             $(".no-search-query").last().show();
+            return;
+        }
+        if (query.length < min_query_length) {
+            $(".min-search-query").last().show();
             return;
         }
         if (result_count == 0) {
