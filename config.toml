@@ -1,4 +1,4 @@
-baseURL = "http://lt-osp.netlify.com/"
+baseURL = "https://ltosp.uk/"
 languageCode = "en-us"
 title = "LT-OSP Field Guide"
 theme = ["lt-osp", "fuse-search"]
