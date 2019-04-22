@@ -36,6 +36,7 @@ $(function () {
         button.addEventListener("click", onToggleMenu);
     });
 
+    /* Help */
     var help = document.getElementById("help");
     var helpToggles = document.getElementsByClassName("help-toggle");
 
@@ -67,4 +68,38 @@ $(function () {
     Array.from(helpToggles).forEach(function (button) {
         button.addEventListener("click", onToggleHelp);
     });
+
+    /* Search */
+    var search = document.getElementById("header-search-results");
+    var searchToggles = document.getElementsByClassName("search-toggle");
+
+    var showSearch = function () {
+        Array.from(searchToggles).forEach(function (button) {
+            button.classList.add("active");
+        });
+        search.setAttribute(ARIA_EXPANDED, true);
+        scrollIntoView(search);
+    };
+    var hideSearch = function () {
+        Array.from(searchToggles).forEach(function (button) {
+            button.classList.remove("active");
+            button.blur();
+        });
+        search.setAttribute(ARIA_EXPANDED, false);
+    };
+    var toggleSearch = function () {
+        var isExpanded = search.getAttribute(ARIA_EXPANDED) == "true";
+        isExpanded ? hideSearch() : showSearch();
+    };
+    var onToggleSearch = function (evt) {
+        if (!search) return;
+
+        evt.preventDefault();
+        toggleSearch();
+    };
+
+    Array.from(searchToggles).forEach(function (button) {
+        button.addEventListener("click", onToggleSearch);
+    });
+
 });

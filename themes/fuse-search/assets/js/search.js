@@ -111,12 +111,17 @@ $(function () {
             return;
         }
         last_query = query;
+        updateInput(query);
         updateLocation(query);
         if (!query || query.length < min_query_length) {
             populateResults([], { query });
             return;
         }
         populateResults(fuse.search(query), { query });
+    }
+
+    function updateInput(query) {
+        $('form[role=search] input[name=q]').val(query);
     }
 
     function updateLocation(query) {

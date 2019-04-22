@@ -15,12 +15,8 @@
                             class="fas fa-info-circle" title="{{ .LinkTitle }}"></i></a></li>
                 {{- end -}}
                 {{- with site.GetPage "/search" -}}
-                <li class="search">
-                    <form role="search" method="GET" action="{{ .Permalink }}" class="search">
-                        <label for="search-query"><i class="fas fa-search" title="Search"></i></label>
-                        <input name="q" id="search-query" type="search" placeholder="Search"
-                            aria-label="Search for skills"></label>
-                    </form>
+                <li><a href="{{ .Permalink }}" class="search-toggle"><i class="fas fa-search"
+                            title="{{ .Title }}"></i></a>
                 </li>
                 {{- end -}}
             </ul>
@@ -39,6 +35,12 @@
     </nav>
 </header>
 <section id="header-search-results">
+    {{- with site.GetPage "/search" -}}
+    <form role="search" method="GET" action="{{ .Permalink }}" class="search" id="search-form">
+        <label for="search-query">Search:</label>
+        <input name="q" id="search-query" type="search" placeholder="Search" aria-label="Search for skills"></label>
+    </form>
+    {{- end -}}
     <p class="no-search-results" style="display: none">
         No matches found. Enter a new search term above.</p>
     <div class="search-results" style="display: none"></div>

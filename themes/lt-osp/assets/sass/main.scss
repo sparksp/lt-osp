@@ -167,7 +167,7 @@ body {
       background: rgba(0, 0, 0, .1);
     }
   }
-  a.help-toggle.active {
+  a.active, a.active:focus {
     background: white;
     color: $text-color;
   }
@@ -335,10 +335,19 @@ li ul {
   background-color: darken(white, 1%);
   color: black;
   max-width: 100vw;
+  display: none;
 
-  > * {
+  &[aria-expanded=true] {
+    display: block;
+  }
+
+  .search-results, .no-search-results {
     margin: 0;
-    box-shadow: 0 0 2px #000;
+  }
+
+  form {
+    padding: .3em .5em;
+    border-bottom: 1px solid black;
   }
 
   .summary, .title {
@@ -355,7 +364,7 @@ li ul {
   article, .no-search-results {
     margin: 0;
     padding: .3em .5em;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
   article.hover {
     background: white;
