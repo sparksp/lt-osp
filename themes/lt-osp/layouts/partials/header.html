@@ -3,28 +3,38 @@
         <h1><a href="{{ "" | relURL }}">{{ site.Title }}</a></h1>
 
         {{- $hamburger := resources.Get "svg/menu.svg" -}}
-        <a href="#main-menu" class="menu-toggle" aria-label="Open main menu">
+        <a href="#side-menu" class="menu-toggle" aria-label="Open side menu">
             <span class="sr-only">Open main menu</span><img src="{{ $hamburger.Permalink }}" aria-hidden="true"></a>
+
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+            <ul>
+                {{- range site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ default .Name .Title }}</a></li>
+                {{ end -}}
+                {{- with site.GetPage "/help/key" -}}
+                <li><a href="{{ .Permalink }}" class="help-toggle" aria-label="Display key">{{ .LinkTitle }}</a></li>
+                {{- end -}}
+                {{- with site.GetPage "/search" -}}
+                <li class="search">
+                    <form role="search" method="GET" action="{{ .Permalink }}" class="search">
+                        <label for="search-query">🔍</label>
+                        <input name="q" id="search-query" type="search" placeholder="Search"
+                            aria-label="Search for skills"></label>
+                    </form>
+                </li>
+                {{- end -}}
+            </ul>
+        </nav>
     </div>
-    <nav class="main-menu" id="main-menu" aria-label="Main menu">
-        <a href="#main-menu-toggle" class="menu-close" aria-label="Close main menu">
+    <nav class="side-menu" id="side-menu" aria-label="Side menu">
+        <a href="#side-menu-toggle" class="menu-close" aria-label="Close side menu">
             <span class="sr-only">Open main menu</span><img src="{{ $hamburger.Permalink }}" aria-hidden="true"></a>
         <ul>
-            {{- range site.Menus.main }}
-            <li><a href="{{ .URL }}">{{ .Title }}</a></li>
-            {{ end -}}
-            {{- with site.GetPage "/help/key" -}}
-            <li><a href="{{ .Permalink }}" class="help-toggle" aria-label="Display key">{{ .LinkTitle }}</a></li>
-            {{- end -}}
-            {{- with site.GetPage "/search" -}}
-            <li class="search">
-                <form role="search" method="GET" action="{{ .Permalink }}" class="search">
-                    <label for="search-query">🔍</label>
-                    <input name="q" id="search-query" type="search" placeholder="Search"
-                        aria-label="Search for skills"></label>
-                </form>
+            {{- range site.Menus.guilds }}
+            <li>
+                {{ partial "guilds/nav/link" . }}
             </li>
-            {{- end -}}
+            {{ end -}}
         </ul>
     </nav>
 </header>

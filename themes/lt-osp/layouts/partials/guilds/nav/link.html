@@ -1,4 +1,8 @@
+{{- if .URL }}
 <a href="{{ .URL }}">{{ default .Name .Title }}</a>
+{{- else }}
+<span class="link">{{ default .Name .Title }}</span>
+{{- end }}
 {{- if .HasChildren }}
 <ul>
     {{- range .Children }}

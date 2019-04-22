@@ -13,14 +13,14 @@ $(function () {
         }
     };
 
-    var mainMenu = document.getElementById("main-menu");
+    var sideMenu = document.getElementById("side-menu");
 
     var toggleMenu = function () {
-        var expanded = mainMenu.getAttribute(ARIA_EXPANDED);
-        mainMenu.setAttribute(ARIA_EXPANDED, expanded != "true");
+        var expanded = sideMenu.getAttribute(ARIA_EXPANDED);
+        sideMenu.setAttribute(ARIA_EXPANDED, expanded != "true");
     };
     var onToggleMenu = function (evt) {
-        if (!mainMenu) return;
+        if (!sideMenu) return;
 
         evt.preventDefault();
         toggleMenu();

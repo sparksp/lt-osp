@@ -11,6 +11,6 @@ theme = ["lt-osp", "fuse-search"]
   description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points"
 
 [[menu.guilds]]
-  name = "Miscellaneous"
+  name = "Guilds"
   identifier = "misc"
   weight = -1
