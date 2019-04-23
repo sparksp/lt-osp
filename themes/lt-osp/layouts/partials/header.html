@@ -2,8 +2,12 @@
     <div class="title-menu wait-for-icons">
         <h1><a href="{{ "" | relURL }}">{{ site.Title }}</a></h1>
 
-        <a href="#side-menu" class="menu-toggle" aria-label="Open side menu">
-            <span class="sr-only">Open main menu</span><i class="fas fa-bars" title="Open menu"></i></a>
+        <nav class="aux-menu">
+            <ul>
+                <li><a href="#side-menu" class="menu-toggle" aria-label="Open side menu"><span class="sr-only">Open main
+                            menu</span><i class="fas fa-bars" title="Open menu"></i></a></li>
+            </ul>
+        </nav>
 
         <nav id="main-menu" class="main-menu" aria-label="Main menu">
             <ul>
@@ -22,9 +26,9 @@
             </ul>
         </nav>
     </div>
-    <nav class="side-menu" id="side-menu" aria-label="Side menu">
-        <a href="#side-menu-toggle" class="menu-close" aria-label="Close side menu">
-            <span class="sr-only">Open main menu</span><i class="fas fa-bars" title="Close menu"></i></a>
+</header>
+<aside class="side-menu" id="side-menu" aria-label="Side menu">
+    <nav>
         <ul>
             {{- range site.Menus.guilds }}
             <li>
@@ -33,7 +37,7 @@
             {{ end -}}
         </ul>
     </nav>
-</header>
+</aside>
 <section id="header-search-results">
     {{- with site.GetPage "/search" -}}
     <form role="search" method="GET" action="{{ .Permalink }}" class="search" id="search-form">
@@ -49,14 +53,16 @@
     <div class="search-results" style="display: none"></div>
 </section>
 <script id="search-result-template" type="text/x-js-template">
-    <article id="summary-${id}">
+    <article id="summary-${id}"><div class="content">
         <h2 class="title"><a href="${link}">${title}</a></h2>
         <p class="summary">${summary}</p>
-    </article>
+    </div></article>
 </script>
 {{- with site.GetPage "/help/key" -}}
 {{- if ne $.Page . -}}
-<div id="help" class="help help-key" aria-expanded="false">{{ .Content }}</div>
+<section id="help" class="help help-key" aria-expanded="false">
+    <div class="content">{{ .Content }}</div>
+</section>
 {{- end -}}
 {{- end -}}
 

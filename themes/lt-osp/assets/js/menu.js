@@ -29,6 +29,7 @@ $(function () {
 
     /* Side Menu */
     var sideMenu = document.getElementById("side-menu");
+    var menuToggles = document.getElementsByClassName("menu-toggle");
 
     var toggleMenu = function () {
         var isExpanded = sideMenu.getAttribute(ARIA_EXPANDED) == "true";
@@ -36,9 +37,17 @@ $(function () {
     };
     var openMenu = function () {
         closeMenus();
+        forEach(menuToggles, function (button) {
+            button.classList.add("active");
+        });
         sideMenu.setAttribute(ARIA_EXPANDED, true);
+        scrollIntoView(sideMenu);
     };
     var closeMenu = function () {
+        forEach(menuToggles, function (button) {
+            button.classList.remove("active");
+            button.blur();
+        });
         sideMenu.setAttribute(ARIA_EXPANDED, false);
     }
     CLOSERS.push(closeMenu);
@@ -48,21 +57,9 @@ $(function () {
         evt.preventDefault();
         toggleMenu();
     };
-    var onCloseMenu = function (evt) {
-        if (!sideMenu) return;
 
-        evt.preventDefault();
-        closeMenu();
-    }
-
-    var menuToggles = document.getElementsByClassName("menu-toggle");
     forEach(menuToggles, function (button) {
         button.addEventListener("click", onToggleMenu);
-    });
-
-    var menuClosers = document.getElementsByClassName("menu-close");
-    forEach(menuClosers, function (button) {
-        button.addEventListener("click", onCloseMenu);
     });
 
     /* Help */
