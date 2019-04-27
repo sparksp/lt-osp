@@ -17,6 +17,21 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
+    {{- $bundle := slice }}
+    {{- $bundle = $bundle | append (resources.Get "js/polyfill-array-from.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/leader-line.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/on-ready.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/resize-listener.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/taxonomy.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/fuse.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/jquery-3.3.1.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/jquery.mark.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/url-search-params.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/search.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/menu.js") -}}
+    {{- $bundleJS := $bundle | resources.Concat "js/lt-osp.js" | minify | fingerprint }}
+    <script defer src="{{ $bundleJS.Permalink }}" type="text/javascript"
+        integrity="{{ $bundleJS.Data.Integrity }}"></script>
     {{ range .AlternativeOutputFormats -}}
     {{ printf "<link rel=%q type=%q href=%q title=%q>" .Rel .MediaType.Type .RelPermalink site.Title | safeHTML }}
     {{ end -}}
