@@ -207,6 +207,13 @@ body {
   max-width: 920px;
 }
 
+.site-footer {
+  border-top: 1px solid $text-color;
+  margin: 0;
+  padding: .2em .5em;
+  text-align: center;
+}
+
 li ul {
   margin-bottom: 1em;
 }
