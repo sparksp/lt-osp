@@ -65,14 +65,3 @@
 </section>
 {{- end -}}
 {{- end -}}
-
-{{- $bundle := slice }}
-{{- $bundle = $bundle | append (resources.Get "js/fuse.min.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/jquery-3.3.1.min.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/jquery.mark.min.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/url-search-params.min.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/search.js") -}}
-{{- $bundle = $bundle | append (resources.Get "js/menu.js") -}}
-{{- $bundleJS := $bundle | resources.Concat "js/search-bundle.js" | minify | fingerprint }}
-<script defer src="{{ $bundleJS.Permalink }}" integrity="{{ $bundleJS.Data.Integrity }}"
-    type="text/javascript"></script>
