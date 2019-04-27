@@ -19,6 +19,7 @@
         crossorigin="anonymous"></script>
     {{- $bundle := slice }}
     {{- $bundle = $bundle | append (resources.Get "js/polyfill-array-from.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/anim-event.min.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/leader-line.min.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/on-ready.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/resize-listener.js") -}}

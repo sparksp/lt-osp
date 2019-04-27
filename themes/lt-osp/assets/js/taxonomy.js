@@ -14,6 +14,20 @@ onReady(function () {
     var highlightColor = "black";
     var connectionColor = "#666";
     var highlightShadow = "0 0 2px 1px rgba(0, 0, 0, .3)";
+    var noAnimationEffect = 'none';
+    var isHidden = function (elem) {
+        return (elem.offsetParent === null);
+    }
+    var positionLine = function (line) {
+        if (isHidden(line.start) || isHidden(line.end)) {
+            line.hide(noAnimationEffect);
+        }
+        else {
+            line.position();
+            line.show(noAnimationEffect);
+        }
+    };
+
     var cells = document.getElementsByClassName("cell");
     Array.from(cells).forEach(function (cell) {
         cell.addEventListener('touchend', function (evt) {
@@ -27,12 +41,6 @@ onReady(function () {
         if (!cell.dataset.prerequisite) {
             return;
         }
-        var lines = [];
-        addResizeListener(document.body, function () {
-            lines.forEach(function (line) {
-                line.position();
-            });
-        });
 
         var prerequisites = cell.dataset.prerequisite.split(";");
         prerequisites.forEach(function (prerequisiteId) {
@@ -42,10 +50,11 @@ onReady(function () {
             }
             cell.classList.add("has-prerequisite");
             var line = new LeaderLine(prerequisite, cell, options);
-            addResizeListener(cell.parentNode, function () {
-                line.position();
+            var onResizeLine = AnimEvent.add(function () {
+                positionLine(line);
             });
-            lines.push(line);
+            addResizeListener(document.body, onResizeLine);
+            addResizeListener(cell.parentNode, onResizeLine);
 
             var reset = function () {
                 line.setOptions(options);
