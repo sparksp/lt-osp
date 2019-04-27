@@ -7,6 +7,7 @@ onReady(function () {
         dash: false,
         dropShadow: false,
         endPlugColor: lineColor,
+        endSocket: 'top',
         gradient: false,
         startPlugColor: lineColor
     };
