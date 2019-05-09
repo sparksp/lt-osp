@@ -245,16 +245,23 @@ li ul {
   }
 }
 
+$cell-space-around: .3em;
+$cell-spacing: 1em;
+$cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
+
 .cell {
   background-color: white;
   border: 3px solid #333;
   color: $text-color;
   display: block;
-  margin: .3em;
+  margin: $cell-space-around;
   padding: .2em .5em;
   position: relative;
   text-align: center;
   z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &.restricted-cell {
     background-color: #C6D7A5;
@@ -263,12 +270,14 @@ li ul {
   &.replacement-cell {
     border-color: #999;
     border-width: 2px;
+    padding-bottom: calc(.2em + 1px);
+    padding-top: calc(.2em + 1px);
   }
   & + .cell {
-    margin-top: .6em;
+    margin-top: $cell-spacing;
   }
   & + .has-prerequisite {
-    margin-top: 2em;
+    margin-top: $cell-height;
   }
 
   &:link {
@@ -319,6 +328,7 @@ li ul {
 .cell-ladder {
   display: inline-block;
   width: 100%;
+  margin-bottom: $cell-spacing - (2 * $cell-space-around);
 }
 
 #header-search-results {
