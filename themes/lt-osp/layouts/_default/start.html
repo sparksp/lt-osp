@@ -1,0 +1,32 @@
+{{ define "main" -}}
+<div class="guilds">
+  <h1>{{ .Title }}</h1>
+  <p>{{ site.Params.description }}</p>
+  {{- with site.Menus.guilds }}
+  <section class="guild-list">
+    {{- range . }}
+    <section class="guild">
+      <header class="cell-list-title">
+        {{- if .URL }}
+        <a href="{{ .URL }}">{{ .Title }}</a>
+        {{- else }}
+        {{ .Title | default .Name }}
+        {{ end -}}
+      </header>
+      {{- if .HasChildren }}
+      <div class="cell-list">
+        <div class="cell-ladder">
+          {{- range .Children }}
+          {{ partial "guilds/home-item" . }}
+          {{ end -}}
+        </div>
+      </div>
+      {{- else }}
+      <div class="cell-list no-cells"></div>
+      {{ end -}}
+    </section>
+    {{ end -}}
+  </section>
+  {{- end }}
+</div>
+{{- end }}

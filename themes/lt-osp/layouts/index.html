@@ -1,32 +1,45 @@
-{{ define "main" -}}
-<div class="guilds">
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {{- if eq .Title site.Title -}}
+        {{- site.Title -}}
+        {{- else -}}
+        {{- with .Title -}}{{- . }} &bull; {{ end -}}{{- site.Title -}}
+        {{- end -}}
+    </title>
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ hugo.Generator }}
+    {{- with site.Params.copyright }}
+    <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
+    <meta name="dcterms.rightsHolder" content="Adam Scott and Phill Sparks">
+    <meta name="dcterms.rights" content="{{ . }}">
+    <meta name="dcterms.dateCopyrighted" content="{{ now.Format "2006" }}">
+    {{- end }}
+    <style type="text/css">
+      .landing-page {
+        text-align: center;
+        border: 2vw solid #DC7F38;
+        box-sizing: border-box;
+        height: 100%;
+      }
+    </style>
+</head>
+
+<body class="landing-page">
   <h1>{{ .Title }}</h1>
   <p>{{ site.Params.description }}</p>
-  {{- with site.Menus.guilds }}
-  <section class="guild-list">
-    {{- range . }}
-    <section class="guild">
-      <header class="cell-list-title">
-        {{- if .URL }}
-        <a href="{{ .URL }}">{{ .Title }}</a>
-        {{- else }}
-        {{ .Title | default .Name }}
-        {{ end -}}
-      </header>
-      {{- if .HasChildren }}
-      <div class="cell-list">
-        <div class="cell-ladder">
-          {{- range .Children }}
-          {{ partial "guilds/home-item" . }}
-          {{ end -}}
-        </div>
-      </div>
-      {{- else }}
-      <div class="cell-list no-cells"></div>
-      {{ end -}}
-    </section>
-    {{ end -}}
-  </section>
-  {{- end }}
-</div>
-{{- end }}
+  <h2>Coming Soon!</h2>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="UW2SPMF9R5XXL" />
+    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit"
+            title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+</body>
+</html>

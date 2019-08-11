@@ -1,6 +1,8 @@
 <header class="banner" role="banner" id="banner">
     <div class="title-menu wait-for-icons">
-        <h1><a href="{{ "" | relURL }}">{{ site.Title }}</a></h1>
+        {{- with site.GetPage "/start" -}}
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        {{- end -}}
 
         <nav class="aux-menu">
             <ul>
