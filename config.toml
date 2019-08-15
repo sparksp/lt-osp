@@ -1,6 +1,6 @@
 baseURL = "https://ltosp.uk/"
 languageCode = "en-us"
-title = "LT-OSP Field Guide"
+title = "LT OSP Field Guide"
 theme = ["lt-osp", "fuse-search"]
 
 [taxonomies]

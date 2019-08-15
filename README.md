@@ -1,4 +1,4 @@
-# LT-OSP Field Guide
+# LT OSP Field Guide
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1b16e56d-e5f4-49bf-b071-e6273aaec500/deploy-status)](https://app.netlify.com/sites/compassionate-aryabhata-ce7373/deploys)
 
