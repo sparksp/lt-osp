@@ -1,6 +1,6 @@
 ---
 title: "Enchant Projectile Weapon"
-guilds: [archers]
+guilds: [rangers]
 tier: 5
 osp_cost: 50
 prerequisites: []

@@ -1,6 +1,6 @@
 ---
 title: "Immune to Distract and Confusion"
-guilds: [archers, bards]
+guilds: [rangers, bards]
 tier: 3
 osp_cost: 30
 prerequisites: []

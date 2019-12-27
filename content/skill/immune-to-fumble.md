@@ -1,6 +1,6 @@
 ---
 title: "Immune to Fumble"
-guilds: [archers, militia, scouts]
+guilds: [rangers, militia, scouts]
 tier: 1
 osp_cost: 10
 prerequisites: []
