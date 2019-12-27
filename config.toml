@@ -15,3 +15,8 @@ theme = ["lt-osp", "fuse-search"]
   name = "General"
   identifier = "misc"
   weight = -1
+
+[[menu.guilds]]
+  name = "Rune 2020"
+  identifier = "rune-2020"
+  weight = -1
