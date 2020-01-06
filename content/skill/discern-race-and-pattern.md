@@ -1,6 +1,6 @@
 ---
 title: "Discern Race and Pattern"
-guilds: [archers]
+guilds: [rangers]
 tier: 4
 osp_cost: 40
 prerequisites: ["discern-race"]
