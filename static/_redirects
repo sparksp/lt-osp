@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://compassionate-aryabhata-ce7373.netlify.com/* https://ltosp.uk/:splat 301!
