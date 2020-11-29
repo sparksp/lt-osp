@@ -8,6 +8,6 @@ requirements: ["Potion Lore or Poison Lore CS"]
 replacement: true
 ladder: "create-reagents"
 ---
-This skill replaces the [Create Reagents OS][create-reagents], and allows the character to create two alchemical reagents at each LT Main Event using ingredients that can be purchased from the relevant Guild. The character must be in the relevant Guild to use this skill.
+This skill replaces the [Create Reagents][create-reagents] Occupational Skill and allows the character to create two alchemical reagents at each Lorien Trust Main Event using ingredients from the Alchemists Guild. These reagents will expire at the end of the event and can be used to improve and aid the creation of both Alchemical and Weaponsmithing items. The character must gain permission from the Guild to use their facilities.
 
 [create-reagents]: {{< ref "create-reagents" >}}
