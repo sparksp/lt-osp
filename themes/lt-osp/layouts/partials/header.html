@@ -1,6 +1,6 @@
 <header class="banner" role="banner" id="banner">
     <div class="title-menu wait-for-icons">
-        <h1><a href="{{ "" | relURL }}">{{ site.Title }}</a></h1>
+        <h1><a href="{{ "" | absURL }}">{{ site.Title }}</a></h1>
 
         <nav class="aux-menu">
             <ul>
@@ -11,18 +11,24 @@
 
         <nav id="main-menu" class="main-menu" aria-label="Main menu">
             <ul>
-                {{- range site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ default .Name .Title }}</a></li>
+            {{- range site.Menus.main }}
+                {{- if .Page }}
+                <li><a href="{{ .Page.Permalink }}">{{ default .Name .Title }}</a></li>
+                {{- else if .URL }}
+                <li><a href="{{ absURL .URL }}">{{ default .Name .Title }}</a></li>
+                {{- else }}
+                <li><span class="link">{{ default .Name .Title }}</span></li>
                 {{ end -}}
-                {{- with site.GetPage "/help/key" -}}
+            {{ end -}}
+            {{- with site.GetPage "/help/key" -}}
                 <li><a href="{{ .Permalink }}" class="help-toggle" aria-label="Display key"><i
                             class="fas fa-info-circle" title="{{ .LinkTitle }}"></i></a></li>
-                {{- end -}}
-                {{- with site.GetPage "/search" -}}
+            {{- end -}}
+            {{- with site.GetPage "/search" -}}
                 <li><a href="{{ .Permalink }}" class="search-toggle"><i class="fas fa-search"
                             title="{{ .Title }}"></i></a>
                 </li>
-                {{- end -}}
+            {{- end -}}
             </ul>
         </nav>
     </div>
