@@ -7,4 +7,7 @@ prerequisites: []
 requirements: []
 ladder: "additional-reforging"
 ---
-Once per event the character can reforge one piece of armour or weaponry, and improve it by one level. This OS can only be used on items that the character has the OS to make and is subject to the normal restrictions on reforging.
+This allows more powerful, complex or desirable items to be made. The character may only use these reforge abilities on an item that they are creating themselves and some items may require more than one reforge to create. See [Armoursmith][armoursmith] and [Weaponsmith][weaponsmith] occupational skill entries for more details. If the character has both the Armoursmith and Weaponsmith occupational skill – they will gain an additional reforge for each.
+
+[armoursmith]: {{< ref "armoursmith-master" >}}
+[weaponsmith]: {{< ref "weaponsmith-master" >}}
