@@ -7,4 +7,4 @@ prerequisites: []
 requirements: []
 ladder: "herb-lore"
 ---
-With this skill, the character may examine a dead body and detect if they were under the influence of a poison or potion when they died. If a referee or marshal is present they may also receive other information about what killed the character and for how long they have been dead. Any other information is purely at the discretion of the referee or marshal present.
+With this skill, the character may examine a dead body for 1 minute and detect if the character was under the influence of a poison when they died and how quickly the poison acted, as well as determining if the Poison was Magical or not. After a further 1 minute of examination the Race, Pattern Type and details of any potions that were affecting the character when it died can also be determined.
