@@ -3,13 +3,28 @@ languageCode = "en-us"
 title = "LT OSP Field Guide"
 theme = ["lt-osp", "fuse-search"]
 
+[outputFormats]
+  [outputFormats.NetlifyRedirects]
+    name = "_Redirects"
+    baseName = "_redirects"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "_Redirects"]
+
 [taxonomies]
   guild = "guilds"
 
-[params]
+[Params]
   themeColor = "theme-base-09"
   description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v3.1.1"
   copyright = "Copyright 2019 Adam Scott and Phill Sparks. All rights reserved."
+  [Params.Redirects]
+    Gone = []
+    [Params.Redirects.Custom]
+      "https://compassionate-aryabhata-ce7373.netlify.com/*" = "https://ltosp.uk/:splat"
+
 
 [[menu.guilds]]
   name = "General"

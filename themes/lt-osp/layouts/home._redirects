@@ -1,0 +1,21 @@
+{{- with site.Params.Redirects.Custom }}
+# Custom Redirects
+{{- range $from, $to := . }}
+{{ $from }}  {{ $to }}
+{{- end }}
+{{- end }}
+
+# Page Aliases
+{{- range .Site.Pages }}
+{{- $page := . -}}
+{{- range .Aliases }}
+{{  . | printf "%-35s" }}  {{ $page.RelPermalink }}  301!
+{{- end }}
+{{- end }}
+
+{{- with site.Params.Redirects.Gone }}
+# Gone
+{{- range . }}
+{{ . }}  /404.html  410
+{{- end }}
+{{- end }}
