@@ -1,5 +1,7 @@
-{{- if .URL }}
-<a href="{{ .URL }}">{{ default .Name .Title }}</a>
+{{- if .Page }}
+<a href="{{ .Page.Permalink }}">{{ default .Name .Title }}</a>
+{{- else if .URL }}
+<a href="{{ absURL .URL }}">{{ default .Name .Title }}</a>
 {{- else }}
 <span class="link">{{ default .Name .Title }}</span>
 {{- end }}

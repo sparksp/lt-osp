@@ -7,8 +7,10 @@
     {{- range . }}
     <section class="guild">
       <header class="cell-list-title">
-        {{- if .URL }}
-        <a href="{{ .URL }}">{{ .Title }}</a>
+        {{- if .Page }}
+        <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
+        {{- else if .URL }}
+        <a href="{{ absURL .URL }}">{{ .Title | default .Name }}</a>
         {{- else }}
         {{ .Title | default .Name }}
         {{ end -}}

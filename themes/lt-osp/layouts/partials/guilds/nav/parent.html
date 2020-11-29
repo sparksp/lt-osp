@@ -1,8 +1,10 @@
 {{- if $parent := .parent -}}
 {{- range .menu -}}
 {{- if eq (default .Name .Identifier) $parent -}}
-{{- if .URL -}}
-<p>Back to <a href="{{ .URL }}" rel="parent">{{ default .Name .Title }}</a></p>
+{{- if .Page -}}
+<p>Back to <a href="{{ .Page.Permalink }}" rel="parent">{{ default .Name .Title }}</a></p>
+{{- else if .URL -}}
+<p>Back to <a href="{{ absURL .URL }}" rel="parent">{{ default .Name .Title }}</a></p>
 {{- end }}
 {{- else -}}
 {{- if .HasChildren -}}
