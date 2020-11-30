@@ -4,6 +4,6 @@ guilds: [rangers]
 tier: 2
 osp_cost: 20
 prerequisites: []
-requirements: ["Bind Wounds", " or ", "Physician CS"]
+requirements: ["Triage CS", " or ", "Triage (Advanced) CS"]
 ---
-This skill allows a character to use naturally occurring materials instead of bandages to use the CS Bind Wounds or physician. Please do not damage the environment to get materials to use with this skill.
+The character is particularly adept at treating wounds effectively and allows the character with Triage or Triage (Advanced) to use their skills on two locations at the same time (must be stated at the start of the action).

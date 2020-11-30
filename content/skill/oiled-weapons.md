@@ -1,6 +1,8 @@
 ---
 title: "Oiled Weapons"
-guilds: [alchemists,scouts]
+aliases:
+    - /skill/oiled-arrows/
+guilds: [alchemists,rangers,scouts]
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]
