@@ -7,4 +7,4 @@ prerequisites: []
 requirements: []
 ladder: "bowyer"
 ---
-This skill allows the character to make a level 1 projectile weapon at each LT Main Event with tools that can be obtained and used in the relevant Guild area. The character must gain permission from the Guild to use their facilities. Instead of making a new weapon they may rework an existing weapon and improve it by one level, subject to the normal restrictions on reworking.
+This skill allows the character to make a Crafting Level 1 Projectile Weapon or Bandolier at each Lorien Trust Main Event with tools and materials obtained and used in the relevant Guild area. The character must gain permission from the Guild to use their facilities. In addition the in-character time it takes to prepare or repair a projectile (after it has been out-of-character returned) is reduced to 30 seconds per projectile. In addition this skill allows you to decrease the time required for checking that retrieved or returned projectiles are safe to use again (see Projectile Weapons Use description). A Bowyer (Aprentice) may check up to 6 projectiles per min (10 Seconds per projectile).
