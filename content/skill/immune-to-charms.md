@@ -7,4 +7,4 @@ prerequisites: ["detect-and-remove-beguile"]
 requirements: []
 ladder: "detect-and-remove-beguile"
 ---
-This skill makes the character immune to all charm effects. Charms are a sub group of Mind effects and include Befriend, Beguile, Distract and Enthral.
+This skill makes the character immune to all charm effects. Charms are a sub group of Mind effects and include Befriend, Beguile, Enthral and Enthral Unliving.

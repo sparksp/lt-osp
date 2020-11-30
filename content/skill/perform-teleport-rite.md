@@ -4,11 +4,11 @@ guilds: [casino]
 tier: 5
 osp_cost: 50
 prerequisites: [perform-transport-rite]
-requirements: []
+requirements: ["Spellcasting", ", ", "Incantation", ", ", "Corruption", " or ", "Healing CS"]
 replacement: true
 restricted: true
 ladder: "identify"
 ---
-This skill is new to [Rune 2020][rune-2020].  More details will be published in the updated Occupational Skills Booklet available on the Lorien Trust Website over this Winter.
+This skill replaces the [Perform Transport Rite][perform-transport-rite] Occupational Skill. This allows the character to perform the Transport and Teleport rites without having the requirement for the Ritual Magic CS or the appropriate casting spell list. It also grants the character Spell Reduction (1) for the Transport Rite ability.
 
-[rune-2020]: /guilds/rune-2020/
+[perform-transport-rite]: {{< ref "perform-transport-rite" >}}
