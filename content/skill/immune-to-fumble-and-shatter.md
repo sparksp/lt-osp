@@ -8,6 +8,6 @@ requirements: []
 replacement: true
 ladder: "immune-to-fumble"
 ---
-This skill replaces the [Immune to Fumble OS][immune-to-fumble]. The character and any item held are immune to the Fumble and Shatter effects.
+This skill replaces the [Immune to Fumble][immune-to-fumble] Occupational Skill. The character and any item held are immune to the Fumble and Shatter effects.
 
 [immune-to-fumble]: {{< ref "immune-to-fumble" >}}
