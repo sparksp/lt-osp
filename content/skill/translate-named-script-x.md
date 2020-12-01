@@ -58,4 +58,9 @@ _The following may not be Tutored:_
 * TNS Daemon Runes (Daemon Creatures Only)
 * TNS Elemental Runes (Elemental Creatures Only)
 * TNS Grave Runes (Unliving Creatures only)
-* TNS Spiral (Oathsworn Scouts Guild Req.)
+* [TNS Spiral][tns-spiral] ([Oathsworn Scouts Guild][x-oathsworn] Req.)
+
+
+
+[tns-spiral]: {{< ref "tns-spiral" >}}
+[x-oathsworn]: {{< ref "x-oath-sworn" >}}
