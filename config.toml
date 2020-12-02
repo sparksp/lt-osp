@@ -24,6 +24,7 @@ theme = ["lt-osp", "fuse-search"]
     Gone = []
     [Params.Redirects.Custom]
       "https://compassionate-aryabhata-ce7373.netlify.com/*" = "https://ltosp.uk/:splat"
+      "https://rules-v4.ltosp.uk/*" = "https://rules-v4--compassionate-aryabhata-ce7373.netlify.app/:splat"
 
 [[menu.guilds]]
   name = "General"
