@@ -8,6 +8,6 @@ requirements: ["Any Armour Use CS"]
 replacement: true
 ladder: "armour-mastery"
 ---
-This skill replaces the [Armour Mastery OS][armour-mastery] and increases the AV of any armour worn by +2, subject to the rule of double.
+This skill replaces the [Armour Mastery][armour-mastery] Occupational Skill and increases the AV of any armour worn by +2, subject to the rule of double.
 
 [armour-mastery]: {{< ref "armour-mastery" >}}
