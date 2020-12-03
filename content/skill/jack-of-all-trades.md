@@ -11,11 +11,11 @@ Using this skill will remove it from the character’s card and free it up to be
 
 [^1]: This does not include any other skills or lists that may be associated with that Guild.
 
-For example a character with [Mages Oathsworn][oathsworn] would be able to purchase the following Tier 5 skills [Ritualist (Master)][ritualist-master], [Diagnose Powers][diagnose-powers] and [Cast Additional Magecraft][cast-additional-magecraft]. They would not be able to purchase [High Magic (Spellcasting)][high-magic] or [+16 Spell Cards][plus-16-spell-cards].
+For example a character with [Mages Oathsworn][oathsworn] would be able to purchase the following Tier 5 skills [Ritualist (Master)][ritualist-master], [Diagnose Powers][diagnose-powers] and [Cast Additional Magecraft][cast-additional-magecraft]. They would not be able to purchase [High Magic (Spellcasting)][high-magic] or [+16 Spell Power][plus-16-spell-power].
 
 [cast-additional-magecraft]: {{< ref "cast-additional-magecraft" >}}
 [diagnose-powers]: {{< ref "diagnose-powers" >}}
 [high-magic]: {{< ref "high-magic-x" >}}
 [oathsworn]: {{< ref "x-oath-sworn" >}}
-[plus-16-spell-cards]: {{< ref "plus-16-spell-cards" >}}
+[plus-16-spell-power]: {{< ref "plus-16-spell-power" >}}
 [ritualist-master]: {{< ref "ritualist-master" >}}
