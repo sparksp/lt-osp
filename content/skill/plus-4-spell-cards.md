@@ -1,6 +1,6 @@
 ---
 title: "+4 Spell Cards"
-guilds: [powers-or-magic-guilds]
+guilds: [arcane-guilds]
 tier: 1
 osp_cost: 10
 prerequisites: []
