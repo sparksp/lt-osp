@@ -9,7 +9,7 @@ prerequisites: ["plus-12-spell-power"]
 requirements: []
 replacement: true
 restricted: true
-ladder: "spell-power"
+ladder: "+spell-power"
 ---
 This skill replaces the [+12 Spell Power][plus-12-spell-power] Occupational Skill. The character gains +16 spell Power per day, subject to the rule of double.
 
