@@ -1,6 +1,6 @@
 ---
 title: "+16 Spell Cards"
-guilds: [powers-or-magic-guilds]
+guilds: [arcane-guilds]
 tier: 5
 osp_cost: 50
 prerequisites: ["plus-12-spell-cards"]
