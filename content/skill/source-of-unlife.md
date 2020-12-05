@@ -3,12 +3,15 @@ title: "Source of Unlife"
 guilds: [corruptors]
 tier: 5
 osp_cost: 50
-prerequisites: ["repair-unliving-advanced"]
-requirements: ["high-magic-x", " and ", "corruption", " OS", " and ", "Healing CS"]
+prerequisites: ["mind-healing", " & ", "repair-unliving-advanced"]
+requirements: ["Level 2 Corruption CS"]
 replacement: true
 restricted: true
-ladder: "revitalise-unliving"
+ladder: "revive"
 ---
-This skill replaces the [Repair Unliving (Advanced) OS][repair-unliving-advanced]. After Chanting for 10 seconds whilst touching the target, a character with this OS can restore all locations on a single Unliving target to full body hits (LHV). It costs 2 spell cards to use this ability. Note: this ability is not a spell, and may not be combined with Spell Reduction
+This skill replaces the [Repair Unliving (Advanced)][repair-unliving-advanced] Occupational Skill and includes the [Mind Healing][mind-healing] Occupational Skill. It also allows the character to cast the Total Repair Unliving Spell without having the requirement of the [High Magic][high-magic] Occupational Skill. If the character gains the [High Magic (Corruption)][high-magic-corruption] Occupational Skill, they gain Spell Reduction (3) for the spell Total Repair Unliving.
 
+[high-magic]: {{< ref "high-magic-x" >}}
+[high-magic-corruption]: {{< ref "high-magic-x" >}}
+[mind-healing]: {{< ref "mind-healing" >}}
 [repair-unliving-advanced]: {{< ref "repair-unliving-advanced" >}}
