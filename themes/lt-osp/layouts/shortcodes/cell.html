@@ -1,4 +1,4 @@
 <a href="#" title="{{ default .Inner (.Get "title") }}"
     class="cell{{ with .Get "replacement" }} replacement-cell{{ end }}{{ with .Get "restricted" }} restricted-cell{{ end }}"
-    {{ with .Get "id" }}id="{{ . }}" {{ end }} {{ with .Get "prerequisite" }}data-prerequisite="{{ . }}" {{ end }}>
+    {{ with .Get "id" }}id="{{ . }}" {{ end }} {{ with .Get "prerequisite" }}data-prerequisites="{{ . }}" {{ end }}>
     {{- .Inner -}}</a>
