@@ -16,6 +16,6 @@
 {{- with site.Params.Redirects.Gone }}
 # Gone
 {{- range . }}
-{{ . }}  /404.html  410
+{{ . | printf "%-35s" }}  /404.html  410
 {{- end }}
 {{- end }}
