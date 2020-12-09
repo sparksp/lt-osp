@@ -8,6 +8,6 @@ requirements: []
 replacement: true
 ladder: "master"
 ---
-This skill replaces the [Apprentice \<X> OS][apprentice-x] (where \<X> is the same). This skill allows the character to gain extra income and represents the character’s profession, \<X>. The player can collect an extra 3 Stell from Game Control once per Gathering.
+This skill replaces [Apprentice \<X>][apprentice-x] (where \<X> is the same). This skill allows the character to gain extra income and represents the character’s profession, \<X>. The player can collect an extra 2 Gold from Game Control once per Gathering. This skill not count towards your 4 skills permitted per year.
 
 [apprentice-x]: {{< ref "apprentice-x" >}}

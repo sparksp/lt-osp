@@ -8,6 +8,6 @@ requirements: []
 replacement: true
 ladder: "master"
 ---
-This skill replaces the [Journeyman \<X> OS][journeyman-x] (where \<X> is the same). This skill allows the character to gain extra income and represents the character’s profession, \<X>. The player can collect an extra 8 Stell from Game Control once per Gathering if paid on the gate or, if pre-booked, it will be included in the return pack.
+This skill replaces [Journeyman \<X>][journeyman-x] (where \<X> is the same). This skill allows the character to gain extra income and represents the character’s profession, \<X>. The player can collect an extra 4 Gold from Game Control once per Gathering. This skill not count towards your 4 skills permitted per year.
 
 [journeyman-x]: {{< ref "journeyman-x" >}}
