@@ -1,6 +1,6 @@
 ---
 title: "Immune to Immobilisation"
-guilds: [scouts]
+guilds: [generic, scouts]
 tier: 5
 osp_cost: 50
 prerequisites: ["immune-to-repel-and-strikedown"]

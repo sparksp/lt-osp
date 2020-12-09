@@ -1,6 +1,6 @@
 ---
 title: "Immune to Repel"
-guilds: [armourers, militia, scouts]
+guilds: [generic, armourers, militia, scouts]
 tier: 2
 osp_cost: 20
 prerequisites: []
