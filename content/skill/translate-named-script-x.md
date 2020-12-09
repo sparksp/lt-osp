@@ -63,4 +63,4 @@ _The following may not be Tutored:_
 
 
 [tns-spiral]: {{< ref "tns-spiral" >}}
-[x-oathsworn]: {{< ref "x-oath-sworn" >}}
+[x-oathsworn]: {{< ref "x-oathsworn" >}}
