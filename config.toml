@@ -21,7 +21,11 @@ theme = ["lt-osp", "fuse-search"]
   description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v4.01"
   copyright = "Copyright 2020 Adam Scott and Phill Sparks. All rights reserved."
   [Params.Redirects]
-    Gone = []
+    Gone = [
+      "/skill/scribe-scroll/",
+      "/skill/corruption/",
+      ]
+
     [Params.Redirects.Custom]
       "https://compassionate-aryabhata-ce7373.netlify.com/*" = "https://ltosp.uk/:splat"
       "https://rules-v4.ltosp.uk/*" = "https://rules-v4--compassionate-aryabhata-ce7373.netlify.app/:splat"

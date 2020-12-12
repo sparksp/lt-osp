@@ -4,7 +4,7 @@ guilds: [mages]
 tier: 5
 osp_cost: 50
 prerequisites: ["master-countermagic"]
-requirements: ["enchanting", " or ", "shadow-magic", " OS"]
+requirements: ["enchanting", " or ", "shadow-magic", " Occupational Skill"]
 restricted: true
 ladder: "immune-to-fear"
 ---

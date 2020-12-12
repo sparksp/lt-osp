@@ -8,6 +8,6 @@ requirements: ["Incantation CS"]
 replacement: true
 ladder: "last-rites"
 ---
-This skill replaces the [Last Rites OS][last-rites] and allows a character to perform Lay to Rest or Rite of Dedication (if they have the relevant list) without needing the CS Ritual Magic at any level. It also grants them Spell Reduction(1) on the effects Lay to Rest, Rite of Dedication and Speak With Ancestor. This does not allow a character to perform any other rite.
+This skill replaces [Last Rites][last-rites] and allows grants the character Spell Reduction (1) for the spell Lay to Rest and Spell Reduction (2) for the Spell Speak with Ancestor _(See Spell Reduction entry in the Definitions and Glossary section)_.
 
 [last-rites]: {{< ref "last-rites" >}}
