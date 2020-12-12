@@ -1,6 +1,6 @@
 ---
 title: "Magic Disciplines"
-guilds: [generic]
+guilds: [arcane-guilds]
 tier: 1
 osp_cost: 10
 prerequisites: []
@@ -9,5 +9,6 @@ restricted: true
 layout: "taxonomy-column"
 menu:
     guilds:
-        parent: "generic"
+        parent: "arcane-guilds"
+        weight: 1
 ---
