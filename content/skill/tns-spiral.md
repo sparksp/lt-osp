@@ -3,7 +3,7 @@ title: "TNS Spiral"
 guilds: [scouts]
 tier: 1
 osp_cost: 10
-prerequisites: ["x-oath-sworn ", " <Scouts Guild>"]
+prerequisites: ["x-oathsworn ", " <Scouts Guild>"]
 requirements: []
 restricted: true
 ladder: "translate-named-script-2"

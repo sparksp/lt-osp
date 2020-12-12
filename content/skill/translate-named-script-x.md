@@ -50,7 +50,7 @@ This skill allows a character to translate one named script to the common script
 * TNS Void Entity
 * TNS Void Wretch
 
-## Loresheet/Restricted Scripts
+## Loresheet/Restricted Scripts {#restricted-scripts}
 
 _The following may not be Tutored:_
 
@@ -58,9 +58,4 @@ _The following may not be Tutored:_
 * TNS Daemon Runes (Daemon Creatures Only)
 * TNS Elemental Runes (Elemental Creatures Only)
 * TNS Grave Runes (Unliving Creatures only)
-* [TNS Spiral][tns-spiral] ([Oathsworn Scouts Guild][x-oathsworn] Req.)
-
-
-
-[tns-spiral]: {{< ref "tns-spiral" >}}
-[x-oathsworn]: {{< ref "x-oath-sworn" >}}
+* [TNS Spiral]({{< ref "tns-spiral" >}} "Translate Named Script") ([Oathsworn Scouts Guild]({{< ref "x-oathsworn" >}}) Req.)
