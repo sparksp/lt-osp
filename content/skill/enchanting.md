@@ -7,6 +7,6 @@ osp_cost: 10
 prerequisites: []
 requirements: ["Spellcasting CS"]
 restricted: true
-ladder: "high-magic-enchanting"
+ladder: "high-magic"
 ---
 The character gains the ability to cast spells from the Enchanting lists, instead of the Spellcasting lists.
