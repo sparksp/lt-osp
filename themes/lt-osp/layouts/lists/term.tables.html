@@ -1,0 +1,58 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+
+{{ partial "lists/nav" . }}
+
+{{ .Content }}
+
+{{ with where .Pages ".Params.ladder" "!=" nil -}}
+{{ range .GroupByParam "ladder" -}}
+<table class="cell-table" data-ladder="{{ .Key }}">
+    <thead>
+    <tr>
+        <th>Tier</th>
+        <th>Skill</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{- $tier := 0 }}
+    {{ range .ByParam "tier" -}}
+    {{ if gt $tier 0 -}}
+    {{ range after 1 (seq $tier (sub .Params.tier 1)) -}}
+    <tr>
+        <th scope="row">{{ . }}</th>
+        <td class="no-skill"></td>
+    </tr>
+    {{- end }}
+    {{- end }}
+    <tr>
+        <th scope="row">{{ .Params.tier }}</th>
+        <td>{{ .Render "cell" }}</td>
+    </tr>
+    {{- $tier = .Params.tier }}
+    {{- end }}
+    </tbody>
+</table>
+{{- end }}
+{{- end }}
+
+{{ with where .Pages ".Params.ladder" "==" nil -}}
+{{ range .ByTitle.ByParam "tier" -}}
+<table class="cell-table" data-ladder="none">
+    <thead>
+    <tr>
+        <th>Tier</th>
+        <th>Skill</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">{{ .Params.tier }}</th>
+        <td>{{ .Render "cell" }}</td>
+    </tr>
+    </tbody>
+</table>
+{{- end }}
+{{- end }}
+
+{{- end }}
