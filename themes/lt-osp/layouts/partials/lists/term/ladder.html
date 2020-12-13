@@ -1,8 +1,18 @@
 <table class="cell-table" data-ladder="{{ .Key }}">
+{{- $column_count := 0 }}
+{{- $scratch := newScratch }}
+{{ with (where .Pages ".Params.ladder_group" "==" nil) -}}
+{{- $scratch.SetInMap "columns" "" $column_count }}
+{{- $column_count = add $column_count 1 }}
+{{- end }}
+{{ range (where .Pages ".Params.ladder_group" "!=" nil).GroupByParam "ladder_group" -}}
+{{- $scratch.SetInMap "columns" (string .Key) $column_count }}
+{{- $column_count = add $column_count 1 }}
+{{- end }}
 <thead>
     <tr>
         <th>Tier</th>
-        <th>Skill</th>
+        <th colspan="{{ $column_count }}">Skill</th>
     </tr>
 </thead>
 <tbody>
@@ -13,13 +23,21 @@
     {{ range after 1 (seq $tier (sub .Params.tier 1)) -}}
     <tr>
         <th scope="row">{{ . }}</th>
-        <td class="no-skill"></td>
+        <td class="no-skill" colspan="{{ $column_count }}"></td>
     </tr>
     {{- end }}
     {{- end }}
     <tr>
         <th scope="row">{{ .Params.tier }}</th>
-        <td>{{ .Render "cell" }}</td>
+        {{- $page := . }}
+        {{ range (seq 0 (sub $column_count 1)) -}}
+        {{- $col := index ($scratch.Get "columns") ($page.Params.ladder_group | default "" | string) }}
+        {{ if eq $col . -}}
+        <td>{{ $page.Render "cell" }}</td>
+        {{ else -}}
+        <td class="no-skill"></td>
+        {{- end }}
+        {{- end }}
     </tr>
     {{- $tier = .Params.tier }}
     {{- end }}
