@@ -7,6 +7,6 @@ osp_cost: 10
 prerequisites: []
 requirements: ["Incantation CS"]
 restricted: true
-ladder: "high-magic-dark-incantation"
+ladder: "high-magic"
 ---
 The character gains the ability to cast spells from the Dark Incantation list, instead of the normal Incantation list.
