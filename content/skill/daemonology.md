@@ -1,7 +1,6 @@
 ---
 title: "Daemonology"
 lists:
-    - magic-disciplines
     - arcane-guilds
 tier: 1
 osp_cost: 10
