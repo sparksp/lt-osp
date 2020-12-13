@@ -7,52 +7,12 @@
 
 {{ with where .Pages ".Params.ladder" "!=" nil -}}
 {{ range .GroupByParam "ladder" -}}
-<table class="cell-table" data-ladder="{{ .Key }}">
-    <thead>
-    <tr>
-        <th>Tier</th>
-        <th>Skill</th>
-    </tr>
-    </thead>
-    <tbody>
-    {{- $tier := 5 }}
-    {{ range .ByWeight.ByParam "tier" -}}
-    {{ if lt $tier .Params.tier -}}
-    {{ range after 1 (seq $tier (sub .Params.tier 1)) -}}
-    <tr>
-        <th scope="row">{{ . }}</th>
-        <td class="no-skill"></td>
-    </tr>
-    {{- end }}
-    {{- end }}
-    <tr>
-        <th scope="row">{{ .Params.tier }}</th>
-        <td>{{ .Render "cell" }}</td>
-    </tr>
-    {{- $tier = .Params.tier }}
-    {{- end }}
-    </tbody>
-</table>
+{{ partial "lists/term/ladder" . }}
 {{- end }}
 {{- end }}
 
 {{ with where .Pages ".Params.ladder" "==" nil -}}
-<table class="cell-table" data-ladder="none">
-    <thead>
-    <tr>
-        <th>Tier</th>
-        <th>Skill</th>
-    </tr>
-    </thead>
-    <tbody>
-    {{ range .ByWeight.ByParam "tier" -}}
-    <tr>
-        <th scope="row">{{ .Params.tier }}</th>
-        <td>{{ .Render "cell" }}</td>
-    </tr>
-    {{- end }}
-    </tbody>
-</table>
+{{ partial "lists/term/ladder" (dict "Key" "none" "Pages" .) }}
 {{- end }}
 
 {{- end }}
