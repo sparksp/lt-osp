@@ -37,7 +37,6 @@
 {{- end }}
 
 {{ with where .Pages ".Params.ladder" "==" nil -}}
-{{ range .ByTitle.ByParam "tier" -}}
 <table class="cell-table" data-ladder="none">
     <thead>
     <tr>
@@ -46,13 +45,14 @@
     </tr>
     </thead>
     <tbody>
+    {{ range .ByWeight.ByParam "tier" -}}
     <tr>
         <th scope="row">{{ .Params.tier }}</th>
         <td>{{ .Render "cell" }}</td>
     </tr>
+    {{- end }}
     </tbody>
 </table>
-{{- end }}
 {{- end }}
 
 {{- end }}
