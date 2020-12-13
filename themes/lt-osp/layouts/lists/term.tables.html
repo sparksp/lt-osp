@@ -15,9 +15,9 @@
     </tr>
     </thead>
     <tbody>
-    {{- $tier := 0 }}
-    {{ range .ByParam "tier" -}}
-    {{ if gt $tier 0 -}}
+    {{- $tier := 5 }}
+    {{ range .ByWeight.ByParam "tier" -}}
+    {{ if lt $tier .Params.tier -}}
     {{ range after 1 (seq $tier (sub .Params.tier 1)) -}}
     <tr>
         <th scope="row">{{ . }}</th>

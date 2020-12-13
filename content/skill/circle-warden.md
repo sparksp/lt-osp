@@ -8,5 +8,6 @@ osp_cost: 85
 prerequisites: []
 requirements: []
 restricted: true
+ladder: "circle"
 ---
 The character is granted the Circle Warden ability.
