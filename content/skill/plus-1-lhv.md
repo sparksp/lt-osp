@@ -7,6 +7,5 @@ osp_cost: 50
 prerequisites: []
 requirements: ["Body development 2 CS", " or ", "Lammie or Loresheet"]
 restricted: true
-ladder: "generic-misc"
 ---
 The character gains +1 LHV, subject to the rule of double.
