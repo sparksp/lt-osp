@@ -7,7 +7,6 @@ tier: 4
 osp_cost: 40
 prerequisites: []
 requirements: ["Poison Lore CS"]
-ladder: "immune-to-fumble-2"
 ---
 The use of the Master Poisoner skill requires the presence of a Referee or Marshal and they will determine a reasonable amount of time that the poison will linger (no longer than 30 mins after which the poison will be spoiled).
 
