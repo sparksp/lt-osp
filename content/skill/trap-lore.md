@@ -7,7 +7,6 @@ tier: 3
 osp_cost: 30
 prerequisites: []
 requirements: []
-ladder: "conceal"
 ---
 Trap Lore allows the character to make a single Trap Bag at each Lorien Trust Main Event with materials that can be obtained and then used to craft items in the Scouts Guild. The character must gain permission from the Guild to use their facilities. In addition the character with the Trap Lore skill can also perform the following actions:
 
