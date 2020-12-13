@@ -4,6 +4,7 @@ linktitle: "Rangers Guild"
 aliases:
     - /guilds/archers/
     - /guilds/rangers/
+layout: term.tables
 menu:
     lists:
         parent: "martial-guilds"
