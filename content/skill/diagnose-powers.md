@@ -8,7 +8,6 @@ prerequisites: ["identify"]
 requirements: ["Lammie or Loresheet, any Spellcasting, Incantation, Healing, Corruption or Sense Magic CS"]
 replacement: true
 restricted: true
-ladder: "identify"
 ---
 A character with this skill can identify the approximate powers or purpose of a magical lammed item - these may include structures, standing stones or other unusual items. The examination of the item requires a minimum 1 minute of appropriate role-play with a Referee or Marshall present and will not always produce a result. _Loresheets_ for this skill are available for download and print from The Lorien Trust Website.
 
