@@ -8,5 +8,6 @@ osp_cost: 85
 prerequisites: []
 requirements: ["x-command", " (Watchers)"]
 restricted: true
+ladder: "circle"
 ---
 The character is granted the Circle Watcher ability.
