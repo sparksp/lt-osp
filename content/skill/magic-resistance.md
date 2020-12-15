@@ -9,5 +9,6 @@ requirements: []
 replacement: true
 restricted: true
 ladder: "immune-to-fumble"
+ladder_group: "1"
 ---
 This skill replaces and includes [Immune to Through]({{< ref "immune-to-through" >}}) unless it has the Artefact damage type. This grants the character Damage Reduction (Harm & Mage Bolt). This Skill will not alter any other damage effect that ignores armour. Provides no protection against Retribution.

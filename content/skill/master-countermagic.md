@@ -9,5 +9,6 @@ prerequisites: ["cast-high-countermagic", " or ", "high-magic-x", " (Incantation
 requirements: ["Spellcasting or Incantation CS"]
 replacement: true
 ladder: "incantation"
+ladder_group: "1"
 ---
 This skill replaces [Cast High Countermagic]({{< ref "cast-high-countermagic" >}}). They may cast the High Countermagic spell and have Spell Reduction (1) for the effects Iron Will and High Countermagic.
