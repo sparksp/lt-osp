@@ -8,6 +8,7 @@ osp_cost: 10
 prerequisites: []
 requirements: []
 ladder: "translate-named-script"
+ladder_group: "1"
 ---
 This skill allows a character to translate one named script to common for every TNS that is purchased. Each of the most common scripts are listed below and fall into one to three Script families: Regional & Historical, People & Race, or Myth & Magic. A loresheet for each script can be collected from Game Control once this skill is on the character card. Some TNS scripts are not listed below and are not part of the Script Categories – these TNS Scripts are only available with particular prerequisites or Loresheets.
 
