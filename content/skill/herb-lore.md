@@ -1,7 +1,7 @@
 ---
 title: "Herb Lore"
 lists:
-    - alchemists
+    - alchemists-guild
     - bards
     - healers
 tier: 1
