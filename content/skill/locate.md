@@ -1,7 +1,7 @@
 ---
 title: "Locate"
 lists:
-    - casino
+    - casino-guild
     - militia
     - scouts
 tier: 2

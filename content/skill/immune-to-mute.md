@@ -2,7 +2,7 @@
 title: "Immune to Mute"
 lists:
     - bards-guild
-    - casino
+    - casino-guild
     - militia
 tier: 2
 osp_cost: 20

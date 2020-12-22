@@ -1,7 +1,7 @@
 ---
 title: "Perform Transport Rite"
 lists:
-    - casino
+    - casino-guild
     - mages
 tier: 1
 osp_cost: 10

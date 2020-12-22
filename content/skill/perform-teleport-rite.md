@@ -1,7 +1,7 @@
 ---
 title: "Perform Teleport Rite"
 lists:
-    - casino
+    - casino-guild
 tier: 5
 osp_cost: 50
 prerequisites: [perform-transport-rite]

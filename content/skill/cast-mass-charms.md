@@ -2,7 +2,7 @@
 title: "Cast Mass Charms"
 lists:
     - bards-guild
-    - casino
+    - casino-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-charms"]
