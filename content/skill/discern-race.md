@@ -1,7 +1,7 @@
 ---
 title: "Discern Race"
 lists:
-    - rangers
+    - rangers-guild
 tier: 2
 osp_cost: 20
 prerequisites: ["tracking"]

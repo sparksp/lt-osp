@@ -1,5 +1,6 @@
 ---
-title: "Rangers"
+title: "Rangers Guild Ω"
+linktitle: "Rangers Guild"
 aliases:
     - /guilds/archers/
     - /guilds/rangers/
