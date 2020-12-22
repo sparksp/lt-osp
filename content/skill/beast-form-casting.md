@@ -1,7 +1,8 @@
 ---
 title: "Beast-form Casting #"
 linktitle: "Beast-form Casting"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 weight: 3
 prerequisites: ["beast-form-skill-use"]
 requirements: ["Lammie or Loresheet"]

@@ -1,7 +1,8 @@
 ---
 title: "+2 Bonus Power Rating (PR) #"
 linktitle: "+2 Bonus PR"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: ["plus-1-bonus-power-rating"]
 requirements: ["Lammie or Loresheet"]
 replacement: true

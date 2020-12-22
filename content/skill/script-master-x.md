@@ -1,6 +1,7 @@
 ---
 title: "Script Master <X>"
-guilds: [bards]
+lists:
+    - bards
 tier: 3
 osp_cost: 30
 prerequisites: ["Any ", "translate-named-script-x", " from the same family"]

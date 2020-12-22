@@ -1,6 +1,7 @@
 ---
 title: "Strikedown Shot"
-guilds: [rangers]
+lists:
+    - rangers
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-fumble-and-shatter"]

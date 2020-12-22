@@ -1,6 +1,7 @@
 ---
 title: "Contribute to 3rd Ritual"
-guilds: [mages]
+lists:
+    - mages
 tier: 3
 osp_cost: 30
 prerequisites: ["contribute-to-2nd-ritual"]

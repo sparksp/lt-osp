@@ -1,6 +1,8 @@
 ---
 title: "Immune to Fumble and Shatter"
-guilds: [rangers, militia]
+lists:
+    - militia
+    - rangers
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]

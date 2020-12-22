@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 draft: true
-guilds: []
+lists:
+    - generic
 tier: 1
 osp_cost: 10
 prerequisites: []

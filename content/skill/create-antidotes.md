@@ -1,6 +1,7 @@
 ---
 title: "Create Antidotes"
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 1
 osp_cost: 10
 prerequisites: ["Poison Lore", " or ", "Potion Lore CS"]

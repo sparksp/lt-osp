@@ -1,6 +1,8 @@
 ---
 title: "Forgery"
-guilds: [bards, scouts]
+lists:
+    - bards
+    - scouts
 tier: 5
 osp_cost: 50
 prerequisites: ["written-forgery", " & ", "Recognise Forgery"]

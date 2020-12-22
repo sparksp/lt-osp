@@ -1,7 +1,8 @@
 ---
 title: "+5 Dismiss Rank #"
 linktitle: "+5 Dismiss Rank"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ladder: "dismiss-rank"

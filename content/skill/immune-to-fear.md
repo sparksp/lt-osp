@@ -1,6 +1,11 @@
 ---
 title: "Immune to Fear"
-guilds: [bards, casino, corruptors, incantors, militia]
+lists:
+    - bards
+    - casino
+    - corruptors
+    - incantors
+    - militia
 tier: 1
 osp_cost: 10
 prerequisites: []

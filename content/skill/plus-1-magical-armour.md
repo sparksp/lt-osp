@@ -1,7 +1,8 @@
 ---
 title: "+1 Magical Armour #"
 linktitle: "+1 Magical Armour"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ladder: "magical-armour"

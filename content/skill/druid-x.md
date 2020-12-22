@@ -1,7 +1,8 @@
 ---
 title: "Druid <X> #"
 linktitle: "Druid <X>"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 resticted: true

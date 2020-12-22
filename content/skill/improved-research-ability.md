@@ -1,6 +1,7 @@
 ---
 title: "Improved Research Ability"
-guilds: [knowledge-guilds]
+lists:
+    - knowledge-guilds
 tier: 4
 osp_cost: 40
 prerequisites: ["newsmonger"]

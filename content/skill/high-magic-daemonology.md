@@ -1,6 +1,7 @@
 ---
 title: "High Magic (Daemonology)"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 4
 osp_cost: 40
 prerequisites: [daemonology]

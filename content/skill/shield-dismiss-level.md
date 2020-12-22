@@ -1,7 +1,8 @@
 ---
 title: "Shield Dismiss Level @"
 linktitle: "Shield Dismiss Level"
-guilds: [generic]
+lists:
+    - generic
 tier: 3
 osp_cost: 30
 prerequisites: []
