@@ -1,7 +1,7 @@
 ---
 title: "Weaponsmith (Apprentice)"
 lists:
-    - armourers
+    - armourers-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

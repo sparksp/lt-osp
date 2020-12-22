@@ -1,7 +1,7 @@
 ---
 title: "Armoursmith (Master)"
 lists:
-    - armourers
+    - armourers-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["armoursmith-artisan"]
