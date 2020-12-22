@@ -1,7 +1,7 @@
 ---
 title: "Heal Magical Pattern"
 lists:
-    - healers
+    - healers-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["heal-alien-or-aberrant-pattern"]

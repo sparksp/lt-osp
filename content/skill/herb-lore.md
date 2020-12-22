@@ -3,7 +3,7 @@ title: "Herb Lore"
 lists:
     - alchemists-guild
     - bards-guild
-    - healers
+    - healers-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

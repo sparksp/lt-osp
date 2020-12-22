@@ -1,7 +1,7 @@
 ---
 title: "Advanced Healing"
 lists:
-    - healers
+    - healers-guild
 tier: 2
 osp_cost: 20
 prerequisites: ["revive"]
