@@ -1,7 +1,7 @@
 ---
 title: "TNS Spiral"
 lists:
-    - scouts
+    - scouts-guild
 tier: 1
 osp_cost: 10
 prerequisites: ["x-oathsworn ", " <Scouts Guild>"]

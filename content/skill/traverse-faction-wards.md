@@ -1,7 +1,7 @@
 ---
 title: "Traverse Faction Wards"
 lists:
-    - scouts
+    - scouts-guild
 tier: 3
 osp_cost: 30
 prerequisites: []
