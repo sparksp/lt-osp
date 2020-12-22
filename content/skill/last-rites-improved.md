@@ -1,7 +1,7 @@
 ---
 title: "Last Rites (Improved)"
 lists:
-    - incantors
+    - incantors-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["last-rites"]

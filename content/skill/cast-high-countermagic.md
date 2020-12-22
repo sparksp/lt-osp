@@ -1,7 +1,7 @@
 ---
 title: "Cast High Countermagic"
 lists:
-    - incantors
+    - incantors-guild
     - mages
 tier: 3
 osp_cost: 30
