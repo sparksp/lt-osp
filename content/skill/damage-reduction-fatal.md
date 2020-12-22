@@ -1,6 +1,7 @@
 ---
 title: "Damage Reduction (Fatal)"
-guilds: [incantors]
+lists:
+    - incantors
 tier: 5
 osp_cost: 50
 prerequisites: ["dedicated-follower"]

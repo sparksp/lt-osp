@@ -1,6 +1,7 @@
 ---
 title: "Tutor"
-guilds: [generic]
+lists:
+    - generic
 tier: 4
 osp_cost: 40
 prerequisites: []

@@ -1,6 +1,7 @@
 ---
 title: "Weaponsmith (Artisan)"
-guilds: [armourers]
+lists:
+    - armourers
 tier: 4
 osp_cost: 40
 prerequisites: ["repair-destroyed-items"]

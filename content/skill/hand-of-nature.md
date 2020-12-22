@@ -1,6 +1,7 @@
 ---
 title: "Hand of Nature"
-guilds: [rangers]
+lists:
+    - rangers
 tier: 2
 osp_cost: 20
 prerequisites: []

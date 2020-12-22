@@ -30,7 +30,7 @@ $(function () {
         keys: [
             { name: "title", weight: 0.8 },
             { name: "contents", weight: 0.5 },
-            { name: "guilds", weight: 0.3 }
+            { name: "lists", weight: 0.3 }
         ]
     };
     const page_title = document.title;
@@ -171,7 +171,7 @@ $(function () {
 
     function populateResult(result, { query }) {
         var contents = result.contents;
-        var output = render(templateDefinition, { id: result.id, title: text(result.title), link: result.permalink, guilds: result.guilds, summary: result.summary });
+        var output = render(templateDefinition, { id: result.id, title: text(result.title), link: result.permalink, lists: result.lists, summary: result.summary });
         $('.search-results').last().append(output);
         $("#summary-" + result.id).mark(query);
     }

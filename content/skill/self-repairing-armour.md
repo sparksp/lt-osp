@@ -1,7 +1,8 @@
 ---
 title: "Self Repairing Armour #"
 linktitle: "Self Repairing Armour"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Any Armour use CS"]
 ---

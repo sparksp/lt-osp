@@ -1,6 +1,8 @@
 ---
 title: "Conceal Item"
-guilds: [casino, scouts]
+lists:
+    - casino
+    - scouts
 tier: 2
 osp_cost: 20
 prerequisites: []

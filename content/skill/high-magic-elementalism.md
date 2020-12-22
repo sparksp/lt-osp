@@ -1,6 +1,7 @@
 ---
 title: "High Magic (Elementalism)"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 4
 osp_cost: 40
 prerequisites: [elementalism]

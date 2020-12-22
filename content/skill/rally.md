@@ -1,6 +1,9 @@
 ---
 title: "Rally"
-guilds: [bards, casino, militia]
+lists:
+    - bards
+    - casino
+    - militia
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-mute", " & ", "immune-to-fear"]

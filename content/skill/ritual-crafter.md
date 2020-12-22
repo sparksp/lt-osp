@@ -1,7 +1,8 @@
 ---
 title: "Ritual Crafter #"
 linktitle: "Ritual Crafter"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Ritual Magic CS"]
 ---

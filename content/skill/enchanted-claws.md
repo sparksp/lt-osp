@@ -1,7 +1,8 @@
 ---
 title: "Enchanted Claws #"
 linktitle: "Enchanted Claws"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet", " and ", "Claw Competency"]
 ladder: "claws"

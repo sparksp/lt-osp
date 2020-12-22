@@ -1,6 +1,7 @@
 ---
 title: "Master <X>"
-guilds: [generic]
+lists:
+    - generic
 tier: 3
 osp_cost: 30
 prerequisites: ["journeyman-x"]

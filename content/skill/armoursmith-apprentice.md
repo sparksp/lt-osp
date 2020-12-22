@@ -1,6 +1,7 @@
 ---
 title: "Armoursmith (Apprentice)"
-guilds: [armourers]
+lists:
+    - armourers
 tier: 1
 osp_cost: 10
 prerequisites: []

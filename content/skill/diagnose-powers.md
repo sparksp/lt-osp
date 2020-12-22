@@ -1,6 +1,7 @@
 ---
 title: "Diagnose Powers"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 5
 osp_cost: 50
 prerequisites: ["identify"]

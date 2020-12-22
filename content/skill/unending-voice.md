@@ -1,6 +1,7 @@
 ---
 title: "Unending Voice"
-guilds: [bards]
+lists:
+    - bards
 tier: 3
 osp_cost: 30
 prerequisites: ["sleepless-chanting"]

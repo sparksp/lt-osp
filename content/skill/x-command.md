@@ -1,6 +1,7 @@
 ---
 title: "<X> Command"
-guilds: [generic]
+lists:
+    - generic
 tier: 5
 osp_cost: 50
 prerequisites: []

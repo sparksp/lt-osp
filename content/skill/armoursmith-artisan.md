@@ -1,6 +1,7 @@
 ---
 title: "Armoursmith (Artisan)"
-guilds: [armourers]
+lists:
+    - armourers
 tier: 4
 osp_cost: 40
 prerequisites: ["repair-enchanted-items"]

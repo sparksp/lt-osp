@@ -3,7 +3,9 @@ title: "Dismiss/Control +6"
 aliases:
     - /skill/dismiss-control-plus-6/
     - /skill/wedge-mastery-improved/
-guilds: [corruptors, incantors]
+lists:
+    - corruptors
+    - incantors
 tier: 4
 osp_cost: 40
 prerequisites: ["dismiss-or-control-plus-4"]

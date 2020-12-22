@@ -1,6 +1,7 @@
 ---
 title: "Arcane Crafter (Master)"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 4
 osp_cost: 40
 prerequisites: [arcane-crafter-adept]

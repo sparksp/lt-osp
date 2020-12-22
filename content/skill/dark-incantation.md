@@ -1,6 +1,7 @@
 ---
 title: "Dark Incantation"
-guilds: [magic-disciplines]
+lists:
+    - magic-disciplines
 tier: 1
 osp_cost: 10
 prerequisites: []

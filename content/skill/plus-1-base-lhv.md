@@ -1,7 +1,8 @@
 ---
 title: "+1 Base LHV #"
 linktitle: "+1 Base LHV"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

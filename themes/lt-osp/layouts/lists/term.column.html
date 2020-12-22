@@ -1,0 +1,51 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+
+{{ partial "lists/nav" . }}
+
+{{ .Content }}
+
+{{- with where .Pages ".Params.list" nil }}
+<table class="cell-table">
+    <thead>
+        <tr>
+            <th>{{ $.Title }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{ range . -}}
+                {{ .Render "cell" }}
+                {{- end }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{ end }}
+
+{{ with where .Pages ".Params.list" "!=" nil }}
+{{ range .GroupByParam "list" }}
+<table class="cell-table">
+    <thead>
+        <tr>
+            <th>
+                {{ site.GetPage (printf "/lists/%s" .Key) | partial "lists/link" }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                {{ range .Pages }}
+                {{ .Render "cell" }}
+                {{ end }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{{ end }}
+{{ end }}
+
+{{ end }}

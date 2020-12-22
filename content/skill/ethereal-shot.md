@@ -1,6 +1,7 @@
 ---
 title: "Ethereal Shot"
-guilds: [rangers]
+lists:
+    - rangers
 tier: 5
 osp_cost: 50
 prerequisites: ["discern-race-and-pattern"]

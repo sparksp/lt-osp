@@ -1,6 +1,7 @@
 ---
 title: "Repair Unliving (Advanced)"
-guilds: [corruptors]
+lists:
+    - corruptors
 tier: 2
 osp_cost: 20
 prerequisites: ["revitalise-unliving"]
