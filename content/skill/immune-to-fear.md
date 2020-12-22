@@ -4,7 +4,7 @@ lists:
     - bards-guild
     - casino-guild
     - corruptors-guild
-    - incantors
+    - incantors-guild
     - militia
 tier: 1
 osp_cost: 10
