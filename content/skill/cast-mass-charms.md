@@ -1,7 +1,7 @@
 ---
 title: "Cast Mass Charms"
 lists:
-    - bards
+    - bards-guild
     - casino
 tier: 4
 osp_cost: 40

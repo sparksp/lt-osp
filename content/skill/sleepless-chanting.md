@@ -1,7 +1,7 @@
 ---
 title: "Sleepless Chanting"
 lists:
-    - bards
+    - bards-guild
 tier: 2
 osp_cost: 20
 prerequisites: []

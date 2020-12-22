@@ -1,5 +1,6 @@
 ---
-title: "Bards"
+title: "Bards Guild Ω"
+linktitle: "Bards Guild"
 aliases:
     - /guilds/bards/
 menu:

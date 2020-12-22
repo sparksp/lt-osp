@@ -1,7 +1,7 @@
 ---
 title: "Immune to Mind Effects"
 lists:
-    - bards
+    - bards-guild
     - casino
     - militia
 tier: 5
