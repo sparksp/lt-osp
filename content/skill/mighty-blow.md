@@ -2,7 +2,7 @@
 title: "Mighty Blow"
 lists:
     - armourers-guild
-    - militia
+    - militia-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-repel-and-strikedown"]

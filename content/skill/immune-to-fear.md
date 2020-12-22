@@ -5,7 +5,7 @@ lists:
     - casino-guild
     - corruptors-guild
     - incantors-guild
-    - militia
+    - militia-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
