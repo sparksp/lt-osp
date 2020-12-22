@@ -2,7 +2,7 @@
 title: "Immune to Mind Effects"
 lists:
     - bards-guild
-    - casino
+    - casino-guild
     - militia
 tier: 5
 osp_cost: 50

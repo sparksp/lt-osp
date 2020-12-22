@@ -1,7 +1,7 @@
 ---
 title: "Conceal Item"
 lists:
-    - casino
+    - casino-guild
     - scouts
 tier: 2
 osp_cost: 20
