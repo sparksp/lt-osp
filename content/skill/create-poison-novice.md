@@ -3,7 +3,7 @@ title: "Create Poison (Novice)"
 aliases:
     - /skill/create-poison-1/
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 2
 osp_cost: 20
 prerequisites: ["Poison Lore"]

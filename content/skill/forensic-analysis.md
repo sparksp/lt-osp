@@ -1,7 +1,7 @@
 ---
 title: "Forensic Analysis"
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 3
 osp_cost: 30
 prerequisites: []

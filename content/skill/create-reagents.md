@@ -1,7 +1,7 @@
 ---
 title: "Create Reagents"
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 1
 osp_cost: 10
 prerequisites: ["Poison Lore", " or ", "Potion Lore CS"]
