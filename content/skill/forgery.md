@@ -1,7 +1,7 @@
 ---
 title: "Forgery"
 lists:
-    - bards
+    - bards-guild
     - scouts
 tier: 5
 osp_cost: 50

@@ -1,7 +1,7 @@
 ---
 title: "Immune to Mute"
 lists:
-    - bards
+    - bards-guild
     - casino
     - militia
 tier: 2

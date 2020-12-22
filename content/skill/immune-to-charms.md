@@ -1,7 +1,7 @@
 ---
 title: "Immune to Charms"
 lists:
-    - bards
+    - bards-guild
     - casino
 tier: 3
 osp_cost: 30
