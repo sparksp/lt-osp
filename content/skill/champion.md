@@ -2,7 +2,7 @@
 title: "Champion"
 lists:
     - incantors-guild
-    - mages
+    - mages-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["transcend-armour"]

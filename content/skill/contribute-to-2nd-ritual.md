@@ -1,7 +1,7 @@
 ---
 title: "Contribute to 2nd Ritual"
 lists:
-    - mages
+    - mages-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

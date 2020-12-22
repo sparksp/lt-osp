@@ -1,7 +1,7 @@
 ---
 title: "Rite Master"
 lists:
-    - mages
+    - mages-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

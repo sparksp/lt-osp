@@ -2,7 +2,7 @@
 title: "Master Countermagic"
 lists:
     - incantors-guild
-    - mages
+    - mages-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["cast-high-countermagic", " or ", "high-magic-x", " (Incantation or Spellcasting)"]
