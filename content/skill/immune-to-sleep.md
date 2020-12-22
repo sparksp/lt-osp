@@ -1,7 +1,7 @@
 ---
 title: "Immune to Sleep"
 lists:
-    - rangers
+    - rangers-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-befriend-and-confusion"]

@@ -2,7 +2,7 @@
 title: "Tracking"
 lists:
     - militia-guild
-    - rangers
+    - rangers-guild
     - scouts
 tier: 1
 osp_cost: 10
