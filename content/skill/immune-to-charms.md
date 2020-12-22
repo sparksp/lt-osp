@@ -1,6 +1,8 @@
 ---
 title: "Immune to Charms"
-guilds: [bards, casino]
+lists:
+    - bards
+    - casino
 tier: 3
 osp_cost: 30
 prerequisites: ["detect-and-remove-beguile"]

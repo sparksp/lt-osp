@@ -1,6 +1,7 @@
 ---
 title: "Create Antidotes (Improved)"
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 3
 osp_cost: 30
 prerequisites: ["create-antidotes"]

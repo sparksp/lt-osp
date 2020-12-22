@@ -1,7 +1,8 @@
 ---
 title: "Treewalker #"
 linktitle: "Treewalker"
-guilds: [generic]
+lists:
+    - generic
 tier: 5
 osp_cost: 85
 prerequisites: ["perform-transport-rite"]

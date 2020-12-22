@@ -1,6 +1,7 @@
 ---
 title: "Arcane Crafter (Apprentice)"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 1
 osp_cost: 10
 prerequisites: []

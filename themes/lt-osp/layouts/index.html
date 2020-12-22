@@ -1,11 +1,11 @@
 {{ define "main" -}}
-<div class="guilds">
+<div class="lists">
   <h1>{{ .Title }}</h1>
   <p>{{ site.Params.description }}</p>
-  {{- with site.Menus.guilds }}
-  <section class="guild-list">
+  {{- with site.Menus.lists }}
+  <section class="list-list">
     {{- range . }}
-    <section class="guild">
+    <section class="list">
       <header class="cell-list-title">
         {{- if .Page }}
         <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
@@ -19,7 +19,7 @@
       <div class="cell-list">
         <div class="cell-ladder">
           {{- range .Children }}
-          {{ partial "guilds/home-item" . }}
+          {{ partial "lists/home-item" . }}
           {{ end -}}
         </div>
       </div>

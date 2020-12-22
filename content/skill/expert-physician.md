@@ -1,6 +1,7 @@
 ---
 title: "Expert Physician"
-guilds: [healers]
+lists:
+    - healers
 tier: 4
 osp_cost: 40
 prerequisites: ["surgeon"]

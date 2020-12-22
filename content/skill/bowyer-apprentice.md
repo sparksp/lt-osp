@@ -1,6 +1,7 @@
 ---
 title: "Bowyer (Apprentice)"
-guilds: [rangers]
+lists:
+    - rangers
 tier: 2
 osp_cost: 20
 prerequisites: []

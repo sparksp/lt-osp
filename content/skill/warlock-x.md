@@ -1,7 +1,8 @@
 ---
 title: "Warlock <X> #"
 linktitle: "Warlock <X>"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ---

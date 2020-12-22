@@ -1,6 +1,7 @@
 ---
 title: "Identify"
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 2
 osp_cost: 20
 prerequisites: []

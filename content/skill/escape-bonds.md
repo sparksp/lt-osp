@@ -1,6 +1,7 @@
 ---
 title: "Escape Bonds"
-guilds: [generic]
+lists:
+    - generic
 tier: 3
 osp_cost: 30
 prerequisites: []

@@ -1,7 +1,8 @@
 ---
 title: "Harden Body #"
 linktitle: "Harden Body"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 weight: 2
 prerequisites: ["toughen-body"]
 requirements: ["Lammie or Loresheet"]

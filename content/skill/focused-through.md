@@ -2,7 +2,8 @@
 title: "Focused Through"
 aliases:
     - /skill/through-from-behind/
-guilds: [scouts]
+lists:
+    - scouts
 tier: 2
 osp_cost: 20
 prerequisites: ["immune-to-fumble"]

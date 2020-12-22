@@ -14,7 +14,7 @@ theme = ["lt-osp", "fuse-search"]
   home = ["HTML", "_Redirects"]
 
 [taxonomies]
-  guild = "guilds"
+  list = "lists"
 
 [Params]
   themeColor = "theme-base-09"
@@ -30,7 +30,7 @@ theme = ["lt-osp", "fuse-search"]
       "https://compassionate-aryabhata-ce7373.netlify.com/*" = "https://ltosp.uk/:splat"
       "https://rules-v4.ltosp.uk/*" = "https://rules-v4--compassionate-aryabhata-ce7373.netlify.app/:splat"
 
-[[menu.guilds]]
+[[menu.lists]]
   name = "General"
   identifier = "misc"
   weight = -1

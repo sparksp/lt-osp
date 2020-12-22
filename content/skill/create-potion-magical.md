@@ -2,7 +2,8 @@
 title: "Create Potion (Magical)"
 aliases:
     - /skill/create-magical-potion/
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 5
 osp_cost: 50
 prerequisites: ["create-potion-master", " & ", "Potion Lore"]

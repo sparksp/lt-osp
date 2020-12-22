@@ -1,6 +1,7 @@
 ---
 title: "Awakened <X>"
-guilds: [generic]
+lists:
+    - generic
 tier: 1
 osp_cost: 10
 prerequisites: []

@@ -1,7 +1,8 @@
 ---
 title: "Mystic Claws #"
 linktitle: "Mystic Claws"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ladder: "claws"

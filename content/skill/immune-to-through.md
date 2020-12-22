@@ -1,6 +1,7 @@
 ---
 title: "Immune to Through"
-guilds: [militia]
+lists:
+    - militia
 tier: 4
 osp_cost: 40
 prerequisites: ["immune-to-fumble-and-shatter"]

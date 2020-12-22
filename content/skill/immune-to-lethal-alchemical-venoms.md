@@ -2,7 +2,8 @@
 title: "Immune to Lethal Alchemical Venoms"
 aliases:
     - /skill/immune-to-lethal-alchemical-poisons/
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 4
 osp_cost: 40
 prerequisites: []

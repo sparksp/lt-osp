@@ -2,7 +2,8 @@
 title: "Create Poison (Magical)"
 aliases:
     - /skill/create-magical-poison/
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 5
 osp_cost: 50
 prerequisites: ["create-poison-master", " & ", "Poison Lore"]

@@ -1,7 +1,8 @@
 ---
 title: "Cursing Word #"
 linktitle: "Cursing Word"
-guilds: ["lammie-restricted"]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie, Loresheet"]
 ---

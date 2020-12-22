@@ -1,7 +1,8 @@
 ---
 title: "Retractable Claws #"
 linktitle: "Retractable Claws"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ladder: "claws"

@@ -1,6 +1,7 @@
 ---
 title: "Guarded Channelling"
-guilds: [healers]
+lists:
+    - healers
 tier: 5
 osp_cost: 50
 prerequisites: ["immune-to-disease"]

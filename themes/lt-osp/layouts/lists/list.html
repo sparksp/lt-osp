@@ -1,0 +1,12 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+{{- with site.Menus.lists }}
+<ul>
+    {{- range . }}
+    <li>{{ partial "lists/nav/link" . }}</li>
+    {{- end }}
+</ul>
+{{- end }}
+{{- end }}

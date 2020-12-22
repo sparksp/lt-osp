@@ -2,7 +2,8 @@
 title: "+8 Spell Power"
 aliases:
     - /skill/plus-8-spell-cards/
-guilds: [arcane-guilds]
+lists:
+    - arcane-guilds
 tier: 2
 osp_cost: 20
 prerequisites: ["plus-4-spell-power"]

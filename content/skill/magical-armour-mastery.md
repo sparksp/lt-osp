@@ -1,6 +1,7 @@
 ---
 title: "Magical Armour Mastery"
-guilds: [generic]
+lists:
+    - generic
 tier: 2
 osp_cost: 20
 prerequisites: ["Any Armour Use CS"]

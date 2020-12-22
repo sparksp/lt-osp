@@ -1,6 +1,7 @@
 ---
 title: "Through"
-guilds: [scouts]
+lists:
+    - scouts
 tier: 4
 osp_cost: 40
 prerequisites: ["focused-through"]

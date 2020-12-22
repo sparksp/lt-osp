@@ -2,7 +2,8 @@
 title: "Weapon Finesse"
 aliases:
     - /skill/through-thrown/
-guilds: [scouts]
+lists:
+    - scouts
 tier: 5
 osp_cost: 50
 prerequisites: ["through"]
