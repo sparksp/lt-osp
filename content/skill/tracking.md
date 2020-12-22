@@ -1,7 +1,7 @@
 ---
 title: "Tracking"
 lists:
-    - militia
+    - militia-guild
     - rangers
     - scouts
 tier: 1

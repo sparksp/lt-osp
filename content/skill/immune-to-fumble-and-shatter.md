@@ -1,7 +1,7 @@
 ---
 title: "Immune to Fumble and Shatter"
 lists:
-    - militia
+    - militia-guild
     - rangers
 tier: 3
 osp_cost: 30

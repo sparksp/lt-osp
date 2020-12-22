@@ -3,7 +3,7 @@ title: "Immune to Repel and Strikedown"
 lists:
     - generic
     - armourers-guild
-    - militia
+    - militia-guild
     - scouts
 tier: 3
 osp_cost: 30

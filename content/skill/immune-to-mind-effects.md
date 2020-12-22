@@ -3,7 +3,7 @@ title: "Immune to Mind Effects"
 lists:
     - bards-guild
     - casino-guild
-    - militia
+    - militia-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["rally"]
