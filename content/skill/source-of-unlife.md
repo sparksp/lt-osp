@@ -1,7 +1,7 @@
 ---
 title: "Source of Unlife"
 lists:
-    - corruptors
+    - corruptors-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["mind-healing", " & ", "repair-unliving-advanced"]

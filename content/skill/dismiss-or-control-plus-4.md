@@ -3,7 +3,7 @@ title: "Dismiss/Control +4"
 aliases:
     - /skill/dismiss-control-plus-4/
 lists:
-    - corruptors
+    - corruptors-guild
     - incantors
 tier: 2
 osp_cost: 20

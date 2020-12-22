@@ -3,7 +3,7 @@ title: "Immune to Fear"
 lists:
     - bards-guild
     - casino-guild
-    - corruptors
+    - corruptors-guild
     - incantors
     - militia
 tier: 1
