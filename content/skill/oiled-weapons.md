@@ -5,7 +5,7 @@ aliases:
 lists:
     - alchemists-guild
     - rangers-guild
-    - scouts
+    - scouts-guild
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-fumble"]

@@ -3,7 +3,7 @@ title: "Immune to Fumble"
 lists:
     - militia-guild
     - rangers-guild
-    - scouts
+    - scouts-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

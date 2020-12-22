@@ -4,7 +4,7 @@ lists:
     - generic
     - armourers-guild
     - militia-guild
-    - scouts
+    - scouts-guild
 tier: 2
 osp_cost: 20
 prerequisites: []
