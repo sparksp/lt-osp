@@ -4,7 +4,7 @@ lists:
     - generic
     - armourers-guild
     - militia-guild
-    - scouts
+    - scouts-guild
 tier: 3
 osp_cost: 30
 prerequisites: ["immune-to-repel"]
