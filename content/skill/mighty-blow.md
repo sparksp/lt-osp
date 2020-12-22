@@ -1,7 +1,7 @@
 ---
 title: "Mighty Blow"
 lists:
-    - armourers
+    - armourers-guild
     - militia
 tier: 4
 osp_cost: 40

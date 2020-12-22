@@ -1,5 +1,6 @@
 ---
-title: "Armourers"
+title: "Armourers Guild Ω"
+linktitle: "Armourers Guild"
 aliases:
     - /guilds/armourers/
 menu:
