@@ -1,7 +1,8 @@
 ---
 title: "Advanced Armour Repair #"
 linktitle: "Advanced Armour Repair"
-guilds: [generic]
+lists:
+    - generic
 tier: 3
 osp_cost: 30
 prerequisites: ["quick-armour-repair"]

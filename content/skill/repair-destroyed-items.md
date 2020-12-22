@@ -1,6 +1,7 @@
 ---
 title: "Repair Destroyed Items"
-guilds: [armourers]
+lists:
+    - armourers
 tier: 2
 osp_cost: 20
 prerequisites: ["weaponsmith-apprentice"]

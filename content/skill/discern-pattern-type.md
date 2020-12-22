@@ -1,6 +1,7 @@
 ---
 title: "Discern Pattern Type"
-guilds: [healers]
+lists:
+    - healers
 tier: 1
 osp_cost: 10
 prerequisites: []

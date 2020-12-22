@@ -1,6 +1,7 @@
 ---
 title: "Advanced Pattern Scan"
-guilds: [healers]
+lists:
+    - healers
 tier: 4
 osp_cost: 40
 prerequisites: ["discern-pattern-type"]

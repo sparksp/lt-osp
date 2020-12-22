@@ -292,12 +292,12 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
   }
 }
 
-.guild-list {
+.list-list {
   column-gap: .5em;
   column-rule: none;
   column-width: 300px;
 }
-.guild {
+.list {
   @include break-inside;
   overflow: hidden
 }

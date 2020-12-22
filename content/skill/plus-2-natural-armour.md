@@ -1,7 +1,8 @@
 ---
 title: "+2 Natural Armour #"
 linktitle: "+2 Natural Armour"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: ["plus-1-natural-armour"]
 requirements: []
 replacement: true

@@ -1,6 +1,8 @@
 ---
 title: "Discern Unliving"
-guilds: [corruptors, incantors]
+lists:
+    - corruptors
+    - incantors
 tier: 3
 osp_cost: 30
 prerequisites: []

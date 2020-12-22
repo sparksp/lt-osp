@@ -1,7 +1,8 @@
 ---
 title: "Herb Lore (Improved) #"
 linktitle: "Herb Lore (Improved)"
-guilds: [generic]
+lists:
+    - generic
 tier: 2
 osp_cost: 25
 prerequisites: ["herb-lore"]

@@ -1,7 +1,8 @@
 ---
 title: "Beguile <X> #"
 linktitle: "Beguile <X>"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

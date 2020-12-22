@@ -1,7 +1,8 @@
 ---
 title: "Natural Claws #"
 linktitle: "Natural Claws"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ladder: "claws"

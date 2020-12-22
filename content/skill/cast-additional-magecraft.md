@@ -1,6 +1,7 @@
 ---
 title: "Cast Additional Magecraft"
-guilds: [mages]
+lists:
+    - mages
 tier: 5
 osp_cost: 50
 prerequisites: ["master-countermagic"]

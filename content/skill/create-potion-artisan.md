@@ -2,7 +2,8 @@
 title: "Create Potion (Artisan)"
 aliases:
     - /skill/create-potion-2/
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 3
 osp_cost: 30
 prerequisites: ["create-potion-novice", " & ", "Potion Lore"]

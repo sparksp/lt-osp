@@ -1,7 +1,8 @@
 ---
 title: "Sigil Skill Reduction (1) #"
 linktitle: "Sigil Skill Reduction (1)"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Werecreature <X> #"
 linktitle: "Werecreature <X>"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ---

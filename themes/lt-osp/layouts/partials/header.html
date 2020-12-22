@@ -36,9 +36,9 @@
 <aside class="side-menu" id="side-menu" aria-label="Side menu">
     <nav>
         <ul>
-            {{- range site.Menus.guilds }}
+            {{- range site.Menus.lists }}
             <li>
-                {{ partial "guilds/nav/link" . }}
+                {{ partial "lists/nav/link" . }}
             </li>
             {{ end -}}
         </ul>

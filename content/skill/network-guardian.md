@@ -1,7 +1,8 @@
 ---
 title: "Network Guardian #"
 linktitle: "Network Guardian"
-guilds: [generic]
+lists:
+    - generic
 tier: 5
 osp_cost: 85
 prerequisites: []

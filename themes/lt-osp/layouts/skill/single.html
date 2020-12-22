@@ -4,16 +4,16 @@
 
     {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end }}
 
-    {{- with .Params.guilds }}
-    {{- $guilds := site.GetPage "/guilds" }}
+    {{- with .Params.lists }}
+    {{- $lists := site.GetPage "/lists" }}
     <p>
-        <strong>Guilds:</strong>
+        <strong>Lists:</strong>
         {{- $len := len . }}
         {{- range $index, $e := . }}
         {{- if $index }}
         {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
         {{- end }}
-        {{ $guilds.GetPage . | partial "guild-link" }}
+        {{ $lists.GetPage . | partial "lists/link" }}
         {{- end }}
     </p>
     {{- end }}

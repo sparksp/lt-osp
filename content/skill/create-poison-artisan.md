@@ -2,7 +2,8 @@
 title: "Create Poison (Artisan)"
 aliases:
     - /skill/create-poison-2/
-guilds: [alchemists]
+lists:
+    - alchemists
 tier: 3
 osp_cost: 30
 prerequisites: ["create-poison-novice", " & ", "Poison Lore"]

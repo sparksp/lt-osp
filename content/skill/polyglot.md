@@ -1,6 +1,7 @@
 ---
 title: "Polyglot"
-guilds: [bards]
+lists:
+    - bards
 tier: 5
 osp_cost: 70
 prerequisites: ["Any ", "script-master-x"]

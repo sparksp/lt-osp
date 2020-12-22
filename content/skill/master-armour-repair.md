@@ -1,7 +1,8 @@
 ---
 title: "Master Armour Repair #"
 linktitle: "Master Armour Repair"
-guilds: [generic]
+lists:
+    - generic
 tier: 4
 osp_cost: 40
 prerequisites: ["advanced-armour-repair"]

@@ -1,6 +1,7 @@
 ---
 title: "Conceal Item (Improved)"
-guilds: [casino]
+lists:
+    - casino
 tier: 3
 osp_cost: 30
 prerequisites: [conceal-item]

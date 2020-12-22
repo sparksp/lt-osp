@@ -1,7 +1,8 @@
 ---
 title: "Level 2 Spell Reduction (1) #"
 linktitle: "Level 2 Spell Reduction (1)"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

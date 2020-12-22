@@ -1,7 +1,8 @@
 ---
 title: "Focused Strike #"
 linktitle: "Focused Strike"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ladder: "strike"

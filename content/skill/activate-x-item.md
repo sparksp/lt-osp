@@ -1,6 +1,7 @@
 ---
 title: "Activate <X> Item"
-guilds: [generic]
+lists:
+    - generic
 tier: 2
 osp_cost: 20
 prerequisites: ["x-oathsworn"]
