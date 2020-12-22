@@ -3,7 +3,7 @@ title: "Oiled Weapons"
 aliases:
     - /skill/oiled-arrows/
 lists:
-    - alchemists
+    - alchemists-guild
     - rangers
     - scouts
 tier: 3

@@ -3,7 +3,7 @@ title: "Create Potion (Novice)"
 aliases:
     - /skill/create-potion-1/
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 2
 osp_cost: 20
 prerequisites: ["Potion Lore"]
