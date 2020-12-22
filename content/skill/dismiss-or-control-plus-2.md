@@ -5,7 +5,7 @@ aliases:
     - /skill/wedge-mastery/
 lists:
     - corruptors-guild
-    - incantors
+    - incantors-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

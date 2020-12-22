@@ -1,7 +1,7 @@
 ---
 title: "Master Countermagic"
 lists:
-    - incantors
+    - incantors-guild
     - mages
 tier: 4
 osp_cost: 40
