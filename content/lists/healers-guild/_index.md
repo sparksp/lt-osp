@@ -1,5 +1,6 @@
 ---
-title: "Healers"
+title: "Healers Guild Ω"
+linktitle: "Healers Guild"
 aliases:
     - /guilds/healers/
 menu:

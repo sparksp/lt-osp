@@ -2,7 +2,7 @@
 title: "Mind Healing"
 lists:
     - corruptors-guild
-    - healers
+    - healers-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["advanced-healing", " (Healers)", " / ", "repair-unliving-advanced", " (Corruptors)"]

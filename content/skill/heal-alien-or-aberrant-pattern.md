@@ -1,7 +1,7 @@
 ---
 title: "Heal Alien or Aberrant Pattern"
 lists:
-    - healers
+    - healers-guild
 tier: 3
 osp_cost: 30
 prerequisites: []
