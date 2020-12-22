@@ -2,7 +2,7 @@
 title: "Immune to Repel and Strikedown"
 lists:
     - generic
-    - armourers
+    - armourers-guild
     - militia
     - scouts
 tier: 3

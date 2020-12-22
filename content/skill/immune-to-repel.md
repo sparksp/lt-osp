@@ -2,7 +2,7 @@
 title: "Immune to Repel"
 lists:
     - generic
-    - armourers
+    - armourers-guild
     - militia
     - scouts
 tier: 2
