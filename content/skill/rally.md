@@ -1,7 +1,7 @@
 ---
 title: "Rally"
 lists:
-    - bards
+    - bards-guild
     - casino
     - militia
 tier: 4
