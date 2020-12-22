@@ -2,7 +2,7 @@
 title: "Immune to Fear"
 lists:
     - bards-guild
-    - casino
+    - casino-guild
     - corruptors
     - incantors
     - militia

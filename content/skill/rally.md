@@ -2,7 +2,7 @@
 title: "Rally"
 lists:
     - bards-guild
-    - casino
+    - casino-guild
     - militia
 tier: 4
 osp_cost: 40

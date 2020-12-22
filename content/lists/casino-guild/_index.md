@@ -1,5 +1,6 @@
 ---
-title: "Casino"
+title: "Casino Guild Ω"
+linktitle: "Casino Guild"
 aliases:
     - /guilds/casino/
 menu:
