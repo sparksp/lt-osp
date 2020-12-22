@@ -1,7 +1,7 @@
 ---
 title: "Immune to Fumble"
 lists:
-    - militia
+    - militia-guild
     - rangers
     - scouts
 tier: 1
