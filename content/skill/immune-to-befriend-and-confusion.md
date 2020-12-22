@@ -4,7 +4,7 @@ aliases:
     - /skill/immune-to-distract-and-confusion/
 lists:
     - bards-guild
-    - rangers
+    - rangers-guild
 tier: 3
 osp_cost: 30
 prerequisites: []

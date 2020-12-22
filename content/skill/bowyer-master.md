@@ -3,7 +3,7 @@ title: "Bowyer (Master)"
 aliases:
     - /skill/bowyer-artisan/
 lists:
-    - rangers
+    - rangers-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["bowyer-apprentice"]

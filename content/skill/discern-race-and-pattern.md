@@ -1,7 +1,7 @@
 ---
 title: "Discern Race and Pattern"
 lists:
-    - rangers
+    - rangers-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["discern-race"]

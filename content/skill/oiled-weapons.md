@@ -4,7 +4,7 @@ aliases:
     - /skill/oiled-arrows/
 lists:
     - alchemists-guild
-    - rangers
+    - rangers-guild
     - scouts
 tier: 3
 osp_cost: 30
