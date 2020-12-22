@@ -1,7 +1,7 @@
 ---
 title: "Discern Unliving"
 lists:
-    - corruptors
+    - corruptors-guild
     - incantors
 tier: 3
 osp_cost: 30

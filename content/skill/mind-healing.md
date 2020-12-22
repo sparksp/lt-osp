@@ -1,7 +1,7 @@
 ---
 title: "Mind Healing"
 lists:
-    - corruptors
+    - corruptors-guild
     - healers
 tier: 4
 osp_cost: 40
