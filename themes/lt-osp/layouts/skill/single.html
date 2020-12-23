@@ -7,14 +7,14 @@
     {{- with .Params.lists }}
     {{- $lists := site.GetPage "/lists" }}
     <p>
-        <strong>Lists:</strong>
         {{- $len := len . }}
+        <strong>List{{ if ne $len 1 }}s{{ end }}:</strong>
         {{- range $index, $e := . }}
         {{- if $index }}
         {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
         {{- end }}
         {{ $lists.GetPage . | partial "lists/link" }}
-        {{- end }}
+        {{- end }}.
     </p>
     {{- end }}
 
@@ -35,33 +35,16 @@
     {{ .Content }}
 
     {{ with (where site.RegularPages ".Params.prerequisites" "intersect" (slice .File.ContentBaseName)).ByParam "tier" -}}
-    <aside>
-        <h2>Dependent Skills</h2>
-        <table class="cell-table">
-            <thead>
-            <tr>
-                <th>Tier</th>
-                <th>Skill</th>
-            </tr>
-            </thead>
-            <tbody>
-            {{ range . -}}
-            <tr>
-                <th scope="row">{{ .Params.tier }}</th>
-                <td>
-                    <a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
-                       id="{{ .Type }}-{{ .File.UniqueID }}"
-                       href="{{ .Permalink }}"
-                       title="{{ .Title }}"
-                    >
-                        {{- .LinkTitle -}}
-                    </a>
-                </td>
-            </tr>
-            {{- end }}
-            </tbody>
-        </table>
-    </aside>
+    <p>
+        {{- $len := len . }}
+        <strong>Dependent skill{{ if ne $len 1 }}s{{ end }}:</strong>
+        {{- range $index, $e := . }}
+        {{- if $index }}
+        {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
+        {{- end }}
+        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .LinkTitle }}</a>
+        {{- end }}.
+    </p>
     {{- end }}
 
 </article>
