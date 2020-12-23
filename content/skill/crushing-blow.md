@@ -1,8 +1,8 @@
 ---
 title: "Crushing Blow"
 lists:
-    - armourers
-    - militia
+    - armourers-guild
+    - militia-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["mighty-blow"]

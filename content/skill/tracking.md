@@ -1,9 +1,9 @@
 ---
 title: "Tracking"
 lists:
-    - militia
-    - rangers
-    - scouts
+    - militia-guild
+    - rangers-guild
+    - scouts-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

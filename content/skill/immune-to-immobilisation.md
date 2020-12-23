@@ -2,7 +2,7 @@
 title: "Immune to Immobilisation"
 lists:
     - generic
-    - scouts
+    - scouts-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["immune-to-repel-and-strikedown"]

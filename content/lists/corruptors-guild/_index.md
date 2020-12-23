@@ -1,5 +1,6 @@
 ---
-title: "Corruptors"
+title: "Corruptors Guild Ω"
+linktitle: "Corruptors Guild"
 aliases:
     - /guilds/corruptors/
 menu:

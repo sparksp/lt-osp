@@ -1,7 +1,7 @@
 ---
 title: "Dedicated Follower"
 lists:
-    - incantors
+    - incantors-guild
 tier: 3
 osp_cost: 30
 prerequisites: []

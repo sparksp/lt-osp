@@ -1,8 +1,8 @@
 ---
 title: "Trap Lore"
 lists:
-    - rangers
-    - scouts
+    - rangers-guild
+    - scouts-guild
 tier: 3
 osp_cost: 30
 prerequisites: []

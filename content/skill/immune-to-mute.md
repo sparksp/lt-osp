@@ -1,9 +1,9 @@
 ---
 title: "Immune to Mute"
 lists:
-    - bards
-    - casino
-    - militia
+    - bards-guild
+    - casino-guild
+    - militia-guild
 tier: 2
 osp_cost: 20
 prerequisites: ["immune-to-fear"]

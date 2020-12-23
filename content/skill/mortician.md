@@ -1,7 +1,7 @@
 ---
 title: "Mortician"
 lists:
-    - corruptors
+    - corruptors-guild
 tier: 2
 osp_cost: 20
 prerequisites: []

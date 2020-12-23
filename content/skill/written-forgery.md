@@ -1,8 +1,8 @@
 ---
 title: "Written Forgery"
 lists:
-    - bards
-    - scouts
+    - bards-guild
+    - scouts-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["translate-named-script-x", " & ", "Recognise Forgery"]

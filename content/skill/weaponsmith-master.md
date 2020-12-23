@@ -1,7 +1,7 @@
 ---
 title: "Weaponsmith (Master)"
 lists:
-    - armourers
+    - armourers-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["weaponsmith-artisan"]

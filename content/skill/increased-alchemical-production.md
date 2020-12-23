@@ -1,7 +1,7 @@
 ---
 title: "Increased Alchemical Production"
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["create-reagents-improved"]

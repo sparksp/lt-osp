@@ -1,7 +1,7 @@
 ---
 title: "Create Reagents (Improved)"
 lists:
-    - alchemists
+    - alchemists-guild
 tier: 2
 osp_cost: 30
 prerequisites: ["create-reagents"]

@@ -3,8 +3,8 @@ title: "Immune to Befriend and Confusion"
 aliases:
     - /skill/immune-to-distract-and-confusion/
 lists:
-    - bards
-    - rangers
+    - bards-guild
+    - rangers-guild
 tier: 3
 osp_cost: 30
 prerequisites: []

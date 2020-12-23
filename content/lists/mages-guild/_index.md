@@ -1,5 +1,6 @@
 ---
-title: "Mages"
+title: "Mages Guild Ω"
+linktitle: "Mages Guild"
 aliases:
     - /guilds/mages/
 menu:

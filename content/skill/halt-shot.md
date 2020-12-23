@@ -1,7 +1,7 @@
 ---
 title: "Halt Shot"
 lists:
-    - rangers
+    - rangers-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["strikedown-shot"]

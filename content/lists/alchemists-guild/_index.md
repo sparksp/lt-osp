@@ -1,5 +1,6 @@
 ---
-title: "Alchemists"
+title: "Alchemists Guild Ω"
+linktitle: "Alchemists Guild"
 aliases:
     - /guilds/alchemists/
 menu:

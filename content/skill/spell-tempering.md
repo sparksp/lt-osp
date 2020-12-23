@@ -1,7 +1,7 @@
 ---
 title: "Spell Tempering"
 lists:
-    - armourers
+    - armourers-guild
 tier: 3
 osp_cost: 30
 prerequisites: ["additional-reforging"]

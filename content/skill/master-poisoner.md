@@ -1,8 +1,8 @@
 ---
 title: "Master Poisoner"
 lists:
-    - alchemists
-    - scouts
+    - alchemists-guild
+    - scouts-guild
 tier: 4
 osp_cost: 40
 prerequisites: []

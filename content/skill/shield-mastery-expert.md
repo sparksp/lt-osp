@@ -1,8 +1,8 @@
 ---
 title: "Shield Mastery (Expert)"
 lists:
-    - armourers
-    - militia
+    - armourers-guild
+    - militia-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["shield-mastery"]

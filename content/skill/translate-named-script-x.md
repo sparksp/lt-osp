@@ -1,8 +1,8 @@
 ---
 title: "Translate Named Script <X>"
 lists:
-    - bards
-    - scouts
+    - bards-guild
+    - scouts-guild
 tier: 1
 osp_cost: 10
 prerequisites: []

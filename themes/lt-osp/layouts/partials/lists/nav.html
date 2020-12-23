@@ -2,7 +2,7 @@
 {{- partial "lists/nav/parent" (dict "menu" site.Menus.lists "parent" .Parent) -}}
 {{- if .HasChildren }}
 <p>
-    <strong>lists:</strong>
+    <strong>Lists:</strong>
     {{- $len := len .Children }}
     {{- range $index, $e := .Children }}
     {{- if $index }}

@@ -1,8 +1,8 @@
 ---
 title: "Detect and Remove Beguile"
 lists:
-    - bards
-    - casino
+    - bards-guild
+    - casino-guild
 tier: 2
 osp_cost: 20
 prerequisites: []

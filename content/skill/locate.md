@@ -1,9 +1,9 @@
 ---
 title: "Locate"
 lists:
-    - casino
-    - militia
-    - scouts
+    - casino-guild
+    - militia-guild
+    - scouts-guild
 tier: 2
 osp_cost: 20
 prerequisites: []

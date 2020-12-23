@@ -1,7 +1,7 @@
 ---
 title: "Ritualist (Expert)"
 lists:
-    - mages
+    - mages-guild
 tier: 4
 osp_cost: 40
 prerequisites: ["ritual-magic-improved"]

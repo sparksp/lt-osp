@@ -1,5 +1,6 @@
 ---
-title: "Knowledge Guilds"
+title: "Knowledge Guilds Ω"
+linktitle: "Knowledge Guilds"
 aliases:
     - /guilds/knowledge-guilds/
 menu:

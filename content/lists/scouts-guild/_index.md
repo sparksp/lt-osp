@@ -1,5 +1,6 @@
 ---
-title: "Scouts"
+title: "Scouts Guild Ω"
+linktitle: "Scouts Guild"
 aliases:
     - /guilds/scouts/
 menu:
