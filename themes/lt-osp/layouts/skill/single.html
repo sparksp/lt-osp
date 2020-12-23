@@ -33,5 +33,36 @@
     {{- end }}
 
     {{ .Content }}
+
+    {{ with (where site.RegularPages ".Params.prerequisites" "intersect" (slice .File.ContentBaseName)).ByParam "tier" -}}
+    <aside>
+        <h2>Dependent Skills</h2>
+        <table class="cell-table">
+            <thead>
+            <tr>
+                <th>Tier</th>
+                <th>Skill</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{ range . -}}
+            <tr>
+                <th scope="row">{{ .Params.tier }}</th>
+                <td>
+                    <a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
+                       id="{{ .Type }}-{{ .File.UniqueID }}"
+                       href="{{ .Permalink }}"
+                       title="{{ .Title }}"
+                    >
+                        {{- .LinkTitle -}}
+                    </a>
+                </td>
+            </tr>
+            {{- end }}
+            </tbody>
+        </table>
+    </aside>
+    {{- end }}
+
 </article>
 {{- end }}
