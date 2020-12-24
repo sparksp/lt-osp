@@ -7,14 +7,14 @@
     {{- with .Params.lists }}
     {{- $lists := site.GetPage "/lists" }}
     <p>
-        <strong>Lists:</strong>
         {{- $len := len . }}
+        <strong>List{{ if ne $len 1 }}s{{ end }}:</strong>
         {{- range $index, $e := . }}
         {{- if $index }}
         {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
         {{- end }}
         {{ $lists.GetPage . | partial "lists/link" }}
-        {{- end }}
+        {{- end }}.
     </p>
     {{- end }}
 
@@ -33,5 +33,19 @@
     {{- end }}
 
     {{ .Content }}
+
+    {{ with (where site.RegularPages ".Params.prerequisites" "intersect" (slice .File.ContentBaseName)).ByParam "tier" -}}
+    <p>
+        {{- $len := len . }}
+        <strong>Dependent skill{{ if ne $len 1 }}s{{ end }}:</strong>
+        {{- range $index, $e := . }}
+        {{- if $index }}
+        {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
+        {{- end }}
+        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .LinkTitle }}</a>
+        {{- end }}.
+    </p>
+    {{- end }}
+
 </article>
 {{- end }}
