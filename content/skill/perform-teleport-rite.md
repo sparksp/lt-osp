@@ -4,7 +4,7 @@ lists:
     - casino-guild
 tier: 5
 osp_cost: 50
-prerequisites: [perform-transport-rite]
+prerequisites: ["perform-transport-rite"]
 requirements: ["Spellcasting", ", ", "Incantation", ", ", "Corruption", " or ", "Healing CS"]
 replacement: true
 restricted: true

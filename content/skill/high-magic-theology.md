@@ -4,7 +4,7 @@ lists:
     - arcane-guilds
 tier: 4
 osp_cost: 40
-prerequisites: [theology]
+prerequisites: ["theology"]
 requirements: ["Level 2 Incantation and ", "theology"]
 replacement: true
 restricted: true

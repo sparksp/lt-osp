@@ -4,7 +4,7 @@ lists:
     - arcane-guilds
 tier: 4
 osp_cost: 40
-prerequisites: [daemonology]
+prerequisites: ["daemonology"]
 requirements: ["Level 2 Spellcasting CS"]
 replacement: true
 restricted: true
