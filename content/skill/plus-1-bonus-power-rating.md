@@ -7,4 +7,4 @@ prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ladder: "bonus-power-rating"
 ---
-This increases the Power Rating carrying capacity before consequences by 1 (so items will stop working at 14)
+This increases the Power Rating carrying capacity by 1.
