@@ -8,4 +8,4 @@ prerequisites: []
 requirements: ["Any Armour use CS"]
 ladder: "armour-mastery"
 ---
-This skill allows the character to restore the AV of damaged armour in half the normal time. This excludes NAV and MAV.
+This skill allows the character to restore the AV of damaged armour in half the normal time. This skill cannot be used to repair NAV (Natural Armour) or MAV (Magical Armour).

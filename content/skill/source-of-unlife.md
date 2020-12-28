@@ -10,9 +10,4 @@ replacement: true
 restricted: true
 ladder: "revive"
 ---
-This skill replaces the [Repair Unliving (Advanced)][repair-unliving-advanced] Occupational Skill and includes the [Mind Healing][mind-healing] Occupational Skill. It also allows the character to cast the Total Repair Unliving Spell without having the requirement of the [High Magic][high-magic] Occupational Skill. If the character gains the [High Magic (Corruption)][high-magic-corruption] Occupational Skill, they gain Spell Reduction (3) for the spell Total Repair Unliving.
-
-[high-magic]: {{< ref "high-magic-x" >}}
-[high-magic-corruption]: {{< ref "high-magic-x" >}}
-[mind-healing]: {{< ref "mind-healing" >}}
-[repair-unliving-advanced]: {{< ref "repair-unliving-advanced" >}}
+This skill replaces [Repair Unliving (Advanced)]({{< ref "repair-unliving-advanced" >}}) and includes the [Repair Unliving (Advanced)]({{< ref "repair-unliving-advanced" >}}) and [Mind Healing]({{< ref "mind-healing" >}}) Occupational Skills. It also allows the character to cast the Total Repair Unliving Spell without having the requirement of the [High Magic]({{< ref "high-magic-x" >}}) Occupational Skill. If the character gains the [High Magic (Corruption)]({{< ref "high-magic-x" >}}) Occupational Skill, they gain Spell Reduction (3) for the spell Total Repair Unliving.

@@ -6,7 +6,7 @@ lists:
 tier: 1
 osp_cost: 10
 prerequisites: []
-requirements: ["Spellcasting", ", ", "Incantation", " or ", "Healing CS"]
+requirements: ["Spellcasting", ", ", "Incantation", ", ", "Corruption", " or ", "Healing CS"]
 ladder: "identify"
 ---
-This allows the person to perform a Transport Rite without having the Ritual Magic CS. This does not allow a character to perform any other rite.
+This skill adds the Transportation Spell to the characters available spell list(s).

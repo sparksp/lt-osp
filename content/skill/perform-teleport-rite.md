@@ -10,6 +10,4 @@ replacement: true
 restricted: true
 ladder: "identify"
 ---
-This skill replaces the [Perform Transport Rite][perform-transport-rite] Occupational Skill. This allows the character to perform the Transport and Teleport rites without having the requirement for the Ritual Magic CS or the appropriate casting spell list. It also grants the character Spell Reduction (1) for the Transport Rite ability.
-
-[perform-transport-rite]: {{< ref "perform-transport-rite" >}}
+This skill adds the Transportation and Teleport Spells to the characters available spell list(s). In addition the character has spell reduction (1) for the Teleport spell.
