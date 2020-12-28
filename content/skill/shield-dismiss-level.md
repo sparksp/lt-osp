@@ -1,6 +1,5 @@
 ---
-title: "Shield Dismiss Level @"
-linktitle: "Shield Dismiss Level"
+title: "Shield Dismiss Level"
 lists:
     - generic
 tier: 3

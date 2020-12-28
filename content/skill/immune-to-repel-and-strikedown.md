@@ -12,6 +12,4 @@ requirements: []
 replacement: true
 ladder: "immune-to-repel"
 ---
-This skill replaces the [Immune to Repel][immune-to-repel] Occupational Skill. The character is immune to the Strikedown and Repel effects.
-
-[immune-to-repel]: {{< ref "immune-to-repel" >}}
+This skill replaces [Immune to Repel]({{< ref "immune-to-repel" >}}). The character is immune to the Strikedown and Repel effects.

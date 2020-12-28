@@ -7,4 +7,4 @@ prerequisites: []
 requirements: []
 ladder: "claws"
 ---
-Claws count as small melee weapons for the purpose of delivering the following effects or poisons: Harm, Through, Weapon of Cold, Weapon of Flame, Paralysis, Cause Disease, Cause Fatal Wound, Ancestral Weapon, Ancestral Strike, any Weapon Oil or Lethal Alchemical Venom. They may not be used with any Lethal Magical Venom.
+Claws count as small melee weapons for the purpose of delivering the following effects or poisons: Harm, Smite, Through, Weapon of Earth/Air/Flame/Air, Weapons of Primal Magic, Paralysis, Cause Disease, Cause Fatal Wound, Ethereal Weapon, Ancestral Strike, any Weapon Oil or Lethal Alchemical Venom. They may not be used with any Lethal Magical Venom.

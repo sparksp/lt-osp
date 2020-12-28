@@ -8,4 +8,4 @@ prerequisites: []
 requirements: ["Incantation CS"]
 ladder: "last-rites"
 ---
-This skill grants them Spell Reduction (1) on the effect Lay to Rest _(See Spell Reduction entry in the Definitions and Glossary section)_.
+This skill grants them Spell Reduction (1) on the effect Lay to Rest.

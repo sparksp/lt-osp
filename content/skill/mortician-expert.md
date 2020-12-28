@@ -9,6 +9,4 @@ requirements: ["Triage (Advanced) CS"]
 replacement: true
 ladder: "corruption"
 ---
-This skill replaces [Mortician][mortician] and reduces the time required for each Mortician activity to 30 seconds rather than 1 minute.
-
-[mortician]: {{< ref "mortician" >}}
+This skill replaces [Mortician]({{< ref "mortician" >}}) and reduces the time required for each Mortician activity to 30 seconds rather than 1 minute.
