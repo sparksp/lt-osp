@@ -10,6 +10,4 @@ replacement: true
 restricted: true
 ladder: "immune-to-fumble"
 ---
-This skill replaces the [Focused Through][focused-through] Occupational Skill and allows a character to strike for the Through effect with a small or medium melee weapon held in their primary hand. This cannot be used with a skill, lammie or loresheet that would modify the damage effect.
-
-[focused-through]: {{< ref "focused-through" >}}
+This skill replaces [Focused Through]({{< ref "focused-through" >}}) and allows a character to strike for the Through effect with a small or medium melee weapon held in their primary hand. This cannot be used with a skill, lammie or loresheet that would modify the damage effect.
