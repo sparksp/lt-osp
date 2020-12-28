@@ -20,13 +20,11 @@ function Delayed(_timeout) {
 
 $(function () {
     const fuseOptions = {
-        distance: 100,
-        location: 0,
-        maxPatternLength: 32,
         minMatchCharLength: 3,
         shouldSort: true,
-        threshold: 0.1,
+        threshold: 0.2,
         tokenize: true,
+        useExtendedSearch: true,
         keys: [
             { name: "title", weight: 0.8 },
             { name: "contents", weight: 0.5 },
@@ -170,10 +168,10 @@ $(function () {
     }
 
     function populateResult(result, { query }) {
-        var contents = result.contents;
-        var output = render(templateDefinition, { id: result.id, title: text(result.title), link: result.permalink, lists: result.lists, summary: result.summary });
+        const item = result.item;
+        const output = render(templateDefinition, { id: item.id, title: text(item.title), link: item.permalink, lists: item.lists, summary: item.summary });
         $('.search-results').last().append(output);
-        $("#summary-" + result.id).mark(query);
+        $("#summary-" + item.id).mark(query);
     }
 
     function render(templateString, data) {

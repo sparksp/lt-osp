@@ -4,7 +4,7 @@ lists:
     - arcane-guilds
 tier: 4
 osp_cost: 40
-prerequisites: [elementalism]
+prerequisites: ["elementalism"]
 requirements: ["Level 2 Healing CS, Level 2 Spellcasting and ", "enchanting", ", or Level 2 Incantation and ", "light-incantation"]
 replacement: true
 restricted: true

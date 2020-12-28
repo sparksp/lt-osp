@@ -22,8 +22,9 @@ theme = ["lt-osp", "fuse-search"]
   copyright = "Copyright 2020 Adam Scott and Phill Sparks. All rights reserved."
   [Params.Redirects]
     Gone = [
-      "/skill/scribe-scroll/",
       "/skill/corruption/",
+      "/skill/immune-to-ingestive-alchemical-poisons/",
+      "/skill/scribe-scroll/",
       ]
 
     [Params.Redirects.Custom]
