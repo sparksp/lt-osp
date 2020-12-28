@@ -6,7 +6,7 @@ lists:
     - healers-guild
 tier: 4
 osp_cost: 40
-prerequisites: [triage-master]
+prerequisites: ["triage-master"]
 requirements: ["Triage (Advanced) CS"]
 replacement: true
 ladder: "triage"

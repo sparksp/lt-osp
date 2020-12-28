@@ -11,6 +11,4 @@ requirements: ["Potion Lore CS"]
 replacement: true
 ladder: "create-potion"
 ---
-This skill replaces the [Create Potion (Novice)][create-potion-novice] Occupational Skill and allows the character to make a level 1 and a level 2 potion at each Lorien Trust Main Event with ingredients that can be obtained and used in the Alchemists Guild. This skill may also be used with the _Distilling_ process.
-
-[create-potion-novice]: {{< ref "create-potion-novice" >}}
+This skill replaces [Create Potion (Novice)]({{< ref "create-potion-novice" >}}) and allows the character to make a level 1 and a level 2 potion at each Lorien Trust Main Event with ingredients that can be obtained and used in the Alchemists Guild. This skill may also be used with the _Distilling_ process.

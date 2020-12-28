@@ -4,7 +4,7 @@ lists:
     - arcane-guilds
 tier: 4
 osp_cost: 40
-prerequisites: [necromancy]
+prerequisites: ["necromancy"]
 requirements: ["Level 2 Corruption, Level 2 Incantation and ", "dark-incantation", ", or Level 2 Spellcasting and ", "shadow-magic"]
 replacement: true
 restricted: true
