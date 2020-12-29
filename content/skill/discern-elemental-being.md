@@ -2,8 +2,11 @@
 title: "Discern Elemental Being"
 lists:
     - healers-guild
+    - elemental-loresheet
 tier: 3
 osp_cost: 30
+loresheet_tier: 1
+loresheet_osp_cost: 10
 prerequisites: []
 requirements: []
 ---

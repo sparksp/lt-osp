@@ -2,8 +2,11 @@
 title: "Magical Armour Mastery"
 lists:
     - generic
+    - elemental-loresheet
 tier: 2
 osp_cost: 20
+loresheet_tier: 2
+loresheet_osp_cost: 20
 prerequisites: ["Any Armour Use CS"]
 requirements: ["Any Armour Use CS"]
 ladder: "armour-repair"

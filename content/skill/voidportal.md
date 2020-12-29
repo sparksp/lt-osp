@@ -3,8 +3,11 @@ title: "Voidportal #"
 linktitle: "Voidportal"
 lists:
     - generic
+    - elemental-loresheet
 tier: 5
 osp_cost: 85
+loresheet_tier: 4
+loresheet_osp_cost: 85
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 restricted: true
