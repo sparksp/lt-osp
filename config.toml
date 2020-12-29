@@ -35,3 +35,8 @@ theme = ["lt-osp", "fuse-search"]
   name = "General"
   identifier = "misc"
   weight = -1
+
+[[menu.lists]]
+  name = "Loresheets"
+  identifier = "loresheets"
+  weight = -1

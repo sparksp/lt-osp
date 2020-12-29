@@ -2,8 +2,11 @@
 title: "Shield Dismiss Level"
 lists:
     - generic
+    - elemental-loresheet
 tier: 3
 osp_cost: 30
+loresheet_tier: 1
+loresheet_osp_cost: 10
 prerequisites: []
 requirements: []
 restricted: true

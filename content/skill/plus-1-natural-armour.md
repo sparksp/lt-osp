@@ -2,6 +2,9 @@
 title: "+1 Natural Armour"
 lists:
     - lammie-restricted
+    - elemental-loresheet
+loresheet_tier: 2
+loresheet_osp_cost: 20
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ladder: "natural-armour"
