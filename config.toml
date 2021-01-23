@@ -39,4 +39,3 @@ theme = ["lt-osp", "fuse-search"]
 [[menu.lists]]
   name = "Summonable"
   identifier = "summonable"
-  weight = -1
