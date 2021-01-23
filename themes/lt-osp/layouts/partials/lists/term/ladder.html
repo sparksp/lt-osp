@@ -1,11 +1,13 @@
+{{- $ladder_group_key := .ladder_group_key | default "ladder_group" -}}
+{{- $tier_key := .tier_key | default "tier" -}}
 <table class="cell-table" data-ladder="{{ .Key }}">
 {{- $column_count := 0 }}
 {{- $scratch := newScratch }}
-{{ with (where .Pages ".Params.ladder_group" "==" nil) -}}
+{{ with (where .Pages (print ".Params." $ladder_group_key) "==" nil) -}}
     {{- $scratch.SetInMap "columns" "" $column_count }}
     {{- $column_count = add $column_count 1 }}
 {{- end }}
-{{ range (where .Pages ".Params.ladder_group" "!=" nil).GroupByParam "ladder_group" -}}
+{{ range (where .Pages (print ".Params." $ladder_group_key) "!=" nil).GroupByParam $ladder_group_key -}}
     {{- $scratch.SetInMap "columns" (string .Key) $column_count }}
     {{- $column_count = add $column_count 1 }}
 {{- end }}
@@ -17,7 +19,7 @@
 </thead>
 <tbody>
 {{- $tier := 5 }}
-{{ range .Pages.ByWeight.GroupByParam "tier" -}}
+{{ range .Pages.ByWeight.GroupByParam $tier_key -}}
     {{- $key := .Key }}
     {{ if lt $tier $key -}}
         {{ range after 1 (seq $tier (sub $key 1)) -}}
@@ -31,14 +33,14 @@
         <th scope="row">{{ $key }}</th>
     {{- $this_col := -1 }}
     {{- $last_ladder_group := "" }}
-    {{ range .Pages.ByParam "ladder_group" -}}
+    {{ range .Pages.ByParam $ladder_group_key -}}
         {{- $page := . }}
-        {{ if eq $last_ladder_group $page.Params.ladder_group -}}
+        {{ if eq $last_ladder_group ($page.Param $ladder_group_key) -}}
     </tr>
     <tr>
         <th scope="row">&#x3003;</th>
         {{- end }}
-        {{- $page_col := index ($scratch.Get "columns") ($page.Params.ladder_group | default "" | string) }}
+        {{- $page_col := index ($scratch.Get "columns") ($page.Param $ladder_group_key | default "" | string) }}
         {{ if lt $this_col $page_col -}}
             {{ range after 1 (seq $this_col (sub $page_col 1)) -}}
         <td class="no-skill"></td>
@@ -46,7 +48,7 @@
         {{- end }}
         <td>{{ $page.Render "cell" }}</td>
         {{- $this_col = $page_col }}
-        {{- $last_ladder_group = $page.Params.ladder_group }}
+        {{- $last_ladder_group = $page.Param $ladder_group_key }}
     {{- end }}
     {{ if lt $this_col (sub $column_count 1) -}}
         {{ range after 1 (seq $this_col (sub $column_count 1)) -}}

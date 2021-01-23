@@ -5,84 +5,13 @@
 
 {{ .Content }}
 
-<table class="cell-table">
-    <thead>
-        <tr>
-            <th>Tier</th>
-            <th colspan="42">{{ .Title }}</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{- $default_ladder := "none" }}
-        {{- $ladder_count := 0}}
-        {{- $scratch := newScratch }}
+{{ with where .Pages ".Params.loresheet_ladder" "!=" nil -}}
+{{ range .GroupByParam "loresheet_ladder" -}}
+{{ partial "lists/term/ladder" (dict "Key" .Key "Pages" .Pages "ladder_group_key" "loresheet_ladder_group" "tier_key" "loresheet_tier") }}
+{{- end }}
+{{- end }}
 
-        {{- with where .Pages ".Params.loresheet_ladder" "!=" nil }}
-        {{- range $n, $group := .GroupByParam "loresheet_ladder" }}
-        {{- $scratch.SetInMap "ladders" $group.Key $n }}
-        {{- $ladder_count = add $ladder_count 1 }}
-        {{- end }}
-        {{- end }}
-        {{- $scratch.SetInMap "ladders" $default_ladder $ladder_count }}
-
-        {{- $max_col := 0 }}
-        {{- range .Pages.GroupByParam "loresheet_tier" }}
-        {{- $col := 0 }}
-        {{- range .Pages.ByParam "loresheet_ladder" }}
-        {{- $ladder := .Params.loresheet_ladder | default $default_ladder }}
-        {{- $ladder_column := index ($scratch.Get "ladders") $ladder }}
-        {{- if lt $col $ladder_column }}
-        {{- range after 1 (seq $col $ladder_column) }}
-        {{- $col = add $col 1 }}
-        {{- end }}
-        {{- end }}
-        {{- $col = add $col 1 }}
-        {{- end }}
-        {{- if lt $max_col $col }}
-        {{- $max_col = $col }}
-        {{- end }}
-        {{- end }}
-
-        {{- $tier := 0 }}
-        {{- range .Pages.GroupByParam "loresheet_tier" }}
-        {{- range after 1 (seq $tier (sub .Key 1)) }}
-        <tr>
-            <th>{{ . }}</th>
-            <td colspan="{{ add $max_col 1 }}" class="no-skill"></td>
-        </tr>
-        {{- end }}
-        {{- $col := 0 }}
-        {{- $tier = .Key }}
-        <tr>
-            <th scope="row">{{ .Key }}</th>
-            {{- range .Pages.ByParam "loresheet_ladder" }}
-            {{- $ladder := .Params.loresheet_ladder | default $default_ladder }}
-            {{- $ladder_column := index ($scratch.Get "ladders") $ladder }}
-            {{- if lt $col $ladder_column }}
-            {{- range after 1 (seq $col $ladder_column) }}
-            <td class="no-skill"></td>
-            {{- $col = add $col 1 }}
-            {{- end }}
-            {{- end }}
-            <td>
-                {{ .Render "cell" }}
-            </td>
-            {{- $col = add $col 1 }}
-            {{- end }}
-
-            {{- if le $col $max_col }}
-            {{- range after 1 (seq $col $max_col) }}
-            <td class="no-skill"></td>
-            {{- end }}
-            {{- end }}
-        </tr>
-        {{- end }}
-        {{- range after 1 (seq $tier 5) }}
-        <tr>
-            <th>{{ . }}</th>
-            <td colspan="{{ $max_col }}" class="no-skill"></td>
-        </tr>
-        {{- end }}
-    </tbody>
-</table>
+{{ with where .Pages ".Params.loresheet_ladder" "==" nil -}}
+{{ partial "lists/term/ladder" (dict "Key" "none" "Pages" . "ladder_group_key" "loresheet_ladder_group" "tier_key" "loresheet_tier") }}
+{{- end }}
 {{- end }}
