@@ -2,6 +2,7 @@
 title: "Shield Dismiss Level"
 lists:
     - generic
+    - daemon-loresheet
     - elemental-loresheet
 tier: 3
 osp_cost: 30

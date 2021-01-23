@@ -3,6 +3,7 @@ title: "+1 Magical Armour #"
 linktitle: "+1 Magical Armour"
 lists:
     - lammie-restricted
+    - daemon-loresheet
     - elemental-loresheet
 loresheet_tier: 2
 loresheet_osp_cost: 20
