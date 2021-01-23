@@ -1,5 +1,5 @@
 ---
-title: "Elemental Loresheet"
+title: "Daemon Loresheet"
 menu:
     lists:
         parent: "summonable"

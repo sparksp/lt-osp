@@ -3,6 +3,7 @@ title: "+5 Dismiss Rank #"
 linktitle: "+5 Dismiss Rank"
 lists:
     - lammie-restricted
+    - daemon-loresheet
     - elemental-loresheet
 loresheet_tier: 1
 loresheet_osp_cost: 10

@@ -1,9 +1,12 @@
 ---
 title: "Discern Daemonic Being"
 lists:
+    - daemon-loresheet
     - mages-guild
 tier: 3
 osp_cost: 30
+loresheet_tier: 1
+loresheet_osp_cost: 10
 prerequisites: []
 requirements: []
 ---

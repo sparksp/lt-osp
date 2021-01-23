@@ -2,6 +2,7 @@
 title: "Magical Armour Mastery"
 lists:
     - generic
+    - daemon-loresheet
     - elemental-loresheet
 tier: 2
 osp_cost: 20
