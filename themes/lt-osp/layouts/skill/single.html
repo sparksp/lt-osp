@@ -56,8 +56,6 @@
     </p>
     {{- end }}
 
-    {{ .Content }}
-
     {{ with (where site.RegularPages ".Params.prerequisites" "intersect" $names).ByParam "tier" -}}
     <p>
         {{- $len := len . }}
@@ -70,6 +68,8 @@
         {{- end }}.
     </p>
     {{- end }}
+
+    <div class="markdown">{{ .Content }}</div>
 
     {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
     <p>See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.</p>

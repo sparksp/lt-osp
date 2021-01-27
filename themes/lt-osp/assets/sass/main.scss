@@ -374,3 +374,21 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
 mark {
   background-color: lighten($primary-color, 25%);
 }
+
+.markdown table {
+  background-color: #fafafa;
+  border-collapse: collapse;
+  color: black;
+  margin-bottom: 1em;
+
+  &, tr, th, td {
+    border: 1px solid #a9a9a9;
+  }
+  th, td {
+    line-height: 1.5;
+    padding: .2em .5em;
+  }
+  td {
+    background-color: white;
+  }
+}
