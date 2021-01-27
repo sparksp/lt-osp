@@ -1,5 +1,5 @@
 {{- $index := slice -}}
-{{- range where site.RegularPages ".Params.searchable" "!=" false -}}
+{{- range (where (where site.RegularPages ".Params.searchable" "!=" false) ".Params.canonical" "==" nil) -}}
     {{- $page := dict "id" .File.UniqueID "title" .Title "contents" (.Plain | chomp) "summary" (.Summary | chomp) "permalink" .Permalink "lists" .Params.lists }}
     {{- $index = $index | append $page -}}
 {{- end -}}

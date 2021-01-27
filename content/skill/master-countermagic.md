@@ -5,7 +5,7 @@ lists:
     - mages-guild
 tier: 4
 osp_cost: 40
-prerequisites: ["cast-high-countermagic", " or ", "high-magic-x", " (Incantation or Spellcasting)"]
+prerequisites: ["cast-high-countermagic", ", ", "high-magic-x/incantation", " or ", "high-magic-x/spellcasting"]
 requirements: ["Spellcasting or Incantation CS"]
 replacement: true
 ladder: "incantation"
