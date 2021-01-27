@@ -1,5 +1,6 @@
 ---
 title: "TNS Spiral"
+canonical: "skill/translate-named-script-x"
 lists:
     - scouts-guild
 tier: 1
@@ -8,4 +9,3 @@ prerequisites: ["x-oathsworn ", " <Scouts Guild>"]
 requirements: []
 restricted: true
 ---
-See [Translate Named Script \<X>]({{< ref "translate-named-script-x" >}}) for full details.
