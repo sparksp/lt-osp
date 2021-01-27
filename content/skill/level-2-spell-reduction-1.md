@@ -4,8 +4,8 @@ linktitle: "Level 2 Spell Reduction (1)"
 lists:
     - daemon-loresheet
     - lammie-restricted
-loresheet_tier: 4
-loresheet_osp: 60
+tier: 4
+osp_cost: 60
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

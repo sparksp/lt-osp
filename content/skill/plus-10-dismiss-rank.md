@@ -5,13 +5,13 @@ lists:
     - lammie-restricted
     - daemon-loresheet
     - elemental-loresheet
-loresheet_tier: 3
-loresheet_osp_cost: 30
+tier: 3
+osp_cost: 30
 prerequisites: ["plus-5-dismiss-rank"]
 requirements: ["Lammie or Loresheet"]
+replacement: true
 ladder: "dismiss-rank"
 weight: 10
-loresheet_ladder: "dismiss-rank"
 ---
 Skill name is interchangeable with Dismiss Rank +10.
 
