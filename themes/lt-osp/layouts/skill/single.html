@@ -2,6 +2,10 @@
 <article>
     <h1>{{ .Title }}</h1>
 
+    {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
+    See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.
+    {{- end }}{{- end }}
+
     {{- with .Params.lists }}
     {{- $lists := site.GetPage "/lists" }}
     <p>
@@ -50,7 +54,11 @@
 
     {{ .Content }}
 
-    {{ with (where site.RegularPages ".Params.prerequisites" "intersect" (slice .File.ContentBaseName)).ByParam "tier" -}}
+    {{- $names := slice (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
+    {{ range (print .File.Dir .File.ContentBaseName | where site.RegularPages ".Params.canonical") -}}
+    {{- $names = $names | append (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
+    {{- end }}
+    {{ with (where site.RegularPages ".Params.prerequisites" "intersect" $names).ByParam "tier" -}}
     <p>
         {{- $len := len . }}
         <strong>Dependent skill{{ if ne $len 1 }}s{{ end }}:</strong>

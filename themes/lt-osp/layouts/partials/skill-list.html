@@ -1,6 +1,10 @@
 {{- range $item := . -}}
 {{- with site.GetPage (printf "/skill/%s" $item) -}}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{- $href := .Permalink }}
+{{- if .Param "canonical" }}{{- with (.Param "canonical" | site.GetPage) -}}
+{{- $href = .Permalink }}
+{{- end }}{{ end }}
+<a href="{{ $href }}">{{ .Title }}</a>
 {{- else -}}
 {{ $item }}
 {{- end -}}
