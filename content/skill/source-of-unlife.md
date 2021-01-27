@@ -11,3 +11,12 @@ restricted: true
 ladder: "revive"
 ---
 This skill replaces [Repair Unliving (Advanced)]({{< ref "repair-unliving-advanced" >}}) and includes the [Repair Unliving (Advanced)]({{< ref "repair-unliving-advanced" >}}) and [Mind Healing]({{< ref "mind-healing" >}}) Occupational Skills. It also allows the character to cast the Total Repair Unliving Spell without having the requirement of the [High Magic]({{< ref "high-magic-x" >}}) Occupational Skill. If the character gains the [High Magic (Corruption)]({{< ref "high-magic-x" >}}) Occupational Skill, they gain Spell Reduction (3) for the spell Total Repair Unliving.
+
+
+## Vampire Loresheet
+
+**Tier:** 5
+
+**Min. Type:** Ancient
+
+**OSP Cost:** 65
