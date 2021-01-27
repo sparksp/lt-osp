@@ -2,11 +2,15 @@
 <article>
     <h1>{{ .Title }}</h1>
 
-    {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
-    See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.
-    {{- end }}{{- end }}
+    {{- $names := slice (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
+    {{- $lists := slice }}
+    {{- with .Params.lists }}{{ $lists = $lists | append . }}{{ end }}
+    {{- range (print .File.Dir .File.ContentBaseName | where site.RegularPages ".Params.canonical") }}
+    {{- $names = $names | append (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
+    {{- with .Params.lists }}{{ $lists = $lists | append . }}{{ end }}
+    {{- end }}
 
-    {{- with .Params.lists }}
+    {{- with ($lists | sort | uniq) }}
     {{- $lists := site.GetPage "/lists" }}
     <p>
         {{- $len := len . }}
@@ -54,10 +58,6 @@
 
     {{ .Content }}
 
-    {{- $names := slice (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
-    {{ range (print .File.Dir .File.ContentBaseName | where site.RegularPages ".Params.canonical") -}}
-    {{- $names = $names | append (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
-    {{- end }}
     {{ with (where site.RegularPages ".Params.prerequisites" "intersect" $names).ByParam "tier" -}}
     <p>
         {{- $len := len . }}
@@ -71,5 +71,8 @@
     </p>
     {{- end }}
 
+    {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
+    <p>See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.</p>
+    {{- end }}{{- end }}
 </article>
 {{- end }}
