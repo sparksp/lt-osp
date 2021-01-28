@@ -28,23 +28,9 @@
     </p>
     {{- end }}
 
-    {{- $tier := .Params.tier }}
     {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end -}}
 
-    {{- with .Params.loresheet_tier }}
-    {{- if ne $tier . }}
-    <p><strong>Loresheet Tier:</strong> {{ . }}</p>
-    {{ end -}}
-    {{ end -}}
-
-    {{- $osp_cost := .Params.osp_cost }}
     {{- with .Params.osp_cost }}<p><strong>OSP Cost:</strong> {{ . }}</p>{{ end -}}
-
-    {{ with .Params.loresheet_osp_cost }}
-    {{- if ne $osp_cost . }}
-    <p><strong>Loresheet OSP Cost:</strong> {{ . }}</p>
-    {{ end -}}
-    {{ end -}}
 
     {{- with .Params.prerequisites }}
     <p>
