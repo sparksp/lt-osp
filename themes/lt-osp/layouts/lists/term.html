@@ -7,7 +7,7 @@
 
 {{ with where .Pages ".Params.ladder" "!=" nil -}}
 {{ range .GroupByParam "ladder" -}}
-{{ partial "lists/term/ladder" (dict "Key" .Key "Pages" .Pages) }}
+{{ partial "lists/term/ladder" . }}
 {{- end }}
 {{- end }}
 
