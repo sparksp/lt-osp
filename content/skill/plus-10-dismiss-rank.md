@@ -3,6 +3,7 @@ title: "+10 Dismiss Rank #"
 linktitle: "+10 Dismiss Rank"
 lists:
     - lammie-restricted
+    - ancestral-loresheet
     - daemon-loresheet
     - elemental-loresheet
 tier: 3
