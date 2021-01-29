@@ -57,7 +57,7 @@ This skill allows a character to translate one named script to common for every 
 
 _The following may not be Tutored:_
 
-* TNS Ancestor Runes (Ancestral Creatures Only)
+* [TNS Ancestor Runes]({{< ref "tns-ancestor-runes" >}}) (Ancestral Creatures Only)
 * [TNS Daemon Runes]({{< ref "tns-daemon-runes" >}}) (Daemon Creatures Only)
 * [TNS Elemental Runes]({{< ref "tns-elemental-runes" >}}) (Elemental Creatures Only)
 * TNS Grave Runes (Unliving Creatures only)
