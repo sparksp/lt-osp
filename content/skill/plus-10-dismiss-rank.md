@@ -6,6 +6,7 @@ lists:
     - ancestral-loresheet
     - daemon-loresheet
     - elemental-loresheet
+    - unliving-loresheet
 tier: 3
 osp_cost: 30
 prerequisites: ["plus-5-dismiss-rank"]

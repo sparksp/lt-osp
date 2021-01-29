@@ -4,6 +4,7 @@ linktitle: "+1 Base LHV"
 lists:
     - lammie-restricted
     - elemental-loresheet
+    - unliving-loresheet
 tier: 4
 osp_cost: 65
 prerequisites: []

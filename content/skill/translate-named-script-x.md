@@ -60,5 +60,5 @@ _The following may not be Tutored:_
 * [TNS Ancestor Runes]({{< ref "tns-ancestor-runes" >}}) (Ancestral Creatures Only)
 * [TNS Daemon Runes]({{< ref "tns-daemon-runes" >}}) (Daemon Creatures Only)
 * [TNS Elemental Runes]({{< ref "tns-elemental-runes" >}}) (Elemental Creatures Only)
-* TNS Grave Runes (Unliving Creatures only)
+* [TNS Grave Runes]({{< ref "tns-grave-runes" >}}) (Unliving Creatures only)
 * [TNS Spiral]({{< ref "tns-spiral" >}} "Translate Named Script") ([Oathsworn Scouts Guild]({{< ref "x-oathsworn" >}}) Req.)
