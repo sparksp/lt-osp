@@ -14,3 +14,10 @@ Gains 1 point of Natural Armour. You may never have more than 4 points of Natura
 **Tier:** 2
 
 **OSP Cost:** 20
+
+
+## Plant Loresheet
+
+**Tier:** 3
+
+**OSP Cost:** 35

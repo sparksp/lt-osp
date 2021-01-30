@@ -39,3 +39,7 @@ theme = ["lt-osp", "fuse-search"]
 [[menu.lists]]
   name = "Summonable"
   identifier = "summonable"
+
+[[menu.lists]]
+  name = "Special Creature"
+  identifier = "special-creature"
