@@ -16,6 +16,13 @@ Gains 1 point of Natural Armour. You may never have more than 4 points of Natura
 **OSP Cost:** 20
 
 
+## Beast Loresheet
+
+**Tier:** 3
+
+**OSP Cost:** 35
+
+
 ## Plant Loresheet
 
 **Tier:** 3
