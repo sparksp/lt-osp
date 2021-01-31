@@ -18,3 +18,12 @@ Regeneration rate cannot be improved beyond 10 sec with this Occupational Skill,
 **Tier:** 4
 
 **OSP Cost:** 35
+
+
+## Werecreature Loresheet
+
+**Tier:** 1
+
+**OSP Cost:** 10
+
+**Note:** This Skill can only be used in Beast-form.
