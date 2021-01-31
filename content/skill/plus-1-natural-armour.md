@@ -28,3 +28,12 @@ Gains 1 point of Natural Armour. You may never have more than 4 points of Natura
 **Tier:** 3
 
 **OSP Cost:** 35
+
+
+## Werecreature Loresheet
+
+**Tier:** 3
+
+**Min. Type:** Mature
+
+**OSP Cost:** 30

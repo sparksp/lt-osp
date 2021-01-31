@@ -9,3 +9,12 @@ requirements: ["Lammie or Loresheet"]
 ladder: "beast-form"
 ---
 The character may change into beast-form two extra times a day. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it.
+
+
+## Werecreature Loresheet
+
+**Tier:** 2
+
+**Min. Type:** Mature
+
+**OSP Cost:** 20
