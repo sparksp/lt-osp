@@ -20,4 +20,6 @@ Requires and replaces the [Beast-form Skill Use]({{< ref "beast-form-skill-use" 
 
 **OSP Cost:** 30
 
+**Pre-requisite to learn:** [Beast-form Skill Use (B)]({{< ref "beast-form-skill-use" >}})
+
 **Note:** This Skill can only be used in Beast-form.
