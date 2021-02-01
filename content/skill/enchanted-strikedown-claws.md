@@ -19,4 +19,6 @@ The character’s claws strike for Enchanted Strikedown. Requires and replaces t
 
 **OSP Cost:** 40
 
+**Pre-requisite to learn:** [Enchanted Claws (B)]({{< ref "enchanted-claws" >}})
+
 **Note:** This Skill can only be used in Beast-form.
