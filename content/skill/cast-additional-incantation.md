@@ -18,3 +18,14 @@ The character can cast spells from the standard Incantation list as well as thei
 **Tier:** 4
 
 **OSP Cost:** 40
+
+
+## Paladin Loresheet
+
+**Tier:** 5
+
+**Min. Type:** Knight
+
+**OSP Cost:** 30
+
+**Pre-requisite to learn:** [Last Rites (Improved)]({{< ref "last-rites-improved" >}})

@@ -11,3 +11,12 @@ ladder: "incantation"
 ladder_group: "3"
 ---
 This skill replaces [Last Rites]({{< ref "last-rites" >}}) and allows grants the character Spell Reduction (1) for the spell Lay to Rest and Spell Reduction (2) for the spell Speak with Ancestor.
+
+
+## Paladin Loresheet
+
+**Tier:** 2
+
+**OSP Cost:** 20
+
+**Pre-requisites to learn:** None

@@ -14,6 +14,15 @@
     {{- with .Params.lists }}{{ $lists = $lists | append . }}{{ end }}
     {{- end }}
 
+    {{- $dependents := slice }}
+    {{ range (where site.RegularPages ".Params.prerequisites" "intersect" $names) -}}
+    {{ $skill := . }}
+    {{- if .Param "canonical" }}{{ with (.Param "canonical" | site.GetPage ) }}
+    {{ $skill = . }}
+    {{- end }}{{ end }}
+    {{ $dependents = $dependents | append $skill }}
+    {{- end }}
+
     {{- with ($lists | sort | uniq) }}
     {{- $lists := site.GetPage "/lists" }}
     <p>
@@ -46,7 +55,7 @@
     </p>
     {{- end }}
 
-    {{ with (where site.RegularPages ".Params.prerequisites" "intersect" $names).ByParam "tier" -}}
+    {{ with (sort (uniq $dependents) "Params.tier") -}}
     <p>
         {{- $len := len . }}
         <strong>Dependent skill{{ if ne $len 1 }}s{{ end }}:</strong>

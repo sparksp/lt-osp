@@ -16,3 +16,14 @@ This grants the character Damage Reduction (Crush). Note: this Occupational Skil
 **Tier:** 3
 
 **OSP Cost:** 30
+
+
+## Paladin Loresheet
+
+**Tier:** 4
+
+**Min. Type:** Knight
+
+**OSP Cost:** 40
+
+**Pre-requisite to learn:** [Immune to Through]({{< ref "immune-to-through" >}})
