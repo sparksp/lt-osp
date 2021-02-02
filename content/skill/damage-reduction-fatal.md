@@ -16,3 +16,12 @@ Grants the character Damage Reduction (Fatal) and changes the Fatal Damage effec
 * Ignores all armour
 * Places the Target into their Grace Period
 * Prevents healing (and Regeneration) from affecting the Target until the Fatal Wound is Removed
+
+
+## Paladin Loresheet
+
+**Tier:** 3
+
+**Min. Type:** Questing
+
+**OSP Cost:** 30
