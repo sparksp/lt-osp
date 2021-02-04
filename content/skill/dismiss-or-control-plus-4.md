@@ -22,12 +22,3 @@ This skill will replace the [Dismiss/Control +2]({{< ref "dismiss-or-control-plu
 **OSP Cost:** 10
 
 **Pre-requisites to learn:** None
-
-
-## Vampire Loresheet
-
-**Tier:** 2
-
-**OSP Cost:** 10
-
-**Pre-requisites to learn:** None
