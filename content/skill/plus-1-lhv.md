@@ -16,12 +16,3 @@ The character gains +1 LHV, subject to the rule of double.
 **Tier:** 3
 
 **OSP Cost:** 30
-
-
-## Vampire Loresheet
-
-**Tier:** 5
-
-**Min. Type:** Mature
-
-**OSP Cost:** 20

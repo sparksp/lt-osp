@@ -30,12 +30,3 @@ Any Normal damage taken by the character has the damage effect Subdue, in additi
 **Tier:** 4
 
 **OSP Cost:** 40
-
-
-## Vampire Loresheet
-
-**Tier:** 2
-
-**Min. Type:** Mature
-
-**OSP Cost:** 20

@@ -17,14 +17,3 @@ This skill requires and replaces the [Toughen Body]({{< ref "toughen-body" >}}) 
 **Tier:** 4
 
 **OSP Cost:** 85
-
-
-## Vampire Loresheet
-
-**Tier:** 4
-
-**Min. Type:** Ancient
-
-**OSP Cost:** 40
-
-**Pre-requisite to learn:** [Toughen Body (V)]({{< ref "toughen-body" >}}).

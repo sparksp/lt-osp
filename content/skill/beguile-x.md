@@ -13,9 +13,11 @@ Note: this is an effect and not a spell, and may not be combined with Spell Redu
 
 ## Vampire Loresheet
 
+**Note:** This Skill may only be used between Dusk (8pm) and Time-out (1am).
+
 | Tier | Min. Type | OSP Cost |
-| :--: | --------- | -------- |
-| 1    | All       | 10       |
-| 2    | Mature    | 20       |
-| 3    | Elder     | 30       |
-| 4    | Ancient   | 40       |
+| :--: | --------- | :------: |
+| 1 | [All Vampire]({{< ref "vampire-x" >}}) | 10 |
+| 2 | [Mature Vampire]({{< ref "vampire-x" >}}) | 20 |
+| 3 | [Elder Vampire]({{< ref "vampire-x" >}}) | 30 |
+| 4 | [Ancient Vampire]({{< ref "vampire-x" >}}) | 40 |
