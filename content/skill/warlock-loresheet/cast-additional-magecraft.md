@@ -1,6 +1,7 @@
 ---
 title: "Cast Additional Magecraft"
 canonical: "skill/cast-additional-magecraft"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 3

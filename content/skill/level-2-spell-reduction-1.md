@@ -14,12 +14,3 @@ The character has Spell Reduction (1) when casting level 2 spells. This skill ca
 **Tier:** 4
 
 **OSP Cost:** 60
-
-
-## Warlock Loresheet
-
-**Tier:** 2
-
-**Min. Type:** Adept
-
-**OSP Cost:** 30

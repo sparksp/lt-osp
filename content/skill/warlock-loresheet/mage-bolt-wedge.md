@@ -1,6 +1,7 @@
 ---
 title: "Mage Bolt Wedge"
 canonical: "skill/mage-bolt-wedge"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 1

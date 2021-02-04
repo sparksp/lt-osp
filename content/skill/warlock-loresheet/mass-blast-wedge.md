@@ -1,6 +1,7 @@
 ---
 title: "Mass Blast Wedge"
 canonical: "skill/mass-blast-wedge"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 3

@@ -1,6 +1,7 @@
 ---
 title: "Cast All Magecraft"
 canonical: "skill/cast-all-magecraft"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 5

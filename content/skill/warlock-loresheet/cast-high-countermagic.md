@@ -1,6 +1,7 @@
 ---
 title: "Cast High Countermagic"
 canonical: "skill/cast-high-countermagic"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 1

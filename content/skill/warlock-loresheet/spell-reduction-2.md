@@ -1,6 +1,7 @@
 ---
 title: "Spell Reduction (2)"
 canonical: "skill/spell-reduction-2"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 5

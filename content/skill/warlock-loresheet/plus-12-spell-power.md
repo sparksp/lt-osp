@@ -1,6 +1,7 @@
 ---
 title: "+12 Spell Power"
 canonical: "skill/plus-12-spell-power"
+canonical_title: "Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 3

@@ -1,6 +1,7 @@
 ---
 title: "High Magic (Healing)"
 canonical: "skill/high-magic-x"
+canonical_title: "High Magic (Healing) - Warlock Loresheet"
 lists:
     - warlock-loresheet
 tier: 5
