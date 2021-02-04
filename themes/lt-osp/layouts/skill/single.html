@@ -39,19 +39,25 @@
 
     {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end -}}
 
+    {{- with .Params.min_type }}<p><strong><abbr title="Minimum">Min.</abbr> Type:</strong> {{ partial "skill/link" . }}</p>{{ end -}}
+
     {{- with .Params.osp_cost }}<p><strong>OSP Cost:</strong> {{ . }}</p>{{ end -}}
 
     {{- with .Params.prerequisites }}
     <p>
         <strong>Pre-requisite to learn:</strong>
-        {{ partial "skill-list" . }}
+        {{ range $item := . -}}
+        {{ partial "skill/link" . }}
+        {{- end }}.
     </p>
     {{- end }}
 
     {{- with .Params.requirements }}
     <p>
         <strong>Requirements to use:</strong>
-        {{ partial "skill-list" . }}
+        {{ range $item := . -}}
+        {{ partial "skill/link" . }}
+        {{- end }}.
     </p>
     {{- end }}
 
