@@ -18,12 +18,3 @@ This skill allows a character to choose to strike for Enchanted with any melee w
 **Tier:** 4
 
 **OSP Cost:** 40
-
-
-## Paladin Loresheet
-
-**Tier:** 3
-
-**Min. Type:** Knight
-
-**OSP Cost:** 30

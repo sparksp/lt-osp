@@ -10,10 +10,3 @@ requirements: []
 ladder: "beguile"
 ---
 This skill makes the character immune to all charm effects. Charms are a subgroup of Mind effects and include Befriend, Beguile, Enthral and Enthral Unliving.
-
-
-## Paladin Loresheet
-
-**Tier:** 2
-
-**OSP Cost:** 20
