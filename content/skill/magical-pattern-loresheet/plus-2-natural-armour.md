@@ -1,6 +1,7 @@
 ---
 title: "+2 Natural Armour"
 canonical: "skill/plus-2-natural-armour"
+canonical_title: "Magical Pattern Loresheet"
 lists:
     - magical-pattern-loresheet
 tier: 4
