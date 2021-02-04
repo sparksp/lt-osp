@@ -9,10 +9,3 @@ requirements: ["Body development 2 CS", " or ", "Lammie or Loresheet"]
 restricted: true
 ---
 The character gains +1 LHV, subject to the rule of double.
-
-
-## Unliving Loresheet
-
-**Tier:** 3
-
-**OSP Cost:** 30
