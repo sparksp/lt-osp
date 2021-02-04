@@ -16,10 +16,3 @@ This skill replaces [+1 Natural Armour]({{< ref "plus-1-natural-armour" >}}), ga
 **Tier:** 4
 
 **OSP Cost:** 40
-
-
-## Plant Loresheet
-
-**Tier:** 4
-
-**OSP Cost:** 45

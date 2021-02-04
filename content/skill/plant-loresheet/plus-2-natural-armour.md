@@ -1,6 +1,7 @@
 ---
 title: "+2 Natural Armour"
 canonical: "skill/plus-2-natural-armour"
+canonical_title: "Plant Loresheet"
 lists:
     - plant-loresheet
 tier: 4
