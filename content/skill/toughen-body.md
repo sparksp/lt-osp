@@ -16,10 +16,3 @@ Any Normal damage taken by the character has the damage effect Subdue, in additi
 **Tier:** 3
 
 **OSP Cost:** 30
-
-
-## Mineral Loresheet
-
-**Tier:** 3
-
-**OSP Cost:** 30

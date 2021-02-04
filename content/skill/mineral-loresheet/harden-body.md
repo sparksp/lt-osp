@@ -1,6 +1,7 @@
 ---
 title: "Harden Body"
 canonical: "skill/harden-body"
+canonical_title: "Mineral Loresheet"
 lists:
     - mineral-loresheet
 tier: 4
