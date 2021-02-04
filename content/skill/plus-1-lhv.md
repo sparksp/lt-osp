@@ -25,12 +25,3 @@ The character gains +1 LHV, subject to the rule of double.
 **Min. Type:** Mature
 
 **OSP Cost:** 20
-
-
-## Werecreature Loresheet
-
-**Tier:** 1
-
-**OSP Cost:** 10
-
-**Note:** This Skill can only be used in Beast-form.

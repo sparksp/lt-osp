@@ -23,12 +23,3 @@ This skill replaces [+1 Natural Armour]({{< ref "plus-1-natural-armour" >}}), ga
 **Tier:** 4
 
 **OSP Cost:** 45
-
-
-## Werecreature Loresheet
-
-**Tier:** 4
-
-**Min. Type:** Elder
-
-**OSP Cost:** 40
