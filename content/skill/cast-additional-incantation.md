@@ -11,10 +11,3 @@ ladder: "incantation"
 ladder_group: "2"
 ---
 The character can cast spells from the standard Incantation list as well as their converted spell list.
-
-
-## Ancestral Loresheet
-
-**Tier:** 4
-
-**OSP Cost:** 40
