@@ -9,16 +9,3 @@ replacement: true
 ladder: "claws"
 ---
 The character’s claws strike for Enchanted Strikedown. Requires and replaces the [Enchanted Claws]({{< ref "enchanted-claws" >}}) Occupational Skill. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it.
-
-
-## Werecreature Loresheet
-
-**Tier:** 4
-
-**Min. Type:** Alpha
-
-**OSP Cost:** 40
-
-**Pre-requisite to learn:** [Enchanted Claws (B)]({{< ref "enchanted-claws" >}})
-
-**Note:** This Skill can only be used in Beast-form.

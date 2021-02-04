@@ -13,8 +13,10 @@ Note: this is an effect and not a spell, and may not be combined with Spell Redu
 
 ## Werecreature Loresheet
 
+**Note:** This Skill can only be used in Beast-form.
+
 | Tier | Min. Type | OSP Cost |
-| :--: | --------- | -------- |
-| 1 | All | 10 |
-| 2 | Mature | 20 |
-| 3 | Elder | 30 |
+| :--: | --------- | :------: |
+| 1 | [All Werecreature]({{< ref "werecreature-x" >}}) | 10 |
+| 2 | [Mature Werecreature]({{< ref "werecreature-x" >}}) | 20 |
+| 3 | [Elder Werecreature]({{< ref "werecreature-x" >}}) | 30 |
