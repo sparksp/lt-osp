@@ -19,3 +19,21 @@ The character gains access to the level 3 of any list they can cast to level 2 (
 **Min. Type:** Elder
 
 **OSP Cost:** 50
+
+
+## High Magic (Healing) - Warlock Loresheet
+
+**Tier:** 5
+
+**Min. Type:** Master
+
+**OSP Cost:** 30
+
+
+## High Magic (Spellcasting) - Warlock Loresheet
+
+**Tier:** 5
+
+**Min. Type:** Master
+
+**OSP Cost:** 30
