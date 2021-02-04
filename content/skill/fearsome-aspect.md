@@ -16,10 +16,3 @@ The character may create an innate Mass Fear effect using 4 of their own Spell P
 **Tier:** 3
 
 **OSP Cost:** 30
-
-
-## Magical Pattern Loresheet
-
-**Tier:** 3
-
-**OSP Cost:** 30
