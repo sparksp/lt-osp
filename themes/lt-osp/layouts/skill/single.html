@@ -2,11 +2,15 @@
 <article>
     <h1>{{ .Title }}</h1>
 
+    {{- $canonical_includes := slice }}
     {{- $names := slice (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
     {{- $lists := slice }}
     {{- with .Params.lists }}{{ $lists = $lists | append . }}{{ end }}
     {{- range (print .File.Dir .File.ContentBaseName | where site.RegularPages ".Params.canonical") }}
     {{- $child := . }}
+    {{- if .Param "canonical_title" }}
+    {{- $canonical_includes = $canonical_includes | append . }}
+    {{- end }}
     {{- if .Param "canonical" }}{{ with (.Param "canonical" | site.GetPage ) }}
     {{- $child = . }}
     {{- end }}{{ end }}
@@ -37,29 +41,7 @@
     </p>
     {{- end }}
 
-    {{- with .Params.tier }}<p><strong>Tier:</strong> {{ . }}</p>{{ end -}}
-
-    {{- with .Params.min_type }}<p><strong><abbr title="Minimum">Min.</abbr> Type:</strong> {{ partial "skill/link" . }}</p>{{ end -}}
-
-    {{- with .Params.osp_cost }}<p><strong>OSP Cost:</strong> {{ . }}</p>{{ end -}}
-
-    {{- with .Params.prerequisites }}
-    <p>
-        <strong>Pre-requisite to learn:</strong>
-        {{ range $item := . -}}
-        {{ partial "skill/link" . }}
-        {{- end }}.
-    </p>
-    {{- end }}
-
-    {{- with .Params.requirements }}
-    <p>
-        <strong>Requirements to use:</strong>
-        {{ range $item := . -}}
-        {{ partial "skill/link" . }}
-        {{- end }}.
-    </p>
-    {{- end }}
+    {{ .Render "details" }}
 
     {{ with (sort (uniq $dependents) "Params.tier") -}}
     <p>
@@ -79,5 +61,15 @@
     {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
     <p>See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.</p>
     {{- end }}{{- end }}
+
+    {{- range $canonical_includes }}
+    <section>
+        <h2>{{ .Params.canonical_title }}</h2>
+
+        {{ .Render "details" }}
+
+        {{ .Render "content" }}
+    </section>
+    {{- end }}
 </article>
 {{- end }}

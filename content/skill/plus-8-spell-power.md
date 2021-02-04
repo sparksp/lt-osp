@@ -13,12 +13,3 @@ ladder: "+spell-power"
 ---
 This skill replaces the [+4 Spell Power]({{< ref "plus-4-spell-power" >}}) Occupational Skill. The character gains +8 spell Power per day, subject to the
 rule of double.
-
-
-## Warlock Loresheet
-
-**Tier:** 2
-
-**Pre-requisites to learn:** None
-
-**OSP Cost:** 10
