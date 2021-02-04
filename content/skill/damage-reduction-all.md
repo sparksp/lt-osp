@@ -14,12 +14,3 @@ This grants the character Damage Reduction to all damage effects and replaces th
 Note: it has no effect on Artefact or Bane Damage, with the exception that it functions on Fatal Damage exactly the same as Occupational Skill: [Damage Reduction (Fatal)]({{< ref "damage-reduction-fatal" >}}).
 
 If the character also has the [Occupational Skill]({{< ref "regenerates" >}} "Regenerates") or ability to Regenerate Damage, the maximum speed at which the Damage can be regained is 1 per 5 mins (this may not be improved by any means).
-
-
-## Paladin Loresheet
-
-**Tier:** 5
-
-**Min. Type:** Lord
-
-**OSP Cost:** 40

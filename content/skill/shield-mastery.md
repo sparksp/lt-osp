@@ -10,10 +10,3 @@ requirements: ["Shield Use CS"]
 ladder: "tracking"
 ---
 A character with this skill can use a shield to parry weapon blows inflicting the Normal (non-magical) Crush effect without damaging the shield. This Occupational Skill will not alter any other damage effect that ignores armour.
-
-
-## Paladin Loresheet
-
-**Tier:** 2
-
-**OSP Cost:** 20

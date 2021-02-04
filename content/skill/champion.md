@@ -20,12 +20,3 @@ This skill replaces [Transcend Armour]({{< ref "transcend-armour" >}}) and allow
 **OSP Cost:** 30
 
 **Pre-requisites to learn:** None
-
-
-## Paladin Loresheet
-
-**Tier:** 1
-
-**OSP Cost:** 10
-
-**Pre-requisites to learn:** None

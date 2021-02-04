@@ -17,12 +17,3 @@ The character and their armour are immune to the Through effect, unless it has t
 **Tier:** 3
 
 **OSP Cost:** 35
-
-
-## Paladin Loresheet
-
-**Tier:** 3
-
-**Min. Type:** Questing
-
-**OSP Cost:** 30
