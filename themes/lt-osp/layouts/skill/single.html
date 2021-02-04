@@ -74,7 +74,7 @@
     </p>
     {{- end }}
 
-    <div class="markdown">{{ .Content }}</div>
+    {{ .Render "content" }}
 
     {{- if .Param "canonical" }}{{- with (.Param "canonical" | string | site.GetPage) }}
     <p>See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.</p>
