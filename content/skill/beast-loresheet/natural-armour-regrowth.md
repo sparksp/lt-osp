@@ -1,6 +1,7 @@
 ---
 title: "Natural Armour Regrowth"
 canonical: "skill/natural-armour-regrowth"
+canonical_title: "Beast Loresheet"
 lists:
     - beast-loresheet
 tier: 3
