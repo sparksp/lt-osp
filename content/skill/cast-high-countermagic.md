@@ -11,3 +11,12 @@ ladder: "incantation"
 ladder_group: "1"
 ---
 With this skill a character may use 4 power and cast a High Countermagic spell.
+
+
+## Warlock Loresheet
+
+**Tier:** 1
+
+**OSP Cost:** 10
+
+**Pre-requisite to learn:** Level 2 Spellcasting CS
