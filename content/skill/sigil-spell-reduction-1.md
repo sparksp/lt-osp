@@ -1,6 +1,6 @@
 ---
-title: "Sigil Skill Reduction (1) #"
-linktitle: "Sigil Skill Reduction (1)"
+title: "Sigil Spell Reduction (1) #"
+linktitle: "Sigil Spell Reduction (1)"
 lists:
     - lammie-restricted
 prerequisites: []
