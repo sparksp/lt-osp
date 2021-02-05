@@ -37,9 +37,13 @@ theme = ["lt-osp", "fuse-search"]
   weight = -1
 
 [[menu.lists]]
-  name = "Summonable"
-  identifier = "summonable"
+  name = "Skill"
+  identifier = "skill"
 
 [[menu.lists]]
   name = "Special Creature"
   identifier = "special-creature"
+
+[[menu.lists]]
+  name = "Summonable"
+  identifier = "summonable"
