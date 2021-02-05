@@ -34,6 +34,11 @@
     {{ range .Pages.ByParam "ladder_group" -}}
         {{- $page := . }}
         {{ if eq $last_ladder_group $page.Params.ladder_group -}}
+            {{ if lt $this_col (sub $column_count 1) -}}
+                {{ range after 1 (seq $this_col (sub $column_count 1)) -}}
+        <td class="no-skill"></td>
+                {{- end }}
+            {{- end }}
     </tr>
     <tr>
         <th scope="row">&#x3003;</th>
