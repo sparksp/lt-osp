@@ -37,6 +37,10 @@ theme = ["lt-osp", "fuse-search"]
   weight = -1
 
 [[menu.lists]]
+  name = "Awakened"
+  identifier = "awakened"
+
+[[menu.lists]]
   name = "Skill"
   identifier = "skill"
 
