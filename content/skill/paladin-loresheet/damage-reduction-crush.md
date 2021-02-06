@@ -10,3 +10,4 @@ osp_cost: 40
 prerequisites: ["paladin-loresheet/immune-to-through"]
 ladder: "damage-reduction-crush"
 ---
+**Note:** If a Paladin gains the CS Spellcasting (any level) the OS Damage Reduction (Crush) will stop working.
