@@ -2,11 +2,7 @@
 title: "Strike for Enchanted #"
 linktitle: "Strike for Enchanted"
 lists:
-    - ancestral-loresheet
     - lammie-restricted
-    - mineral-loresheet
-tier: 3
-osp_cost: 30
 prerequisites: []
 requirements: ["Lammie, Loresheet or High Magic Sigil"]
 ---
