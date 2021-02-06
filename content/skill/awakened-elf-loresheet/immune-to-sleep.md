@@ -4,7 +4,7 @@ canonical: "skill/immune-to-sleep"
 canonical_title: "Awakened Elf Loresheet"
 lists:
     - awakened-elf-loresheet
-tier: 1
+tier: 4 # TODO: Confirm Tier
 osp_cost: 35
 prerequisites: ["None"]
 ---

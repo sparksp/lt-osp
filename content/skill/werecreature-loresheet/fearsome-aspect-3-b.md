@@ -1,4 +1,5 @@
 ---
+# TODO: Confirm this is <3>
 title: "Fearsome Aspect 3 (B)"
 canonical: "skill/fearsome-aspect-x"
 lists:

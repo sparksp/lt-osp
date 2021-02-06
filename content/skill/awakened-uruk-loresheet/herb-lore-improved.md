@@ -4,7 +4,7 @@ canonical: "skill/herb-lore-improved"
 canonical_title: "Awakened Uruk Loresheet"
 lists:
     - awakened-uruk-loresheet
-tier: 2
+tier: 2 # TODO: Confirm Tier
 osp_cost: 20
 prerequisites: ["awakened-uruk-loresheet/herb-lore"]
 replacement: true
