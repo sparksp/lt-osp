@@ -7,4 +7,5 @@ lists:
 tier: 1
 osp_cost: 5
 ladder: "tracking"
+weight: 1
 ---
