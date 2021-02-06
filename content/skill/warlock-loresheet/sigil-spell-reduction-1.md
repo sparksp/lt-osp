@@ -8,4 +8,4 @@ tier: 0
 osp_cost: 0
 ladder: "*granted"
 ---
-Warlock grants the Sigil Spell Reduction (1) Occupational Skill.
+Warlocks automatically gain the Sigil Spell Reduction (1) Occupational Skill.
