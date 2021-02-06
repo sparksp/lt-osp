@@ -37,17 +37,17 @@ theme = ["lt-osp", "fuse-search"]
   weight = -1
 
 [[menu.lists]]
-  name = "Awakened"
-  identifier = "awakened"
+  name = "Awakened Creature Loresheets"
+  identifier = "awakened-creature-loresheets"
 
 [[menu.lists]]
-  name = "Skill"
-  identifier = "skill"
+  name = "Skill Loresheets"
+  identifier = "skill-loresheets"
 
 [[menu.lists]]
-  name = "Special Creature"
-  identifier = "special-creature"
+  name = "Special Creature Loresheets"
+  identifier = "special-creature-loresheets"
 
 [[menu.lists]]
-  name = "Summonable"
-  identifier = "summonable"
+  name = "Summonable Creature Loresheets"
+  identifier = "summonable-creature-loresheets"

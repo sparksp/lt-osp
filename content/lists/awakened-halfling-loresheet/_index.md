@@ -2,7 +2,7 @@
 title: "Awakened Halfling Loresheet"
 menu:
     lists:
-        parent: "awakened"
+        parent: "awakened-creature-loresheets"
 ---
 An Awakened Halfling with this Loresheet the rules apply for the following Occupational Skills:
 * For characters with this loresheet the Skill [Traverse Faction Wards]({{< ref "/skill/traverse-faction-wards" >}}) OS includes and replaces the Skill [Escape Bonds]({{< ref "/skill/escape-bonds" >}})

@@ -2,7 +2,7 @@
 title: "Werecreature Loresheet"
 menu:
     lists:
-        parent: essence
+        parent: "essence-creature-loresheets"
 ---
 Werecreatures automatically gain the OS [Beast-form intelligence]({{< ref "/skill/beast-form-intelligence" >}}) and may speak whilst in Beast-form normally.
 

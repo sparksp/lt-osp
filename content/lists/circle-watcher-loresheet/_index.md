@@ -2,7 +2,7 @@
 title: "Circle Watcher Loresheet"
 menu:
     lists:
-        parent: "skill"
+        parent: "skill-loresheets"
 ---
 Circle Watcher grants the [Immune to Mute]({{< ref "/skill/immune-to-mute" >}}) and [Immune to Charms]({{< ref "/skill/immune-to-charms" >}}) Occupational Skills.
 
