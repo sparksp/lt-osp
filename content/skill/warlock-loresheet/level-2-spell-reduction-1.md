@@ -9,3 +9,4 @@ min_type: "warlock-x/2"
 osp_cost: 30
 ladder: "spell-reduction"
 ---
+**Note:** if a Warlock gains the CS Incantation (any level) the Occupational Skill Level 2 Spell Reduction (1) will stop working.
