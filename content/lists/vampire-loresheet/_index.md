@@ -2,7 +2,7 @@
 title: "Vampire Loresheet"
 menu:
     lists:
-        parent: "essence"
+        parent: "essence-creature-loresheets"
 ---
 Vampires are considerably more powerful during the evening. Some Vampire Powers and Skills are marked with a (V) and may only be used between Dusk (8pm) and Time-out (1am). Between Time-in (usually 10am) and Dusk (8pm), all Vampires have a Base Dismiss level of 10.
 

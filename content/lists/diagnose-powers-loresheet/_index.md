@@ -2,7 +2,7 @@
 title: "Diagnose Powers Loresheet"
 menu:
     lists:
-        parent: "skill"
+        parent: "skill-loresheets"
 ---
 See also: [Diagnose Powers]({{< ref "/skill/diagnose-powers" >}}) Occupational Skill.
 

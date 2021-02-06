@@ -2,7 +2,7 @@
 title: "Awakened Uruk Loresheet"
 menu:
     lists:
-        parent: "awakened"
+        parent: "awakened-creature-loresheets"
 ---
 An Awakened Uruk with this Loresheet the rules apply for the following Occupational Skills:
 
