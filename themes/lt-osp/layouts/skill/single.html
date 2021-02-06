@@ -2,6 +2,10 @@
 <article>
     <h1>{{ .Title }}</h1>
 
+    {{- with .Params.canonical_title -}}
+    <h2>{{ . }}</h2>
+    {{- end }}
+
     {{- $canonical_includes := slice }}
     {{- $names := slice (print .File.Dir .File.ContentBaseName | replaceRE "^skill/" "") }}
     {{- $lists := slice }}
