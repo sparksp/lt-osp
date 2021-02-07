@@ -6,4 +6,5 @@ aliases:
 menu:
     lists:
         identifier: "knowledge-guilds"
+        parent: "guilds"
 ---

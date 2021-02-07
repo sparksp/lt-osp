@@ -37,17 +37,29 @@ theme = ["lt-osp", "fuse-search"]
   weight = -1
 
 [[menu.lists]]
+  name = "Guilds"
+  identifier = "guilds"
+
+[[menu.lists]]
+  name = "Loresheets"
+  identifier = "loresheets"
+
+[[menu.lists]]
   name = "Awakened Creature Loresheets"
   identifier = "awakened-creature-loresheets"
+  parent = "loresheets"
 
 [[menu.lists]]
   name = "Skill Loresheets"
   identifier = "skill-loresheets"
+  parent = "loresheets"
 
 [[menu.lists]]
   name = "Special Creature Loresheets"
   identifier = "special-creature-loresheets"
+  parent = "loresheets"
 
 [[menu.lists]]
   name = "Summonable Creature Loresheets"
   identifier = "summonable-creature-loresheets"
+  parent = "loresheets"
