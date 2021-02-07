@@ -8,4 +8,5 @@ aliases:
 menu:
     lists:
         identifier: "arcane-guilds"
+        parent: "guilds"
 ---

@@ -1,0 +1,71 @@
+{{ define "main" -}}
+<div class="lists">
+  <h1>{{ .Title }}</h1>
+  <p>{{ site.Params.description }}</p>
+  <section>
+  {{- range site.Menus.lists }}
+    <h2>
+      {{- if .Page }}
+      <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
+      {{- else if .URL }}
+      <a href="{{ absURL .URL }}">{{ .Title | default .Name }}</a>
+      {{- else }}
+      {{ .Title | default .Name }}
+      {{ end -}}
+    </h2>
+
+    {{- if .HasChildren }}
+    <section class="list-list">
+      {{- $childless := slice -}}
+      {{- range .Children }}
+        {{- if .HasChildren }}
+      <section class="list">
+        <header class="cell-list-title">
+        {{- if .Page }}
+          <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
+        {{- else if .URL }}
+          <a href="{{ absURL .URL }}">{{ .Title | default .Name }}</a>
+        {{- else }}
+          {{ .Title | default .Name }}
+        {{ end -}}
+        </header>
+        <div class="cell-list">
+          <div class="cell-ladder">
+          {{- range .Children }}
+            {{ partial "lists/home-item" . }}
+          {{ end -}}
+          </div>
+        </div>
+      </section>
+        {{- else }}
+          {{- $childless = $childless | append . }}
+        {{- end }}
+      {{- end }}
+
+      {{- if gt (len $childless) 1 }}
+      <section class="list">
+        <header class="cell-list-title">
+        {{- if .Page }}
+          <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
+        {{- else if .URL }}
+          <a href="{{ absURL .URL }}">{{ .Title | default .Name }}</a>
+        {{- else }}
+          {{ .Title | default .Name }}
+        {{ end -}}
+        </header>
+        <div class="cell-list">
+          <div class="cell-ladder">
+          {{- range $childless }}
+            {{ partial "lists/home-item" . }}
+          {{ end -}}
+          </div>
+        </div>
+      </section>
+      {{- end }}
+    </section>
+    {{- end }}
+
+  {{- end }}
+  </section>
+</div>
+{{- end }}
