@@ -38,11 +38,11 @@ onReady(function () {
             evt.target.focus();
         });
 
-        if (!cell.dataset.prerequisite) {
+        if (!cell.dataset.prerequisites) {
             return;
         }
 
-        var prerequisites = cell.dataset.prerequisite.split(";");
+        var prerequisites = cell.dataset.prerequisites.split(";");
         prerequisites.forEach(function (prerequisiteId) {
             var prerequisite = document.getElementById(prerequisiteId);
             if (!prerequisite) {

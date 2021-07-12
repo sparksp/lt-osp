@@ -1,7 +1,8 @@
 ---
 title: "Immune to Paralysis #"
 linktitle: "Immune to Paralysis"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

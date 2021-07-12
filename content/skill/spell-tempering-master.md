@@ -1,8 +1,10 @@
 ---
 title: "Spell Tempering (Master) #"
 linktitle: "Spell Tempering (Master)"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
+replacement: true
 ---
-This skill allows the character to make a master spell tempered item at each Main Event with tools that can be obtained and used in the relevant Guild area. The character must gain permission from the Guild to use their facilities.
+This skill replaces [Spell Tempering]({{< ref "spell-tempering" >}}) and allows the character to make a master spell tempered item at each Main Event with tools that can be obtained and used in the relevant Guild area.

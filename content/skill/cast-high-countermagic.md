@@ -1,10 +1,13 @@
 ---
 title: "Cast High Countermagic"
-guilds: [incantors, mages]
+lists:
+    - incantors-guild
+    - mages-guild
 tier: 3
 osp_cost: 30
 prerequisites: []
-requirements: ["Spellcasting", " or ", "Incantation", " CS"]
-ladder: "immune-to-fear"
+requirements: ["Spellcasting or Incantation CS"]
+ladder: "incantation"
+ladder_group: "1"
 ---
-With this skill a character may tear 4 spell cards and cast a High Countermagic spell.
+With this skill a character may use 4 power and cast a High Countermagic spell.

@@ -1,0 +1,14 @@
+{{- if .Page }}
+<a href="{{ .Page.Permalink }}">{{ default .Name .Title }}</a>
+{{- else if .URL }}
+<a href="{{ absURL .URL }}">{{ default .Name .Title }}</a>
+{{- else }}
+<span class="link">{{ default .Name .Title }}</span>
+{{- end }}
+{{- if .HasChildren }}
+<ul>
+    {{- range .Children }}
+    <li>{{ partial "lists/nav/link" . }}</li>
+    {{- end }}
+</ul>
+{{- end }}

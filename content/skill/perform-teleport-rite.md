@@ -1,14 +1,12 @@
 ---
 title: "Perform Teleport Rite"
-guilds: [casino]
+lists:
+    - casino-guild
 tier: 5
 osp_cost: 50
-prerequisites: [perform-transport-rite]
-requirements: []
+prerequisites: ["perform-transport-rite"]
+requirements: ["Spellcasting", ", ", "Incantation", ", ", "Corruption", " or ", "Healing CS"]
 replacement: true
 restricted: true
-ladder: "identify"
 ---
-This skill is new to [Rune 2020][rune-2020].  More details will be published in the updated Occupational Skills Booklet available on the Lorien Trust Website over this Winter.
-
-[rune-2020]: /guilds/rune-2020/
+This skill adds the Transportation and Teleport Spells to the characters available spell list(s). In addition the character has spell reduction (1) for the Teleport spell.

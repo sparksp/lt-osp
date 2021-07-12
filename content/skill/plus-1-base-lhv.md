@@ -1,7 +1,12 @@
 ---
 title: "+1 Base LHV #"
 linktitle: "+1 Base LHV"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
+    - elemental-loresheet
+    - unliving-loresheet
+tier: 4
+osp_cost: 65
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

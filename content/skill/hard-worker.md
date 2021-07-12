@@ -1,7 +1,8 @@
 ---
 title: "Hard Worker #"
 linktitle: "Hard Worker"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: []
 ---

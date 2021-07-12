@@ -1,7 +1,8 @@
 ---
 title: "Beast-form Intelligence #"
 linktitle: "Beast-form Intelligence"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]

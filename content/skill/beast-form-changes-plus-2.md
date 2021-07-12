@@ -1,7 +1,8 @@
 ---
 title: "Beast-form Changes +2 #"
 linktitle: "Beast-form Changes +2"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 weight: 4
 prerequisites: []
 requirements: ["Lammie or Loresheet"]

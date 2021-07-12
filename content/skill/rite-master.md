@@ -1,10 +1,11 @@
 ---
 title: "Rite Master"
-guilds: [mages]
+lists:
+    - mages-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
 requirements: ["Ritual Magic CS"]
 ladder: "ritualist"
 ---
-This skills allows a character to use spell cards donated from other characters towards the spell card cost of any rite that involves both the rite master and the donating character. This donation must be OOC.
+This skill allows a character to use Spell Power donated from other characters towards the Spell Power cost of any rite that involves both the rite master and the donating character. This donation must be OOC.

@@ -1,10 +1,12 @@
 ---
 title: "Last Rites"
-guilds: [incantors]
+lists:
+    - incantors-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
 requirements: ["Incantation CS"]
-ladder: "last-rites"
+ladder: "incantation"
+ladder_group: "3"
 ---
-This skill allows a character to perform Lay to Rest or Rite of Dedication (if they have the relevant list) without needing the CS Ritual Magic at any level. This does not allow a character to perform any other rite.
+This skill grants them Spell Reduction (1) on the effect Lay to Rest.

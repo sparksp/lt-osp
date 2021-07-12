@@ -1,0 +1,9 @@
+{{- with site.GetPage (printf "/skill/%s" .) -}}
+{{- $href := .Permalink }}
+{{- if .Param "canonical" }}{{- with (.Param "canonical" | site.GetPage) -}}
+{{- $href = .Permalink }}
+{{- end }}{{ end }}
+<a href="{{ $href }}" title="{{ .Title }}">{{ .LinkTitle }}</a>
+{{- else -}}
+{{ . }}
+{{- end -}}

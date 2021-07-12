@@ -1,7 +1,8 @@
 ---
 title: "Immune to Disease and Decay #"
 linktitle: "Immune to Disease and Decay"
-guilds: [lammie-restricted]
+lists:
+    - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ---

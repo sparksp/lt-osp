@@ -1,0 +1,15 @@
+{{- with .Menus.lists }}
+{{- partial "lists/nav/parent" (dict "menu" site.Menus.lists "parent" .Parent) -}}
+{{- if .HasChildren }}
+<p>
+    <strong>Lists:</strong>
+    {{- $len := len .Children }}
+    {{- range $index, $e := .Children }}
+    {{- if $index }}
+    {{- if ge (add $index 1) $len }} and {{ else }}, {{ end }}
+    {{- end }}
+    {{ partial "lists/link" .Page }}
+    {{- end }}
+</p>
+{{- end }}
+{{- end }}
