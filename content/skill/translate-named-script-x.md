@@ -8,6 +8,7 @@ osp_cost: 10
 prerequisites: []
 requirements: []
 ladder: "translate-named-script"
+ladder_group: "1"
 ---
 This skill allows a character to translate one named script to common for every TNS that is purchased. Each of the most common scripts are listed below and fall into one to three Script families: Regional & Historical, People & Race, or Myth & Magic. A loresheet for each script can be collected from Game Control once this skill is on the character card. Some TNS scripts are not listed below and are not part of the Script Categories – these TNS Scripts are only available with particular prerequisites or Loresheets.
 
@@ -56,8 +57,8 @@ This skill allows a character to translate one named script to common for every 
 
 _The following may not be Tutored:_
 
-* TNS Ancestor Runes (Ancestral Creatures Only)
-* TNS Daemon Runes (Daemon Creatures Only)
-* TNS Elemental Runes (Elemental Creatures Only)
-* TNS Grave Runes (Unliving Creatures only)
+* [TNS Ancestor Runes]({{< ref "tns-ancestor-runes" >}}) (Ancestral Creatures Only)
+* [TNS Daemon Runes]({{< ref "tns-daemon-runes" >}}) (Daemon Creatures Only)
+* [TNS Elemental Runes]({{< ref "tns-elemental-runes" >}}) (Elemental Creatures Only)
+* [TNS Grave Runes]({{< ref "tns-grave-runes" >}}) (Unliving Creatures only)
 * [TNS Spiral]({{< ref "tns-spiral" >}} "Translate Named Script") ([Oathsworn Scouts Guild]({{< ref "x-oathsworn" >}}) Req.)

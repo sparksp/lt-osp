@@ -9,5 +9,6 @@ osp_cost: 10
 prerequisites: []
 requirements: []
 ladder: "immune-to-fumble"
+ladder_group: "1"
 ---
 This skill makes the character immune to the Fumble effect.

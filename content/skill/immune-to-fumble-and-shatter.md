@@ -9,5 +9,6 @@ prerequisites: ["immune-to-fumble"]
 requirements: []
 replacement: true
 ladder: "immune-to-fumble"
+ladder_group: "1"
 ---
 This skill replaces [Immune to Fumble]({{< ref "immune-to-fumble" >}}). The character and any item held are immune to the Fumble and Shatter effects.

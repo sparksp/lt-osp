@@ -3,9 +3,16 @@ title: "+5 Dismiss Rank #"
 linktitle: "+5 Dismiss Rank"
 lists:
     - lammie-restricted
+    - ancestral-loresheet
+    - daemon-loresheet
+    - elemental-loresheet
+    - unliving-loresheet
+tier: 1
+osp_cost: 10
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
 ladder: "dismiss-rank"
+weight: 5
 ---
 Skill name is interchangeable with Dismiss Rank +5.
 

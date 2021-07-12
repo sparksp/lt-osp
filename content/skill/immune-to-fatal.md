@@ -3,7 +3,7 @@ title: "Immune to Fatal #"
 linktitle: "Immune to Fatal"
 lists:
     - lammie-restricted
-prerequisites: []
+prerequisites: ["damage-reduction-fatal"]
 requirements: ["Lammie or Loresheet"]
 replacement: true
 ---

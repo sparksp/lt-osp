@@ -6,4 +6,5 @@ aliases:
 menu:
     lists:
         identifier: "martial-guilds"
+        parent: "guilds"
 ---

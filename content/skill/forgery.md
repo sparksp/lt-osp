@@ -10,6 +10,7 @@ requirements: []
 replacement: true
 restricted: true
 ladder: "translate-named-script"
+ladder_group: "1"
 ---
 This skill replaces [Written Forgery]({{< ref "written-forgery" >}}). A character with this skill is able to create forged items (excluding weapons, armour and shields) with appropriate additional skills. The character must be in the relevant Guild to use this skill and may create a single forged item per Lorien Trust Main Event. Forged crafted items (such as a Forged Potion) require an appropriate [Create Skill]({{< ref "search" >}}?q=^create) and will consume a make slot from your event allocation of the appropriate level. The character must gain permission from the Guild to use their facilities.
 

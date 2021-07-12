@@ -3,7 +3,7 @@
 
 {{ partial "lists/nav" . }}
 
-{{ .Content }}
+{{ .Render "content" }}
 
 {{- with where .Pages ".Params.list" nil }}
 <table class="cell-table">
