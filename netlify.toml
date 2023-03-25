@@ -1,12 +1,12 @@
 [build]
   publish = "public"
-  command = "hugo -b $URL/"
+  command = "hugo --baseURL=$URL/"
 
 [build.environment]
-  HUGO_VERSION = "0.85.0"
+  HUGO_VERSION = "0.111.3"
 
 [context.deploy-preview]
-  command = "hugo --i18n-warnings -b $DEPLOY_PRIME_URL/"
+  command = "hugo --baseURL=$DEPLOY_PRIME_URL/"
 
 [context.branch-deploy]
-  command = "hugo --i18n-warnings --buildDrafts -b $DEPLOY_PRIME_URL/"
+  command = "hugo --buildDrafts --baseURL=$DEPLOY_PRIME_URL/"
