@@ -4,6 +4,7 @@ target = public
 all : $(target) ;
 
 $(target) :
+	mkdir -p $@
 	hugo --gc --destination=$@
 
 .PHONY : clean
