@@ -1,12 +1,20 @@
 [build]
-  publish = "public"
-  command = "mkdir public; hugo --baseURL=$URL/"
+publish = "public"
+command = "hugo --gc --minify"
 
-[build.environment]
-  HUGO_VERSION = "0.111.3"
+[context.production.environment]
+HUGO_VERSION = "0.111.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-  command = "mkdir public; hugo --baseURL=$DEPLOY_PRIME_URL/"
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.111.3"
 
 [context.branch-deploy]
-  command = "mkdir public; hugo --buildDrafts --baseURL=$DEPLOY_PRIME_URL/"
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.111.3"
