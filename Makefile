@@ -4,7 +4,8 @@ target = public
 all : $(target) ;
 
 $(target) :
-	hugo --gc --i18n-warnings -d $@
+	mkdir -p $@
+	hugo --gc --destination=$@
 
 .PHONY : clean
 clean :
@@ -12,4 +13,4 @@ clean :
 
 .PHONY : serve
 serve :
-	hugo serve --buildDrafts --navigateToChanged --i18n-warnings --watch
+	hugo serve --buildDrafts --navigateToChanged --watch
