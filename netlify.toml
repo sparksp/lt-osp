@@ -1,32 +1,17 @@
 [build]
 publish = "public"
-command = """
-rm -r public ;
-mkdir -p public ;
-hugo --gc --minify --ignoreCache
-"""
+command = "make production-build"
+
+[build.environment]
+HUGO_VERSION = "0.111.3"
 
 [context.production.environment]
-HUGO_VERSION = "0.111.3"
+HUGO_BASEURL = "https://ltosp.uk/"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-command = """
-rm -r public ;
-mkdir -p public ;
-hugo --gc --minify --ignoreCache --buildFuture -b $DEPLOY_PRIME_URL
-"""
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.111.3"
+command = "make deploy-preview"
 
 [context.branch-deploy]
-command = """
-rm -r public ;
-mkdir -p public ;
-hugo --gc --minify --ignoreCache -b $DEPLOY_PRIME_URL
-"""
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.111.3"
+command = "make branch-deploy"
