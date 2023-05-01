@@ -5,6 +5,7 @@ all : $(target) ;
 
 $(target) :
 	-rm -r $@
+	-mkdir -p $@
 	hugo --gc --minify --destination=$@
 
 .PHONY : clean
