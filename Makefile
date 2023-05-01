@@ -6,7 +6,7 @@ all : $(target) ;
 $(target) :
 	-rm -r $@
 	-mkdir -p $@
-	hugo --gc --minify --destination=$@
+	hugo --gc --minify --ignoreCache --destination=$@
 
 .PHONY : clean
 clean :
