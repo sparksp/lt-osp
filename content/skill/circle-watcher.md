@@ -1,13 +1,14 @@
 ---
-title: "Circle Watcher #"
+title: "Circle Watcher"
 linktitle: "Circle Watcher"
 lists:
-    - generic
+  - generic
 tier: 5
 osp_cost: 85
 prerequisites: []
 requirements: ["x-command/watchers"]
-restricted: true
+lammie: true
 ladder: "circle"
 ---
+
 The character is granted the Circle Watcher ability.

@@ -1,6 +1,6 @@
 {{ define "main" -}}
 <article>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}{{ if .Params.lammie }} #{{ end }}</h1>
 
     {{- with .Params.canonical_title -}}
     <h2>{{ . }}</h2>

@@ -2,10 +2,10 @@
 {{- if .Param "canonical" }}{{ with (.Param "canonical" | site.GetPage) }}
 {{- $href = .Permalink }}
 {{ end }}{{ end -}}
-<a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
+<a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.lammie }} lammie-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
     id="{{ .Type }}-{{ .File.UniqueID }}" href="{{ $href }}" title="{{ .Title }}" {{- $prerequisites := slice }}
     {{- range .Params.prerequisites }}{{- with site.GetPage (printf "/skill/%s" .) }}
     {{- $prerequisites = $prerequisites | append (print .Type "-" .File.UniqueID) }} {{ end }}{{ end }}
     {{- with $prerequisites }}data-prerequisites="{{ delimit . ";" }}" {{ end }}>
-    {{- .LinkTitle -}}
+    {{- .LinkTitle -}}{{ if .Params.restricted }} @{{ end }}{{ if .Params.lammie }} #{{ end }}
 </a>
