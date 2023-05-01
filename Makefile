@@ -4,8 +4,8 @@ target = public
 all : $(target) ;
 
 $(target) :
-	mkdir -p $@
-	hugo --gc --destination=$@
+	-rm -r $@
+	hugo --gc --minify --destination=$@
 
 .PHONY : clean
 clean :
@@ -13,4 +13,4 @@ clean :
 
 .PHONY : serve
 serve :
-	hugo serve --buildDrafts --navigateToChanged --watch
+	hugo serve --buildDrafts --buildFuture --navigateToChanged --watch
