@@ -3,7 +3,6 @@ title: "Immune to Fear"
 lists:
   - bards-guild
   - casino-guild
-  - incantors-guild
   - militia-guild
 tier: 1
 osp_cost: 10
