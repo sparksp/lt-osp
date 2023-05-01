@@ -66,7 +66,7 @@
     <p>See <a href="{{ .Permalink }}" rel="parent">{{ .Title }}</a> for full details.</p>
     {{- end }}{{- end }}
 
-    {{- range sort $canonical_includes "Params.canonical_title" }}
+    {{- range sort $canonical_includes "Params.canonical_weight" }}
     <section>
         <h2>{{ .Params.canonical_title }}</h2>
 

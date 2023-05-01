@@ -1,6 +1,7 @@
 ---
 title: "Conceal Item"
 lists:
+  - bank-of-erdreja-guild
   - casino-guild
 tier: 2
 osp_cost: 20
