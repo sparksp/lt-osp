@@ -7,5 +7,5 @@
     {{- range .Params.prerequisites }}{{- with site.GetPage (printf "/skill/%s" .) }}
     {{- $prerequisites = $prerequisites | append (print .Type "-" .File.UniqueID) }} {{ end }}{{ end }}
     {{- with $prerequisites }}data-prerequisites="{{ delimit . ";" }}" {{ end }}>
-    {{- .LinkTitle -}}{{ if .Params.restricted }} @{{ end }}{{ if .Params.lammie }} #{{ end }}
+    {{- .LinkTitle -}}{{ if .Params.restricted }}<small> @</small>{{ end }}{{ if .Params.lammie }}<small> #</small>{{ end }}
 </a>

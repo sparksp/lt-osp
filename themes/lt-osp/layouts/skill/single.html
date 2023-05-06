@@ -1,6 +1,9 @@
 {{ define "main" -}}
 <article>
-    <h1>{{ .Title }}{{ if .Params.lammie }} #{{ end }}</h1>
+    <h1>{{ .Title }}
+        {{- if .Params.restricted }}<small title="@ marked skills are restricted and require an IC pre-requisite to purchase, generally a Training Facility or an IC tutor."> @</small>{{ end }}
+        {{- if .Params.lammie }}<small title="Some Occupational Skills marked with # are not available through normal routes – and may only be available with a Ritual, or specific Lammie/Loresheet."> #</small>{{ end }}
+    </h1>
 
     {{- with .Params.canonical_title -}}
     <h2>{{ . }}</h2>

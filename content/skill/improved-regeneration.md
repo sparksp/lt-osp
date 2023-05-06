@@ -1,11 +1,12 @@
 ---
-title: "Improved Regeneration #"
-linktitle: "Improved Regeneration"
+title: "Improved Regeneration"
 lists:
-    - lammie-restricted
+  - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
+lammie: true
 ---
+
 The character’s regeneration rate is improved by one step as shown in the following:
 
 Slower than 10 mins &rightarrow; 10 mins &rightarrow; 5 mins &rightarrow; 1 min &rightarrow; 30 sec &rightarrow; 10 sec.

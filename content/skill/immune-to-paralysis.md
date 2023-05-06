@@ -1,9 +1,10 @@
 ---
-title: "Immune to Paralysis #"
-linktitle: "Immune to Paralysis"
+title: "Immune to Paralysis"
 lists:
-    - lammie-restricted
+  - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
+lammie: true
 ---
+
 The character is immune to the Paralysis effect.
