@@ -1,9 +1,9 @@
 ---
-title: "Militia Guild Ω"
-linktitle: "Militia Guild"
+title: "Militia Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/militia/
+  - /guilds/militia/
 menu:
-    lists:
-        parent: "martial-guilds"
+  lists:
+    parent: "martial-guilds"
 ---

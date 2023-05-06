@@ -1,10 +1,10 @@
 ---
-title: "Martial Guilds Ω"
-linktitle: "Martial Guilds"
+title: "Martial Guilds"
+jackofalltrades: true
 aliases:
-    - /guilds/martial-guilds/
+  - /guilds/martial-guilds/
 menu:
-    lists:
-        identifier: "martial-guilds"
-        parent: "guilds"
+  lists:
+    identifier: "martial-guilds"
+    parent: "guilds"
 ---

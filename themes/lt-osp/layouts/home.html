@@ -22,7 +22,10 @@
       <section class="list">
         <header class="cell-list-title">
         {{- if .Page }}
-          <a href="{{ .Page.Permalink }}">{{ .Title | default .Name }}</a>
+          <a href="{{ .Page.Permalink }}">
+            {{- .Title | default .Name -}}
+            {{- if .Page.Params.jackofalltrades }} <small>Ω</small>{{ end -}}
+          </a>
         {{- else if .URL }}
           <a href="{{ absURL .URL }}">{{ .Title | default .Name }}</a>
         {{- else }}

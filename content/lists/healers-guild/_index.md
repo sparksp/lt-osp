@@ -1,9 +1,9 @@
 ---
-title: "Healers Guild Ω"
-linktitle: "Healers Guild"
+title: "Healers Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/healers/
+  - /guilds/healers/
 menu:
-    lists:
-        parent: "arcane-guilds"
+  lists:
+    parent: "arcane-guilds"
 ---

@@ -1,9 +1,9 @@
 ---
-title: "Armourers Guild Ω"
-linktitle: "Armourers Guild"
+title: "Armourers Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/armourers/
+  - /guilds/armourers/
 menu:
-    lists:
-        parent: "martial-guilds"
+  lists:
+    parent: "martial-guilds"
 ---

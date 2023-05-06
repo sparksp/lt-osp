@@ -1,9 +1,9 @@
 ---
-title: "Corruptors Guild Ω"
-linktitle: "Corruptors Guild"
+title: "Corruptors Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/corruptors/
+  - /guilds/corruptors/
 menu:
-    lists:
-        parent: "arcane-guilds"
+  lists:
+    parent: "arcane-guilds"
 ---

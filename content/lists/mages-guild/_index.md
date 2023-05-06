@@ -1,9 +1,9 @@
 ---
-title: "Mages Guild Ω"
-linktitle: "Mages Guild"
+title: "Mages Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/mages/
+  - /guilds/mages/
 menu:
-    lists:
-        parent: "arcane-guilds"
+  lists:
+    parent: "arcane-guilds"
 ---
