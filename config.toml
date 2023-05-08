@@ -45,11 +45,6 @@ theme = ["lt-osp", "fuse-search"]
   identifier = "loresheets"
 
 [[menu.lists]]
-  name = "Awakened Creature Loresheets"
-  identifier = "awakened-creature-loresheets"
-  parent = "loresheets"
-
-[[menu.lists]]
   name = "Skill Loresheets"
   identifier = "skill-loresheets"
   parent = "loresheets"
