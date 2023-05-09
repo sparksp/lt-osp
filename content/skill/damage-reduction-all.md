@@ -10,7 +10,7 @@ replacement: true
 ladder: "damage-reduction"
 ---
 
-This grants the character Damage Reduction to all damage effects and replaces the [Damage Reduction (Crush)]({{< ref "damage-reduction-crush" >}}) Occupational Skill. In addition the character and their armour are immune to the Through effect, unless it has the Artefact damage type. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it.
+Replaces the [Damage Reduction (Crush)]({{< ref "damage-reduction-crush" >}}) Occupational Skill. Grants the character Damage Reduction to all damage effects and grants the character immunity to all Through effects (Not Artefact through).
 
 Note: it has no effect on Artefact or Bane Damage, with the exception that it functions on Fatal Damage exactly the same as Occupational Skill: [Damage Reduction (Fatal)]({{< ref "damage-reduction-fatal" >}}).
 
