@@ -3,7 +3,7 @@ title: "Focused Strike"
 lists:
   - lammie-restricted
 prerequisites: []
-requirements: []
+requirements: ["Large Melee Weapon use CS"]
 lammie: true
 ladder: "strike"
 ---
