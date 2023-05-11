@@ -13,4 +13,5 @@ restricted: true
 ladder: "immune-to-fear"
 ---
 
-The character is immune to all Mind effects.
+The character is immune to all Mind effects (Befriend, Beguile, Confusion, Disregard, Enthral, Enthral
+Unliving, Fear, Mass Fear, Remove Fear, Sleep).
