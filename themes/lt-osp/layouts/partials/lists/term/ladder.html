@@ -28,7 +28,7 @@
         {{- end }}
     {{- end }}
     <tr>
-        <th scope="row">{{ $key }}</th>
+        <th scope="row">{{ if ne $key 0 }}{{ $key }}{{ end }}</th>
     {{- $this_col := -1 }}
     {{- $last_ladder_group := "" }}
     {{ range .Pages.ByParam "ladder_group" -}}
@@ -41,7 +41,7 @@
             {{- end }}
     </tr>
     <tr>
-        <th scope="row">&#x3003;</th>
+        <th scope="row">{{ if ne $key 0 }}&#x3003;{{ end }}</th>
         {{- end }}
         {{- $page_col := index ($scratch.Get "columns") ($page.Params.ladder_group | default "" | string) }}
         {{ if lt $this_col $page_col -}}
