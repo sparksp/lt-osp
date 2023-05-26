@@ -11,4 +11,4 @@ restricted: true
 ladder: "revive"
 ---
 
-This skill replaces [Advanced Healing]({{< ref "advanced-healing" >}}), and includes the [Advanced Healing]({{< ref "advanced-healing" >}}) and [Mind Healing]({{< ref "mind-healing" >}}) Occupational Skills. It also allows the character to cast the Total Heal Spell without having the requirement of the [High Magic]({{< ref "high-magic-x" >}}) Occupational Skill. If the character gains the [High Magic (Healing)]({{< ref "high-magic-x" >}}) Occupational Skill, they gain Spell Reduction (3) for the spell Total Heal.
+This skill replaces [Advanced Healing]({{< ref "advanced-healing" >}}), and includes the [Advanced Healing]({{< ref "advanced-healing" >}}) and [Mind Healing]({{< ref "mind-healing" >}}) Occupational Skills. It also allows the character to cast the Total Heal Spell without having the requirement of the [High Magic]({{< ref "high-magic-x" >}} "High Magic \<X>") Occupational Skill. If the character gains the [High Magic (Healing)]({{< ref "high-magic-x" >}} "High Magic \<X>") Occupational Skill, they gain Spell Reduction (3) for the spell Total Heal.
