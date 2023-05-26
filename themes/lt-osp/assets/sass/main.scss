@@ -18,6 +18,7 @@ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: $text-color;
   background: white;
+  scroll-padding-top: 3em;
 }
 @media (min-width: 48em) {
   html {

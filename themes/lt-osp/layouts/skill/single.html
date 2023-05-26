@@ -71,7 +71,7 @@
 
     {{- range sort $canonical_includes "Params.canonical_weight" }}
     <section>
-        <h2>{{ .Params.canonical_title }}</h2>
+        <h2 id="{{ .Params.canonical_title | urlize }}">{{ .Params.canonical_title }}</h2>
 
         {{ .Render "details" }}
 

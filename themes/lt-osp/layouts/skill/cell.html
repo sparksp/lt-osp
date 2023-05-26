@@ -1,6 +1,10 @@
 {{- $href := .Permalink -}}
 {{- if .Param "canonical" }}{{ with (.Param "canonical" | site.GetPage) }}
+{{- if $.Param "canonical_title" }}
+{{- $href = printf "%s#%s" .Permalink ($.Param "canonical_title" | urlize) }}
+{{- else }}
 {{- $href = .Permalink }}
+{{- end }}
 {{ end }}{{ end -}}
 <a class="cell cell-{{ .Type }}{{ if .Params.restricted }} restricted-cell{{ end }}{{ if .Params.lammie }} lammie-cell{{ end }}{{ if .Params.replacement }} replacement-cell{{ end }}"
     id="{{ .Type }}-{{ .File.UniqueID }}" href="{{ $href }}" title="{{ .Title }}" {{- $prerequisites := slice }}

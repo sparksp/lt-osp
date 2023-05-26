@@ -45,6 +45,11 @@ theme = ["lt-osp", "fuse-search"]
   identifier = "loresheets"
 
 [[menu.lists]]
+  name = "Paragon Loresheets"
+  identifier = "paragon-loresheets"
+  parent = "loresheets"
+
+[[menu.lists]]
   name = "Skill Loresheets"
   identifier = "skill-loresheets"
   parent = "loresheets"
