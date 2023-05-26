@@ -1,13 +1,14 @@
 ---
 title: "Triage (Master)"
 aliases:
-    - /skill/surgeon/
+  - /skill/surgeon/
 lists:
-    - healers-guild
+  - healers-guild
 tier: 2
 osp_cost: 20
 prerequisites: []
 requirements: ["Triage (Advanced) CS"]
 ladder: "triage"
 ---
-This skill reduces the time required for each Triage (Advanced) activity to 30 seconds rather than 1 minute to a Living pattern.
+
+This skill reduces the time required for each Triage (Advanced) activity to 30 seconds rather than 1 minute to a Living pattern. This skill will have no effect when used with Triage (Advanced) for raising LHV above 0 (zero).

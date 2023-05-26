@@ -11,4 +11,4 @@ ladder: "circle"
 weight: 1
 ---
 
-The character will gain the [Voidportal loresheet]({{< ref "/lists/voidportal-loresheet" >}}). _Loresheets_ for this skill are available for download and print from The Lorien Trust Website.
+The character will gain the [Voidportal loresheet]({{< ref "/lists/voidportal-loresheet" >}}). _Loresheets_ for this skill are available for download and print from The Lorien Trust Website (see _Loresheets_).

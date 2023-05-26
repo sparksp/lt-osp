@@ -10,7 +10,7 @@ requirements: []
 lammie: true
 ---
 
-This skill will replace a lower level of the Warlock \<X> Occupational Skill. The character will gain the [Warlock loresheet]({{< ref "/lists/warlock-loresheet" >}}) and may buy Occupational Skill listed there up to the stated Tier. To gain this skill a character must fulfil the IC requirements listed on the Warlock loresheet. A Warlock is a type of Essence Creature. Loresheets for this skill are available for download and print from The Lorien Trust Website.
+This skill will replace a lower level of the Warlock \<X> Occupational Skill. The character will gain the [Warlock loresheet]({{< ref "/lists/warlock-loresheet" >}}) and may buy Occupational Skill listed there up to the stated Tier. To gain this skill a character must fulfil the IC requirements listed on the Warlock loresheet. A Warlock is a type of Essence Creature. _Loresheets_ for this skill are available for download and print from The Lorien Trust Website (see _Loresheets_).
 
 | Type                 | Tier | OSP Cost |
 | -------------------- | :--: | :------: |
