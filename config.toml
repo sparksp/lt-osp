@@ -18,7 +18,7 @@ theme = ["lt-osp", "fuse-search"]
 
 [Params]
   themeColor = "theme-base-09"
-  description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v4.04"
+  description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v4.06"
   copyright = "Copyright 2020 Adam Scott and Phill Sparks. All rights reserved."
   [Params.Redirects]
     Gone = [
