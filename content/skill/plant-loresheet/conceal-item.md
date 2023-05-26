@@ -1,10 +1,9 @@
 ---
-# TODO: Confirm title is not "Conceal"
-title: "Conceal Item"
+title: "Conceal"
 canonical: "skill/conceal-item"
 canonical_title: "Plant Loresheet"
 lists:
-    - plant-loresheet
+  - plant-loresheet
 tier: 1
 osp_cost: 10
 ---
