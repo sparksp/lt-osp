@@ -1,9 +1,9 @@
 ---
-title: "Casino Guild Ω"
-linktitle: "Casino Guild"
+title: "Casino Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/casino/
+  - /guilds/casino/
 menu:
-    lists:
-        parent: "knowledge-guilds"
+  lists:
+    parent: "knowledge-guilds"
 ---

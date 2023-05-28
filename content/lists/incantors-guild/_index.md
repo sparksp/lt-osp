@@ -1,9 +1,9 @@
 ---
-title: "Incantors Guild Ω"
-linktitle: "Incantors Guild"
+title: "Incantors Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/incantors/
+  - /guilds/incantors/
 menu:
-    lists:
-        parent: "arcane-guilds"
+  lists:
+    parent: "arcane-guilds"
 ---

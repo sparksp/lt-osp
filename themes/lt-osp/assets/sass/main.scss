@@ -18,6 +18,7 @@ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: $text-color;
   background: white;
+  scroll-padding-top: 3em;
 }
 @media (min-width: 48em) {
   html {
@@ -268,7 +269,7 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
   overflow: hidden;
   text-overflow: ellipsis;
 
-  &.restricted-cell {
+  &.restricted-cell, &.lammie-cell {
     background-color: #C6D7A5;
     color: $text-color;
   }

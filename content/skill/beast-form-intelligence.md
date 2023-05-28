@@ -1,11 +1,12 @@
 ---
-title: "Beast-form Intelligence #"
-linktitle: "Beast-form Intelligence"
+title: "Beast-form Intelligence"
 lists:
-    - lammie-restricted
+  - lammie-restricted
 weight: 1
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
+lammie: true
 ladder: "beast-form"
 ---
+
 This skill allows the character to speak while in beast form. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it.

@@ -1,10 +1,11 @@
 ---
-title: "Natural Claws #"
-linktitle: "Natural Claws"
+title: "Natural Claws"
 lists:
-    - lammie-restricted
+  - lammie-restricted
 prerequisites: []
-requirements: []
+requirements: ["Claw Competency"]
+lammie: true
 ladder: "claws"
 ---
+
 Must wear natural claws. Requires valid Claw Competency. May strike and cause damage with both claws.

@@ -1,9 +1,9 @@
 ---
-title: "Scouts Guild Ω"
-linktitle: "Scouts Guild"
+title: "Scouts Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/scouts/
+  - /guilds/scouts/
 menu:
-    lists:
-        parent: "knowledge-guilds"
+  lists:
+    parent: "martial-guilds"
 ---

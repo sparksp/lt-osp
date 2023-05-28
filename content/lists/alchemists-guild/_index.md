@@ -1,9 +1,9 @@
 ---
-title: "Alchemists Guild Ω"
-linktitle: "Alchemists Guild"
+title: "Alchemists Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/alchemists/
+  - /guilds/alchemists/
 menu:
-    lists:
-        parent: "knowledge-guilds"
+  lists:
+    parent: "knowledge-guilds"
 ---

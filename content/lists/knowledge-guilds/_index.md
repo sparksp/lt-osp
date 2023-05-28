@@ -1,10 +1,10 @@
 ---
-title: "Knowledge Guilds Ω"
-linktitle: "Knowledge Guilds"
+title: "Knowledge Guilds"
+jackofalltrades: true
 aliases:
-    - /guilds/knowledge-guilds/
+  - /guilds/knowledge-guilds/
 menu:
-    lists:
-        identifier: "knowledge-guilds"
-        parent: "guilds"
+  lists:
+    identifier: "knowledge-guilds"
+    parent: "guilds"
 ---

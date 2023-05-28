@@ -1,9 +1,9 @@
 ---
-title: "Bards Guild Ω"
-linktitle: "Bards Guild"
+title: "Bards Guild"
+jackofalltrades: true
 aliases:
-    - /guilds/bards/
+  - /guilds/bards/
 menu:
-    lists:
-        parent: "knowledge-guilds"
+  lists:
+    parent: "knowledge-guilds"
 ---

@@ -1,10 +1,11 @@
 ---
-title: "Spell Reduction (1) #"
-linktitle: "Spell Reduction (1)"
+title: "Spell Reduction (1)"
 lists:
-    - lammie-restricted
+  - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
+lammie: true
 ladder: "spell-reduction"
 ---
+
 The character has Spell Reduction (1) when casting spells (min 1 power required for all spells). This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it. This will not work with the Iron Will spell.

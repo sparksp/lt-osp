@@ -1,10 +1,10 @@
 ---
-title: "+1 Magical Armour #"
-linktitle: "+1 Magical Armour"
+title: "+1 Magical Armour"
 lists:
   - lammie-restricted
 prerequisites: []
 requirements: ["Lammie or Loresheet"]
+lammie: true
 ladder: "magical-armour"
 ---
 
