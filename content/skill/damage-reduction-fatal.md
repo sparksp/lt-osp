@@ -1,6 +1,7 @@
 ---
 title: "Damage Reduction (Fatal)"
-guilds: [incantors]
+lists:
+  - incantors-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["dedicated-follower"]
@@ -8,4 +9,12 @@ requirements: []
 restricted: true
 ladder: "dedicated-follower"
 ---
-This grants the character Damage Reduction (Fatal). Note: Fatal will still ignore armour and put the character into its grace period and no damage to the location can be cured until the Fatal effect is removed. However, the target location no longer automatically suffers a mortal wound but takes one point of artefact damage ignoring armour instead.
+
+Grants the character Damage Reduction (Fatal) and changes the Fatal Damage effect to the following:
+
+- Fatal only affects Living patterns
+- The Fatal default damage type is Enchanted unless preceded by an Elemental Weakness or Artefact
+- Inflicts a single blow to the location ignoring the Ritual of Peace
+- Ignores all armour
+- Places the Target into their Grace Period
+- Prevents healing (and Regeneration) from affecting the Target until all the Fatal Wounds are removed

@@ -1,9 +1,12 @@
 ---
-title: "Mystic Claws #"
+title: "Mystic Claws"
 linktitle: "Mystic Claws"
-guilds: [lammie-restricted]
+lists:
+  - lammie-restricted
 prerequisites: []
 requirements: []
+lammie: true
 ladder: "claws"
 ---
-Claws count as small melee weapons for the purpose of delivering the following effects or poisons: Harm, Through, Weapon of Cold, Weapon of Flame, Paralysis, Cause Disease, Cause Fatal Wound, Ancestral Weapon, Ancestral Strike, any Weapon Oil or Lethal Alchemical Venom. They may not be used with any Lethal Magical Venom.
+
+Claws count as small melee weapons for the purpose of delivering effects, venoms (may not be used with any Magical Venom) or weapon oils (max 30 mins duration – any effect that would normally last longer will expire after 30 mins). If the creature also has the [Retractable Claws]({{< ref "retractable-claws" >}}) occupational skill – the claws may not be retracted whilst any of the spells, effects venoms or weapon oils are applied and active.

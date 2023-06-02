@@ -18,6 +18,7 @@ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: $text-color;
   background: white;
+  scroll-padding-top: 3em;
 }
 @media (min-width: 48em) {
   html {
@@ -161,6 +162,11 @@ body {
       padding-left: 1.5em;
     }
   }
+  ul ul ul {
+    :link, .link {
+      padding-left: 2.5em;
+    }
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -263,7 +269,7 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
   overflow: hidden;
   text-overflow: ellipsis;
 
-  &.restricted-cell {
+  &.restricted-cell, &.lammie-cell {
     background-color: #C6D7A5;
     color: $text-color;
   }
@@ -292,12 +298,12 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
   }
 }
 
-.guild-list {
+.list-list {
   column-gap: .5em;
   column-rule: none;
   column-width: 300px;
 }
-.guild {
+.list {
   @include break-inside;
   overflow: hidden
 }
@@ -373,4 +379,22 @@ $cell-height: calc(3.8em + 6px); /* line-height + padding + margin + border */
 
 mark {
   background-color: lighten($primary-color, 25%);
+}
+
+.markdown table {
+  background-color: #fafafa;
+  border-collapse: collapse;
+  color: black;
+  margin-bottom: 1em;
+
+  &, tr, th, td {
+    border: 1px solid #a9a9a9;
+  }
+  th, td {
+    line-height: 1.5;
+    padding: .2em .5em;
+  }
+  td {
+    background-color: white;
+  }
 }

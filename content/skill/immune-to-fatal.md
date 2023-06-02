@@ -1,8 +1,11 @@
 ---
-title: "Immune to Fatal #"
-linktitle: "Immune to Fatal"
-guilds: [lammie-restricted]
-prerequisites: []
+title: "Immune to Fatal"
+lists:
+  - lammie-restricted
+prerequisites: ["damage-reduction-fatal"]
 requirements: ["Lammie or Loresheet"]
+lammie: true
+replacement: true
 ---
-This skill makes the character immune to the Fatal effect. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it.
+
+This skill replaces [Damage Reduction (Fatal)]({{< ref "damage-reduction-fatal" >}}). The character is Immune to the Fatal effect.

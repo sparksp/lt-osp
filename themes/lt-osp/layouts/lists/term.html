@@ -1,0 +1,20 @@
+{{ define "main" -}}
+<h1>
+    {{- .Title -}}
+    {{- if .Params.jackofalltrades }}<small title="Ω marked lists are valid to use with the Occupational Skill Jack Of All Trades."> Ω</small>{{ end }}
+</h1>
+
+{{ partial "lists/nav" . }}
+
+{{ .Render "content" }}
+
+{{ with where .Pages ".Params.ladder" "!=" nil -}}
+{{ range .GroupByParam "ladder" -}}
+{{ partial "lists/term/ladder" . }}
+{{- end }}
+{{- end }}
+
+{{ with where .Pages ".Params.ladder" "==" nil -}}
+{{ partial "lists/term/ladder" (dict "Key" "none" "Pages" .) }}
+{{- end }}
+{{- end }}

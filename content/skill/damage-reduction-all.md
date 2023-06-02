@@ -1,14 +1,17 @@
 ---
-title: "Damage Reduction (All) #"
-linktitle: "Damage Reduction (All)"
-guilds: [lammie-restricted]
+title: "Damage Reduction (All)"
+lists:
+  - lammie-restricted
 weight: 2
 prerequisites: ["damage-reduction-crush"]
 requirements: ["Lammie or Loresheet"]
+lammie: true
 replacement: true
 ladder: "damage-reduction"
 ---
-This grants the character Damage Reduction to all damage effects and replaces the [Damage Reduction (Crush) OS][damage-reduction-crush]. See the Players Handbook & Game Rules (Version 3) for more details on Damage Reduction. This skill can only be used or purchased if the character has an applicable lammie or loresheet that allows it, Note: it has no effect on Artefact or Bane Damage, with the exception that it functions on Fatal Damage exactly the same as OS: [Damage Reduction (Fatal)][damage-reduction-fatal]
 
-[damage-reduction-crush]: {{< ref "damage-reduction-crush" >}}
-[damage-reduction-fatal]: {{< ref "damage-reduction-fatal" >}}
+Replaces the [Damage Reduction (Crush)]({{< ref "damage-reduction-crush" >}}) Occupational Skill. Grants the character Damage Reduction to all damage effects and grants the character immunity to all Through effects (Not Artefact through).
+
+Note: it has no effect on Artefact or Bane Damage, with the exception that it functions on Fatal Damage exactly the same as Occupational Skill: [Damage Reduction (Fatal)]({{< ref "damage-reduction-fatal" >}}).
+
+If the character also has the [Occupational Skill]({{< ref "regenerates" >}} "Regenerates") or ability to Regenerate Damage, the maximum speed at which the Damage can be regained is 1 per 5 mins (this may not be improved by any means).

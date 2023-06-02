@@ -1,10 +1,13 @@
 ---
 title: "Identify"
-guilds: [mages]
+lists:
+  - arcane-guilds
+  - bank-of-erdreja-guild
 tier: 2
 osp_cost: 20
 prerequisites: []
-requirements: ["Any Magic CS", " or ", "Sense Magic CS"]
-ladder: "identify"
+requirements:
+  ["Any Spellcasting, Incantation, Healing, Corruption or Sense Magic CS"]
 ---
-A character with this skill can identify the precise powers and abilities of a Magecraft based item after a period of careful study. This skill requires the presence of a referee (preferably with a radio), who will inform the player how long the study will take. The period of study will generally be as long it takes the referee to procure the information and may in some cases take until the next LT Main Event. When the identification is complete the player may see the powers card for the item, there may also be additional information at the referee’s discretion. If the item is not Magecraft based then this is all the character will be able to determine.
+
+A character with this skill can identify the approximate powers or purpose of a magical lammed item (excluding weapons, armour, scrolls and alchemical items) - these may include structures, standing stones or other unusual items. The examination of the item requires a minimum of 1 minute appropriate role-play with a Referee or Marshal present and will not always produce a result.

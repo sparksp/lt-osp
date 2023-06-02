@@ -1,10 +1,11 @@
 ---
 title: "Perform Transport Rite"
-guilds: [casino, mages]
+lists:
+    - casino-guild
+    - mages-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
-requirements: ["Spellcasting", ", ", "Incantation", " or ", "Healing CS"]
-ladder: "identify"
+requirements: ["Spellcasting", ", ", "Incantation", ", ", "Corruption", " or ", "Healing CS"]
 ---
-This allows the person to perform a transport rite without having the ritual magic CS. This does not allow a character to perform any other rite.
+This skill adds the Transportation Spell to the characters available spell list(s).

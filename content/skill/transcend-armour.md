@@ -1,6 +1,8 @@
 ---
 title: "Transcend Armour"
-guilds: [incantors, mages]
+lists:
+    - incantors-guild
+    - mages-guild
 tier: 2
 osp_cost: 20
 prerequisites: []

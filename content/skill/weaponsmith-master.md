@@ -1,6 +1,7 @@
 ---
 title: "Weaponsmith (Master)"
-guilds: [armourers]
+lists:
+  - armourers-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["weaponsmith-artisan"]
@@ -9,6 +10,5 @@ replacement: true
 restricted: true
 ladder: "t-weaponsmith"
 ---
-This skill replaces the [Weaponsmith (Artisan) OS][weaponsmith-artisan] and allows the character to make a level 1, a level 2 and a level 3 melee weapon or shield at each LT Main Event with tools that can be obtained and used in the relevant Guild. The character must gain permission from the relevant Guild to use their facilities. Instead of making a new weapon or shield they may reforge an existing weapon or shield and improve it by one level, subject to the normal restrictions on reforging.
 
-[weaponsmith-artisan]: {{< ref "weaponsmith-artisan" >}}
+This skill replaces [Weaponsmith (Artisan)]({{< ref "weaponsmith-artisan" >}}) and allows the character to make a level 1, level 2 and level 3 melee weapon or level 1, level 2 and level 3 shield at each Lorien Trust Main Event (3 items in total per event). This skill also allows three reforges (a process of heating and quenching) that allow more powerful, complex or desirable items – the character may only use these reforge abilities on an item that they are creating themselves and some items may require more than one reforge to create. In addition this skill allows the character to repair any weapon or shield (crafted or otherwise) that has been destroyed. This repair requires a minimum of 1 minute appropriate roleplayed action and is reduced to a minimum of 30 seconds for a shield if the character also has the CS Shield Use.

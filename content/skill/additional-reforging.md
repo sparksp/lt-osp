@@ -1,10 +1,12 @@
 ---
 title: "Additional Reforging"
-guilds: [armourers]
+lists:
+  - armourers-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
 requirements: []
 ladder: "additional-reforging"
 ---
-Once per event the character can reforge one piece of armour or weaponry, and improve it by one level. This OS can only be used on items that the character has the OS to make and is subject to the normal restrictions on reforging.
+
+This allows more powerful, complex or desirable items to be made. The character may only use these reforge abilities on an item that they are creating themselves and some items may require more than one reforge to create. See [Armoursmith]({{< ref "armoursmith-apprentice" >}}) and [Weaponsmith]({{< ref "weaponsmith-apprentice" >}}) occupational skill entries for more details. If the character has both the Armoursmith and Weaponsmith occupational skill – they will gain an additional reforge for each.

@@ -1,10 +1,14 @@
 ---
 title: "Immune to Fear"
-guilds: [bards, casino, corruptors, incantors, militia]
+lists:
+  - bards-guild
+  - casino-guild
+  - militia-guild
 tier: 1
 osp_cost: 10
 prerequisites: []
 requirements: []
 ladder: "immune-to-fear"
 ---
+
 This skill makes the character immune to the Fear effect.

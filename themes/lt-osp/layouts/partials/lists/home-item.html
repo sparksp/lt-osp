@@ -1,0 +1,7 @@
+{{ .Page.Render "cell" }}
+
+{{- if .HasChildren }}
+{{- range .Children }}
+{{ partial "lists/home-item" . }}
+{{ end -}}
+{{ end -}}

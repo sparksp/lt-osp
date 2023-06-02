@@ -1,10 +1,12 @@
 ---
 title: "Mind Healing"
-guilds: [healers]
+lists: []
 tier: 4
 osp_cost: 40
-prerequisites: ["advanced-healing"]
-requirements: ["Healing CS"]
+prerequisites: []
+requirements: []
 ladder: "revive"
+ladder_group: "right"
 ---
-This skill gives a character the ability to detect and remove all Mind effects. To detect if an individual is under the influence of any Mind effect, the character must engage them in sensible conversation for at least 30 seconds, after which they may make the call “discern mind effect”. To remove a discerned Mind effect, the character must continue the conversation for at least a further minute. At the end of this period the Mind effect is removed. Using this ability requires concentration.
+
+A character with this skill may extend the Discerning Wounds vocal to include the detection of mind effects. This detection effect requires a minimum of 10 seconds whilst holding a hand in proximity range of the target and using the vocals **"Discern Wound, Poison, Pattern Effect, Dismiss, Disease or Mind Effect"**. The character with this skill may also add to a Chant of Heal Wound or Chant of Repair Unliving Spell with the additional vocal **"and also remove any Mind Effects from your pattern"**. If this spell (and additional vocal) is maintained for a minimum of 30 seconds the character will remove all Mind effects from the target. Using this ability requires concentration. In addition the character with this Occupational Skill also has the [Immune to Sleep]({{< ref "immune-to-sleep" >}}) Occupational Skill.

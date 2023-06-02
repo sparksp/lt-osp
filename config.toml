@@ -14,24 +14,52 @@ theme = ["lt-osp", "fuse-search"]
   home = ["HTML", "_Redirects"]
 
 [taxonomies]
-  guild = "guilds"
+  list = "lists"
 
 [Params]
   themeColor = "theme-base-09"
-  description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v3.1.1"
-  copyright = "Copyright 2019 Adam Scott and Phill Sparks. All rights reserved."
+  description = "An interactive pocket guide to the Lorien Trust Role-Playing (L.T.R.P.) System's Occupational Skill Points v4.06"
+  copyright = "Copyright 2020 Adam Scott and Phill Sparks. All rights reserved."
   [Params.Redirects]
-    Gone = []
+    Gone = [
+      "/skill/corruption/",
+      "/skill/immune-to-ingestive-alchemical-poisons/",
+      "/skill/scribe-scroll/",
+      ]
+
     [Params.Redirects.Custom]
       "https://compassionate-aryabhata-ce7373.netlify.com/*" = "https://ltosp.uk/:splat"
+      "https://rules-v4.ltosp.uk/*" = "https://rules-v4--compassionate-aryabhata-ce7373.netlify.app/:splat"
 
-
-[[menu.guilds]]
+[[menu.lists]]
   name = "General"
   identifier = "misc"
   weight = -1
 
-[[menu.guilds]]
-  name = "Rune 2020"
-  identifier = "rune-2020"
-  weight = -1
+[[menu.lists]]
+  name = "Guilds"
+  identifier = "guilds"
+
+[[menu.lists]]
+  name = "Loresheets"
+  identifier = "loresheets"
+
+[[menu.lists]]
+  name = "Paragon Loresheets"
+  identifier = "paragon-loresheets"
+  parent = "loresheets"
+
+[[menu.lists]]
+  name = "Skill Loresheets"
+  identifier = "skill-loresheets"
+  parent = "loresheets"
+
+[[menu.lists]]
+  name = "Special Creature Loresheets"
+  identifier = "special-creature-loresheets"
+  parent = "loresheets"
+
+[[menu.lists]]
+  name = "Summonable Creature Loresheets"
+  identifier = "summonable-creature-loresheets"
+  parent = "loresheets"

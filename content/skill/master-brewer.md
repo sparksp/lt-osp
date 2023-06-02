@@ -1,8 +1,11 @@
 ---
-title: "Master Brewer #"
+title: "Master Brewer"
 linktitle: "Master Brewer"
-guilds: [lammie-restricted]
+lists:
+  - lammie-restricted
 prerequisites: []
 requirements: []
+lammie: true
 ---
-Once per Main Event when making any Level 1, Level 2, potion or poison may make a second copy of the liquid, the second liquid will cost the same amount and require the same ingredients as the first.
+
+Once per Main Event, when making any Level 1 or Level 2 potion or poison, you may make a second copy of the same liquid. This second liquid will cost the same amount and require the same ingredients as the first.

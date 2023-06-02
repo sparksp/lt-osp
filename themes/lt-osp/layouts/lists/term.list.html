@@ -1,0 +1,32 @@
+{{ define "main" -}}
+<h1>{{ .Title }}</h1>
+
+{{ partial "lists/nav" . }}
+
+{{ .Render "content" }}
+
+<section>
+    <header class="cell-list-title">
+        {{ .Title }}
+    </header>
+    <div class="cell-list">
+        {{ with where .Pages ".Params.ladder" "!=" nil -}}
+        {{ range .GroupByParam "ladder" -}}
+        <div class="cell-ladder">
+            {{ range .ByWeight -}}
+            {{ .Render "cell" }}
+            {{- end }}
+        </div>
+        {{- end }}
+        {{- end }}
+        {{ with where .Pages ".Params.ladder" "==" nil -}}
+        {{ range .ByTitle -}}
+        <div class="cell-ladder cell-ladder-misc">
+            {{ .Render "cell" }}
+        </div>
+        {{- end }}
+        {{- end }}
+    </div>
+</section>
+
+{{- end }}

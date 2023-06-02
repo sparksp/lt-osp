@@ -1,7 +1,0 @@
-{{- range $item := . -}}
-{{- with site.GetPage (printf "/skill/%s" $item) -}}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-{{- else -}}
-{{ $item }}
-{{- end -}}
-{{- end -}}.

@@ -1,0 +1,65 @@
+<table class="cell-table" data-ladder="{{ .Key }}">
+{{- $column_count := 0 }}
+{{- $scratch := newScratch }}
+{{ with (where .Pages ".Params.ladder_group" "==" nil) -}}
+    {{- $scratch.SetInMap "columns" "" $column_count }}
+    {{- $column_count = add $column_count 1 }}
+{{- end }}
+{{ range (where .Pages ".Params.ladder_group" "!=" nil).GroupByParam "ladder_group" -}}
+    {{- $scratch.SetInMap "columns" (string .Key) $column_count }}
+    {{- $column_count = add $column_count 1 }}
+{{- end }}
+<thead>
+    <tr>
+        <th>Tier</th>
+        <th colspan="{{ $column_count }}">Skill</th>
+    </tr>
+</thead>
+<tbody>
+{{- $tier := 5 }}
+{{ range .Pages.ByWeight.GroupByParam "tier" -}}
+    {{- $key := .Key }}
+    {{ if lt $tier $key -}}
+        {{ range after 1 (seq $tier (sub $key 1)) -}}
+    <tr>
+        <th scope="row">{{ . }}</th>
+        <td class="no-skill" colspan="{{ $column_count }}"></td>
+    </tr>
+        {{- end }}
+    {{- end }}
+    <tr>
+        <th scope="row">{{ if ne $key 0 }}{{ $key }}{{ end }}</th>
+    {{- $this_col := -1 }}
+    {{- $last_ladder_group := "" }}
+    {{ range .Pages.ByParam "ladder_group" -}}
+        {{- $page := . }}
+        {{ if eq $last_ladder_group $page.Params.ladder_group -}}
+            {{ if lt $this_col (sub $column_count 1) -}}
+                {{ range after 1 (seq $this_col (sub $column_count 1)) -}}
+        <td class="no-skill"></td>
+                {{- end }}
+            {{- end }}
+    </tr>
+    <tr>
+        <th scope="row">{{ if ne $key 0 }}&#x3003;{{ end }}</th>
+        {{- end }}
+        {{- $page_col := index ($scratch.Get "columns") ($page.Params.ladder_group | default "" | string) }}
+        {{ if lt $this_col $page_col -}}
+            {{ range after 1 (seq $this_col (sub $page_col 1)) -}}
+        <td class="no-skill"></td>
+            {{- end }}
+        {{- end }}
+        <td>{{ $page.Render "cell" }}</td>
+        {{- $this_col = $page_col }}
+        {{- $last_ladder_group = $page.Params.ladder_group }}
+    {{- end }}
+    {{ if lt $this_col (sub $column_count 1) -}}
+        {{ range after 1 (seq $this_col (sub $column_count 1)) -}}
+        <td class="no-skill"></td>
+        {{- end }}
+    {{- end }}
+    </tr>
+{{- $tier = $key }}
+{{- end }}
+</tbody>
+</table>

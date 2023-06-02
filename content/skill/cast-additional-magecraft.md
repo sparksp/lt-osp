@@ -1,11 +1,15 @@
 ---
 title: "Cast Additional Magecraft"
-guilds: [mages]
+lists:
+  - mages-guild
 tier: 5
 osp_cost: 50
 prerequisites: ["master-countermagic"]
-requirements: ["enchanting", " or ", "shadow-magic", " OS"]
+requirements: ["enchanting", " or ", "shadow-magic", " Occupational Skill"]
 restricted: true
-ladder: "immune-to-fear"
+replacement: true
+ladder: "incantation"
+ladder_group: "1"
 ---
+
 The character can cast spells from the standard Spellcasting list as well as their converted spell list.

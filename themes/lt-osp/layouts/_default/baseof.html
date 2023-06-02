@@ -25,7 +25,7 @@
     {{- $bundle = $bundle | append (resources.Get "js/resize-listener.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/taxonomy.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/fuse.min.js") -}}
-    {{- $bundle = $bundle | append (resources.Get "js/jquery-3.3.1.min.js") -}}
+    {{- $bundle = $bundle | append (resources.Get "js/jquery.min.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/jquery.mark.min.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/url-search-params.min.js") -}}
     {{- $bundle = $bundle | append (resources.Get "js/search.js") -}}
@@ -43,6 +43,9 @@
     <meta name="dcterms.rights" content="{{ . }}">
     <meta name="dcterms.dateCopyrighted" content="{{ now.Format "2006" }}">
     {{ end }}
+    {{- if .Param "canonical" }}{{ with (.Param "canonical" | site.GetPage) }}
+    <link rel="canonical" href="{{ .Permalink }}" title="{{ .Title }}">
+    {{- end }}{{ end }}
 </head>
 
 <body>
